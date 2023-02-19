@@ -1,12 +1,26 @@
 {
-  "index": "About",
+  "index": {
+    "title": "About",
+    "type": "page",
+    "display": "hidden"
+  },
+  "documentation": {
+    "title": "Documentation",
+    "type": "page",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": true,
+      "pagination": true
+    }
+  },
   "introduction": "Introduction",
+  "---": {
+    "type": "separator"
+  },
   "another": "Another Page",
   "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
