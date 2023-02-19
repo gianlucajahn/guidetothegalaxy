@@ -15,12 +15,6 @@
       "pagination": true
     }
   },
-  "introduction": "Introduction",
-  "---": {
-    "type": "separator"
-  },
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
