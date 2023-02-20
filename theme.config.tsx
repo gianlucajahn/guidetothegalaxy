@@ -17,6 +17,9 @@ const config: DocsThemeConfig = {
     text: 'Copyright © 2023. The open-sourced guide on spacetravel.',
   },
   faviconGlyph: "🌌",
+  nextThemes: {
+    "defaultTheme": "dark"
+  },
   useNextSeoProps() {
     return {
       titleTemplate: '%s – GTTG'
