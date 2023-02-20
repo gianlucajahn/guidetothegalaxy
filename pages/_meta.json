@@ -2,7 +2,10 @@
   "index": {
     "title": "About",
     "type": "page",
-    "display": "hidden"
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
   },
   "documentation": {
     "title": "Documentation",

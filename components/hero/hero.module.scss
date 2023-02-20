@@ -1,0 +1,120 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');
+
+.section {
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: -58px;
+    align-items: center;
+    background-image: url("../../resources/images/hero11.PNG");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 7.25%;
+    position: relative;
+
+    .license {
+        font-size: 14px;
+        margin-top: 18px;
+        color: #747474;
+        font-family: "Inter", sans-serif;
+    }
+
+    &:after {
+        content:"";
+        background: linear-gradient(90deg, rgba(140,54,255,1) 0%, rgba(9,27,121,1) 50%, rgba(0,188,255,1) 100%);
+        display: block;
+        height: 1px;
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .logoContainer {
+        border-radius: 12px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 5px 14px 12px 14px;
+        backdrop-filter: blur(6px);
+        margin-bottom: 30px;
+        box-shadow: -12px 0px 75px rgb(0, 68, 215), 
+        12px 0px 75px rgb(86, 176, 245);
+
+        p {
+            font-size: 56px;
+        }
+    }
+
+    h1 {
+        font-size: 80px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        max-width: 44%;
+        text-align: center;
+        letter-spacing: -0.035em;
+        color: transparent; 
+        height: 170px;
+        line-height: 1.025;
+        margin-bottom: 20px;
+        background: rgb(185,185,185);
+        background: -moz-linear-gradient(360deg, rgba(185,185,185,1) 0%, rgba(255,255,255,1) 100%);
+        background: -webkit-linear-gradient(360deg, rgba(185,185,185,1) 0%, rgba(255,255,255,1) 100%);
+        background: linear-gradient(360deg, rgba(185,185,185,1) 0%, rgba(255,255,255,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b9b9b9",endColorstr="#ffffff",GradientType=1);
+        background-clip: text;
+    }
+
+    .slogan {
+        font-size: 20px;
+        font-family: 'Space Grotesk', sans-serif;
+        color: #FFFFFFB2;
+        max-width: 35%;
+        text-align: center;
+    }
+
+    .image {
+        width: 420px;
+        z-index: 40;
+        margin-bottom: 28px;
+    }
+
+    .buttonContainer {
+        margin-top: 28px;
+        display: flex;
+        gap: 12px;
+
+        button {
+            width: 200px;
+            height: 48px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            transition: 0.5s all;
+            transition-delay: 0.1s;
+        }
+
+        .brightButton {
+            background-color: white;
+            color: black;
+
+            &:hover {
+                box-shadow: 0px 0px 24px white;
+            }
+        }
+
+        .darkButton {
+            background-color: rgba(5, 5, 5, 0.92);
+            border: 1px solid #969696;
+
+            &:hover {
+                border: 1px solid white;
+            }
+        }
+    }
+}

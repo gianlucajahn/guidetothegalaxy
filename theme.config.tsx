@@ -1,8 +1,11 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import logo from "./.next/static/media/logo_navbar.png";
+import Image from 'next/image';
+import styles from "./theme.module.scss";
 
 const config: DocsThemeConfig = {
-  logo: <span>🌌 guidetothegalaxy.io</span>,
+  logo: <span className={styles.logo}>🌌 GUIDE TO THE GALAXY</span>,
   project: {
     link: 'https://github.com/gianlucajahn/guidetothegalaxy',
   },
