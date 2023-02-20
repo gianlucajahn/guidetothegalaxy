@@ -8,7 +8,7 @@ export default function Hero() {
       <div className={styles.logoContainer}>
         <p style={{ opacity: 1 }}>🌌</p>
       </div>
-      <Image src={require("../../.next/static/media/guidetothegalaxy.png")} alt="GUIDE TO THE GALAXY" width={420} height={36} className={styles.image} />
+      <Image src={require(".//../../resources/images/guidetothegalaxy.png")} alt="GUIDE TO THE GALAXY" width={420} height={36} className={styles.image} />
 
       <h1>The open-sourced guide on spacetravel</h1>
       <p className={styles.slogan}>Learn about and contribute to a growing wiki on space, aerospace engineering and spacetravel.</p>
