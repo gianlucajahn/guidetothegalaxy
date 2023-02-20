@@ -2,9 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');
 
+// Animations
+@keyframes entry {
+    0% {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 .section {
     width: 100vw;
-    height: 92vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     margin-top: -58px;
@@ -20,9 +33,10 @@
 
     .license {
         font-size: 14px;
-        margin-top: 18px;
+        margin-top: 22px;
         color: #747474;
         font-family: "Inter", sans-serif;
+        animation: 2s 1 forwards entry;
     }
 
     &:after {
@@ -38,12 +52,19 @@
     .logoContainer {
         border-radius: 12px;
         background-color: rgba(0, 0, 0, 0.5);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(45deg, rgba(27,27,27,1) 0%, rgba(138,138,138,1) 140%) border-box;
+        border: 1px solid transparent;
         padding: 5px 14px 12px 14px;
         backdrop-filter: blur(6px);
         margin-bottom: 30px;
         box-shadow: -12px 0px 75px rgb(0, 68, 215), 
-        12px 0px 75px rgb(86, 176, 245);
+        12px 0px 75px rgb(86, 176, 245), inset 0 0 50px rgba(255, 255, 255, 0.3),      /* inner white */
+        inset 20px 0 80px rgba(0, 68, 215, 0.7),   /* inner left magenta short */
+        inset -20px 0 80px rgba(0,188,255, 0.7),  /* inner right cyan short */
+        inset 20px 0 300px rgba(0, 68, 215, 0.7),  /* inner left magenta broad */
+        inset -20px 0 300px rgba(0,188,255, 0.7), /* inner right cyan broad */;
+        animation: 2s 1 forwards entry;
 
         p {
             font-size: 56px;
@@ -67,6 +88,7 @@
         background: linear-gradient(360deg, rgba(185,185,185,1) 0%, rgba(255,255,255,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b9b9b9",endColorstr="#ffffff",GradientType=1);
         background-clip: text;
+        animation: 2s 1 forwards entry;
     }
 
     .slogan {
@@ -75,12 +97,14 @@
         color: #FFFFFFB2;
         max-width: 35%;
         text-align: center;
+        animation: 2s 1 forwards entry;
     }
 
     .image {
         width: 420px;
         z-index: 40;
         margin-bottom: 28px;
+        animation: 2s 1 forwards entry;
     }
 
     .buttonContainer {
@@ -97,6 +121,7 @@
             font-weight: 500;
             transition: 0.5s all;
             transition-delay: 0.1s;
+            animation: 2s 1 forwards entry;
         }
 
         .brightButton {
