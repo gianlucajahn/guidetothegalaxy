@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./hero.module.scss";
 import Image from "next/image";
-import logo from "../../.next/static/media/guidetothegalaxy.png";
 
 export default function Hero() {
   return (
@@ -9,7 +8,7 @@ export default function Hero() {
       <div className={styles.logoContainer}>
         <p style={{ opacity: 1 }}>🌌</p>
       </div>
-      <Image src={logo} alt="GUIDE TO THE GALAXY" className={styles.image} />
+      <Image src={require("../../.next/static/media/guidetothegalaxy.png")} alt="GUIDE TO THE GALAXY" width={420} height={36} className={styles.image} />
 
       <h1>The open-sourced guide on spacetravel</h1>
       <p className={styles.slogan}>Learn about and contribute to a growing wiki on space, aerospace engineering and spacetravel.</p>
