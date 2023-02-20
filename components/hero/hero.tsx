@@ -15,7 +15,7 @@ export default function Hero() {
 
       <div className={styles.buttonContainer}>
         <a href="http://localhost:3001/documentation/introduction"><button className={styles.brightButton}>Start reading</button></a>
-        <a href="https://github.com/gianlucajahn/guidetothegalaxy" target="_blank"><button className={styles.darkButton}>GitHub</button></a>
+        <a href="https://github.com/gianlucajahn/guidetothegalaxy" target="_blank"><button className={styles.darkButton} style={{ color: "white !important" }}>GitHub</button></a>
       </div>
 
       <p className={styles.license}>License: MIT X11</p>
