@@ -1,7 +1,5 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
-import logo from "./.next/static/media/logo_navbar.png";
-import Image from 'next/image';
 import styles from "./theme.module.scss";
 
 const config: DocsThemeConfig = {
