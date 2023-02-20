@@ -14,8 +14,14 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/gianlucajahn/guidetothegalaxy',
   footer: {
-    text: 'Copyright © 2023. The definitive guide to spacetravel on the web',
+    text: 'Copyright © 2023. The open-sourced guide on spacetravel.',
   },
+  faviconGlyph: "🌌",
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – GTTG'
+    }
+  }
 }
 
 export default config
