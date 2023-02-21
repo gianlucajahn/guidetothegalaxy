@@ -17,7 +17,7 @@
 
 .section {
     width: 100vw;
-    height: 90vh;
+    height: 92.5vh;
     display: flex;
     flex-direction: column;
     margin-top: -58px;
@@ -28,7 +28,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 7.25%;
+    padding-top: 8.85%;
     position: relative;
 
     .license {
@@ -41,7 +41,7 @@
 
     &:after {
         content:"";
-        background: linear-gradient(90deg, rgba(140,54,255,1) 0%, rgba(9,27,121,1) 50%, rgba(0,188,255,1) 100%);
+        background: linear-gradient(270deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 35%, rgba(255,255,255,1) 100%);
         display: block;
         height: 1px;
         width: 100vw;
@@ -57,6 +57,8 @@
         border: 1px solid transparent;
         padding: 5px 14px 12px 14px;
         backdrop-filter: blur(6px);
+        cursor: pointer;
+        transition: 0.5s all ease-out;
         margin-bottom: 30px;
         box-shadow: -12px 0px 75px rgb(0, 68, 215), 
         12px 0px 75px rgb(86, 176, 245), inset 0 0 50px rgba(255, 255, 255, 0.3),      /* inner white */
@@ -68,6 +70,15 @@
 
         p {
             font-size: 56px;
+        }
+
+        &:hover {
+            box-shadow: -12px 0px 95px rgb(0, 68, 215), 
+            12px 0px 95px rgb(86, 176, 245), inset 0 0 50px rgba(255, 255, 255, 0.3),      /* inner white */
+            inset 20px 0 100px rgba(0, 68, 215, 0.7),   /* inner left magenta short */
+            inset -20px 0 100px rgba(0,188,255, 0.7),  /* inner right cyan short */
+            inset 20px 0 300px rgba(0, 68, 215, 0.7),  /* inner left magenta broad */
+            inset -20px 0 300px rgba(0,188,255, 0.7), /* inner right cyan broad */;
         }
     }
 
@@ -102,7 +113,6 @@
 
     .image {
         width: 420px;
-        z-index: 40;
         margin-bottom: 28px;
         animation: 2s 1 forwards entry;
     }

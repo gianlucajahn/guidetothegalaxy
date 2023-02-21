@@ -1,0 +1,40 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    padding: 0 200px;
+    align-items: flex-start;
+    background-image: url("../../resources/images/manifest4.png");
+    background-repeat: no-repeat;
+    padding-top: 7%;
+    position: relative;
+
+    h1 {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 500;
+        font-size: 34px;
+        margin-bottom: 8px;
+        margin-left: 4px;
+        color: white;
+    }
+
+    .eyebrow {
+        margin-bottom: 14px;
+    }
+
+    .firstRow,
+    .secondRow {
+        display: flex;
+        gap: 22px;
+        margin-bottom: 30px;
+    }
+}

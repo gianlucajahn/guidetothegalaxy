@@ -1,0 +1,40 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');
+
+.tilt {
+    background-color: rgba(15, 15, 15, 0.85);
+    border-radius: 14px;
+    padding: 38px 40px;
+    cursor: pointer;
+    transition: 0.125s all, 0.3s box-shadow;
+    backdrop-filter: blur(10px);
+    border: 1px solid #3f3f3f;
+    box-shadow: 0px 0px 20px #1c1c1c;
+
+    &:hover {
+        box-shadow: 0px 0px 20px #1c1c1c;
+        z-index: 10;
+    }
+
+    .image {
+        margin-bottom: 18px;
+    }
+
+    h3 {
+        font-family: "Inter", sans-serif;
+        color: rgb(253, 117, 5);
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: -0.02em;
+        margin-bottom: 4px;
+    }
+
+    p {
+        font-family: "Inter", sans-serif;
+        color: white;
+        font-weight: 300;
+        font-size: 15px;
+        letter-spacing: -0.02em;
+    }
+}
