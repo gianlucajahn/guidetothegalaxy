@@ -7,6 +7,8 @@ specifiers:
   nextra-theme-docs: latest
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-tilt: ^0.1.4
+  react-use-scroll-snap: ^0.0.4
   sass: ^1.58.3
   typescript: ^4.9.3
 
@@ -16,6 +18,8 @@ dependencies:
   nextra-theme-docs: 2.2.14_3dlgxhjbodg5wy6dtxo6zbkbxe
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-tilt: 0.1.4_biqbaboplfbrettd7655fr4n2y
+  react-use-scroll-snap: 0.0.4_react@18.2.0
   sass: 1.58.3
 
 devDependencies:
@@ -1819,6 +1823,25 @@ packages:
       scheduler: 0.23.0
     dev: false
 
+  /react-tilt/0.1.4_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-bVeRumg+RIn6QN8S92UmubGqX/BG6/QeQISBeAcrS/70dpo/jVj+sjikIawDl5wTuPdubFH8zH0EMulWIctsnw==}
+    peerDependencies:
+      react: ^15.0.0 || ^16.0.0-beta || ^16.0.0
+      react-dom: ^15.0.0 || ^16.0.0-beta || ^16.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /react-use-scroll-snap/0.0.4_react@18.2.0:
+    resolution: {integrity: sha512-IVnGldU13ZM5NkiBNudXFVsyDuF8u99zjYhGsy+fsS75CvcD//apT0Qn1YTEUQ/QDB21K8NPM8psFpTIKeay2Q==}
+    peerDependencies:
+      react: '>=16.8.1'
+    dependencies:
+      react: 18.2.0
+      tweezer.js: 1.5.0
+    dev: false
+
   /react/18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
@@ -2106,6 +2129,10 @@ packages:
 
   /tslib/2.4.1:
     resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
+    dev: false
+
+  /tweezer.js/1.5.0:
+    resolution: {integrity: sha512-aSiJz7rGWNAQq7hjMK9ZYDuEawXupcCWgl3woQQSoDP2Oh8O4srWb/uO1PzzHIsrPEOqrjJ2sUb9FERfzuBabQ==}
     dev: false
 
   /type-fest/1.4.0:
