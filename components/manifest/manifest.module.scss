@@ -11,11 +11,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
-    padding: 0 200px;
+    padding: 7% 200px;
     align-items: flex-start;
     background-image: url(".//../../resources/images/manifest4.PNG");
     background-repeat: no-repeat;
-    padding-top: 7%;
     position: relative;
 
     h1 {
@@ -36,5 +35,98 @@
         display: flex;
         gap: 22px;
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1950px) {
+    .section {
+        padding: 7% 250px;
+    }
+}
+
+@media screen and (min-width: 2115px) {
+    .section {
+        padding: 7% 325px;
+    }
+}
+
+@media screen and (min-width: 2250px) {
+    .section {
+        padding: 7% 390px;
+    }
+}
+
+@media screen and (max-width: 1850px) {
+    .section {
+        padding: 7% 175px;
+    }
+}
+
+@media screen and (max-width: 1720px) {
+    .section {
+        padding: 7% 110px;
+    }
+}
+
+@media screen and (max-width: 1640px) {
+    .section {
+        padding: 7% 75px;
+    }
+}
+
+@media screen and (max-width: 1615px) {
+    .section {
+        padding: 7% 75px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .firstRow,
+        .secondRow {
+            flex-direction: column;
+            gap: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 1175px) {
+    .section {
+        padding: 7% 75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200vh;
+
+        .firstRow,
+        .secondRow {
+            flex-direction: column;
+            gap: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .section {
+        .leftSide,
+        .rightSide {
+            h1 {
+                margin-left: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .section {
+        height: 162.5vh;
+
+        .leftSide,
+        .rightSide {
+            h1 {
+                margin-left: 54px;
+                margin-bottom: -10px;
+                font-size: 30px;
+            }
+        }
     }
 }
