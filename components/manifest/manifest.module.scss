@@ -8,7 +8,6 @@
     display: flex;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
     padding: 7% 200px;
@@ -108,6 +107,8 @@
 @media screen and (max-width: 600px) {
     .section {
         padding: 100px 75px;
+        background-attachment: scroll;
+        background-position: 0% 0%;
     }
 }
 
