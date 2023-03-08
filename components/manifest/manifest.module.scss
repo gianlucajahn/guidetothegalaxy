@@ -105,6 +105,12 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .section {
+        padding: 100px 75px;
+    }
+}
+
 @media screen and (max-width: 520px) {
     .section {
         .leftSide,
