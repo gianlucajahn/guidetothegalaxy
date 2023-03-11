@@ -14,7 +14,7 @@ export default function Hero() {
       <p className={styles.slogan}>Learn about and contribute to a growing wiki on space, aerospace engineering and spacetravel.</p>
 
       <div className={styles.buttonContainer}>
-        <a href="http://localhost:3001/documentation/introduction"><button className={styles.brightButton}>Start reading</button></a>
+        <a href="https://guidetothegalaxy.vercel.app/documentation/introduction"><button className={styles.brightButton}>Start reading</button></a>
         <a href="https://github.com/gianlucajahn/guidetothegalaxy" target="_blank"><button className={styles.darkButton} style={{ color: "white !important" }}>GitHub</button></a>
       </div>
 
