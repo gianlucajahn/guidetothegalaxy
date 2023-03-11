@@ -33,7 +33,11 @@
     }
 
     .book {
-        transform: scale(1.08);
+        background: none;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: white;
+        background-size: 100%;
+        animation: none !important;
     }
 }
 
