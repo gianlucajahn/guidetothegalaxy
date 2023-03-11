@@ -18,10 +18,21 @@
       "pagination": true
     }
   },
+  "FAQ": {
+    "title": "FAQ",
+    "type": "page",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": true,
+      "pagination": true
+    }
+  },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://twitter.com/0xGianni",
     "newWindow": true
   }
 }
