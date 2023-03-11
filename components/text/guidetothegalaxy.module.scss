@@ -1,5 +1,8 @@
 .container {
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
 
     .overlay {
        position: absolute;
@@ -23,7 +26,7 @@
     letter-spacing: -.015em;
     font-weight: 700;
     line-height: 1.26;
-    transition: 0.15s ease-in-out all;
+    transition: 0.2s ease-out all;
 
     &:hover {
         transform: scale(1.03);
