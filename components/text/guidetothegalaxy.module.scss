@@ -1,0 +1,75 @@
+.container {
+    position: relative;
+
+    .overlay {
+       position: absolute;
+       height: 20px;
+       width: 20px; 
+       animation: hovering infinite 5s ease-in-out;
+       cursor: pointer;
+    }
+
+    .rocket {
+        left: 51px;
+        bottom: 5px;
+    }
+
+    .ufo {
+        left: 62.5%;
+        top: 4px;
+        animation-delay: 1s;
+    }
+
+    .planet {
+        left: 38.75%;
+        bottom: 17%;
+        animation-delay: 3s;
+    }
+}
+
+.headline {
+    background: linear-gradient(32deg,#ff0000,#ffbe00,#00e7ff,#ff00d1,#ff4c00);
+    background-size: 300% 300%;
+    animation: gradient-animation 24s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 54px;
+    cursor: pointer;
+    margin-bottom: -16px;
+    margin-top: 20px;
+    letter-spacing: -.015em;
+    font-weight: 700;
+    line-height: 1.26;
+    transition: 0.15s ease-in-out all;
+
+    &:hover {
+
+    }
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+@keyframes hovering {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
