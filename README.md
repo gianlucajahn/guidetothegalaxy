@@ -17,9 +17,9 @@
 ## Technologies
 
 - Next.js 12
- - Server Side Rendering
- - Next.js Image & Link Components
- - Next.js I18n
+  - Server Side Rendering
+  - Next.js Image & Link Components
+  - Next.js I18n
 - TypeScript
 - TailwindCSS
 
