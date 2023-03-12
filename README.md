@@ -14,5 +14,12 @@
 - ⚗️ Taking educated guesses and showing what's possible
 - 👥 Open-Source to allow reciprocal fact-checking
 
+## Technologies
+
+- Next.js 12
+  - Server Side Rendering
+- TypeScript
+- TailwindCSS
+
 ## Why?
 Cause it's cool. 
