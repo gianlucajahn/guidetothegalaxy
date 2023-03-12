@@ -11,7 +11,7 @@ export default function Hero() {
       <Image src={require(".//../../resources/images/guidetothegalaxy.png")} alt="GUIDE TO THE GALAXY" width={420} height={36} className={styles.image} />
 
       <h1 className={styles.title}>The open-sourced guide on spacetravel</h1>
-      <p className={styles.slogan}>Learn about and contribute to a growing wiki on space, aerospace engineering and spacetravel.</p>
+      <p className={styles.slogan}>Learn about and contribute to a growing wiki on astrophysics, aerospace engineering and spacetravel.</p>
 
       <div className={styles.buttonContainer}>
         <a href="https://guidetothegalaxy.vercel.app/documentation/introduction"><button className={styles.brightButton}>Start reading</button></a>
