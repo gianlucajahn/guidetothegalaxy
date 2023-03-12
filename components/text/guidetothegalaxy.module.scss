@@ -10,6 +10,7 @@
     background-size: 300% 300%;
     animation: gradient-animation 24s ease infinite;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 54px;
     cursor: pointer;
@@ -30,7 +31,7 @@
         background-clip: unset;
         -webkit-text-fill-color: white;
         background-size: 100%;
-        animation: none !important;
+        animation: 5s infinite forwards hovering;
     }
 }
 
@@ -43,6 +44,20 @@
     }
     100% {
       background-position: 0% 50%;
+    }
+}
+
+@keyframes hovering {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0px);
     }
 }
 
