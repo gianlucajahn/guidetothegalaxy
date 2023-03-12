@@ -1,23 +1,42 @@
-# Nextra Docs Template 
+<div align="center">
+ 
+<h1 align="center">The Guide to the Galaxy</h1>
+<p align="center">An optimistic glance into the future of human spaceflight, padded with a pinch of sarcasm.</p>
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+![](https://i.imgur.com/QEJF2eJ.png)
+<p align="center">An open-source learning platform</p>
+ 
+ </div>
+ 
+ ## What?
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+- 📑 Based on recent scientific evidence from papers and studies
+- ⚗️ Taking educated guesses and showing what's possible
+- 👥 Open-Source to allow reciprocal fact-checking
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+## Why?
+Cause it's cool. 
 
-## Quick Start
+## Table of Content
 
-Click the button to clone this repository and deploy it on Vercel:
+- Documentation
+   - Introduction
+   - Fundamentals
+      - Motivation
+      - Destinations
+   - Aerospace Engineering
+      - Rockets
+      - Boosters
+      - Space Stations
+- FAQ
+- Contact
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+## Technologies
 
-## Local Development
-
-First, run `pnpm i` to install the dependencies.
-
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
-
-## License
-
-This project is licensed under the MIT License.
+- Next.js 12
+  - Nextra
+  - Server Side Rendering
+  - Next.js Image & Link Components
+  - Next.js I18n
+- TypeScript
+- TailwindCSS
