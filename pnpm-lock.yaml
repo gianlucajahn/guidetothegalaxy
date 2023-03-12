@@ -2,9 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/node': 18.11.10
+  '@vercel/analytics': ^0.1.11
+  i: ^0.3.7
   next: ^13.2.3
   nextra: ^2.2.18
   nextra-theme-docs: ^2.2.18
+  pnpm: ^7.29.1
   react: ^18.2.0
   react-dom: ^18.2.0
   react-tilt: ^0.1.4
@@ -13,9 +16,12 @@ specifiers:
   typescript: ^4.9.3
 
 dependencies:
+  '@vercel/analytics': 0.1.11_react@18.2.0
+  i: 0.3.7
   next: 13.2.3_wiv434v7erz4aedd5whhdwmpv4
   nextra: 2.2.18_nvzgbose6yf6w7ijjprgspqefi
   nextra-theme-docs: 2.2.18_eabglq5mx25htemwufj5jyllhe
+  pnpm: 7.29.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-tilt: 0.1.4_biqbaboplfbrettd7655fr4n2y
@@ -400,6 +406,14 @@ packages:
 
   /@types/unist/2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
+    dev: false
+
+  /@vercel/analytics/0.1.11_react@18.2.0:
+    resolution: {integrity: sha512-mj5CPR02y0BRs1tN3oZcBNAX9a8NxsIUl9vElDPcqxnMfP0RbRc9fI9Ud7+QDg/1Izvt5uMumsr+6YsmVHcyuw==}
+    peerDependencies:
+      react: ^16.8||^17||^18
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /acorn-jsx/5.3.2_acorn@8.8.1:
@@ -834,6 +848,11 @@ packages:
       hast-util-parse-selector: 3.1.1
       property-information: 6.2.0
       space-separated-tokens: 2.0.2
+    dev: false
+
+  /i/0.3.7:
+    resolution: {integrity: sha512-FYz4wlXgkQwIPqhzC5TdNMLSE5+GS1IIDJZY/1ZiEPCT2S3COUVZeT5OW4BmW4r5LHLQuOosSwsvnroG9GR59Q==}
+    engines: {node: '>=0.4'}
     dev: false
 
   /immutable/4.2.4:
@@ -1791,6 +1810,12 @@ packages:
   /picomatch/2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
+    dev: false
+
+  /pnpm/7.29.1:
+    resolution: {integrity: sha512-dn+65B2XpMIin7sQZvBIJ2Zyx8Z7LK95qyAvgEPE8qXkWYL/LuwpfMfK9Muc7+zNnpPwiQgtGEsxgOtuabFibQ==}
+    engines: {node: '>=14.6'}
+    hasBin: true
     dev: false
 
   /postcss/8.4.14:
