@@ -14,6 +14,23 @@
 - ⚗️ Taking educated guesses and showing what's possible
 - 👥 Open-Source to allow reciprocal fact-checking
 
+## Why?
+Cause it's cool. 
+
+## Table of Content
+
+- Documentation
+   - Introduction
+   - Fundamentals
+      - Motivation
+      - Destinations
+   - Aerospace Engineering
+      - Rockets
+      - Boosters
+      - Space Stations
+- FAQ
+- Contact
+
 ## Technologies
 
 - Next.js 12
@@ -22,6 +39,3 @@
   - Next.js I18n
 - TypeScript
 - TailwindCSS
-
-## Why?
-Cause it's cool. 
