@@ -40,3 +40,4 @@ Cause it's cool.
   - Next.js I18n
 - TypeScript
 - TailwindCSS
+- AI Voice Generation @ play.ht
