@@ -14,6 +14,10 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Copyright © 2023. The open-sourced guide on spacetravel.',
   },
+  i18n: [
+    { locale: 'en', text: 'English' },
+    { locale: 'de', text: 'Deutsch' }
+  ],
   faviconGlyph: "🌌",
   nextThemes: {
     "defaultTheme": "dark"

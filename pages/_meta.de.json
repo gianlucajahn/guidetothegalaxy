@@ -1,0 +1,32 @@
+{
+    "index": {
+      "title": "Über uns",
+      "type": "page",
+      "display": "hidden",
+      "theme": {
+        "layout": "raw"
+      }
+    },
+    "documentation": {
+      "title": "Dokumentation",
+      "type": "page",
+      "theme": {
+        "breadcrumb": true,
+        "footer": true,
+        "sidebar": true,
+        "toc": true,
+        "pagination": true
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "type": "page"
+    },
+    "contact": {
+      "title": "Kontakt ↗",
+      "type": "page",
+      "href": "https://twitter.com/0xGianni",
+      "newWindow": true
+    }
+  }
+  

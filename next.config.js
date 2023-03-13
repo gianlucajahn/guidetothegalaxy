@@ -4,4 +4,10 @@ const withNextra = require('nextra')({
   latex: true
 })
 
-module.exports = withNextra()
+module.exports = withNextra({
+  i18n: {
+    locales: ['en', 'de'],
+    defaultLocale: 'en',
+    localeDetection: false,
+  }
+})
