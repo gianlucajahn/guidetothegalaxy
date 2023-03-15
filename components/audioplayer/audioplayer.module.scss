@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    gap: 16px;
+
+    .playButton {
+        background-color: #0077d6;
+        height: 3rem;
+        width: 3.15rem;
+        border-radius: 10px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s all;
+
+        &:hover {
+            background-color: rgb(16, 130, 223);
+        }
+
+        &:active {
+            transform: scale(0.92);
+        }
+
+        .icon {
+            height: 42.5%;
+            width: 42.5%;
+            margin-left: 1px;
+        }
+    }
+
+    .barContainer {
+        position: relative;
+        align-self: flex-end;
+        margin-bottom: 18px;
+        width: 300px;
+
+        .tooltips {
+            display: flex;
+            width: 300px;
+            justify-content: space-between;
+            margin-bottom: 2px;
+
+            p {
+                font-size: 12px;
+                margin-right: 1px;
+            }
+        }
+
+        .barBackground,
+        .barProgress {
+            position: absolute;
+            height: 6px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .barBackground {
+            background-color: #ccc;
+            width: 300px;
+        }
+
+        .barProgress {
+            width: 60%;
+            background-color: #0077d6;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .playButton {
+        height: 3rem !important;
+    }
+}
