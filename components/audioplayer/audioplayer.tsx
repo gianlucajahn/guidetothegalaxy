@@ -52,8 +52,8 @@ export default function AudioPlayer(props: AudioPlayerProps) {
 
       <div className={styles.barContainer}>
         <div className={styles.tooltips}>
-          <p>2:02</p>
-          <p>3:24</p>
+          <p>{audiobook ? audiobook.currentTime : "0:00"}</p>
+          <p>{audiobook ? audiobook.duration : "0:00"}</p>
         </div>
 
         <div className={styles.barBackground} />
