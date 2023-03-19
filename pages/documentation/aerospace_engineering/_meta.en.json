@@ -1,3 +1,6 @@
 {
-    "rockets": "Rockets"
+    "rockets": "Rockets",
+    "boosters": "Boosters",
+    "starship": "Starship",
+    "spacestations": "Space Stations"
 }

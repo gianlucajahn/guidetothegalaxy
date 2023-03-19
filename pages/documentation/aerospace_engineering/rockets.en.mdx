@@ -1,2 +1,57 @@
-# Under construction 🏗
-Please come back later. This page is still being built.
+import Image from "next/image";
+import { Callout } from 'nextra-theme-docs'
+import { Analytics } from '@vercel/analytics/react';
+
+# Rockets 
+How are they powered, how do they land, how can we afford them? 
+
+<Callout type="info" emoji="ℹ️">
+  The entire Aerospace Engineering chapter is supplementary. Feel free to skip it if you don't care for the physics and chemistry behind spaceflight or keep reading if you wanna give it a try.
+</Callout>
+
+<br />
+<figure>
+<Image src={require(".//../../../resources/images/falconheavy.jpg")} alt="SpaceX' Falcon Heavy during takeoff" />
+<figcaption>SpaceX' Falcon Heavy during takeoff. Source: <strong>[Teslarati](https://www.teslarati.com/spacex-third-falcon-heavy-launch-livestream-webcast/)</strong></figcaption>
+</figure>
+
+## What is a rocket?
+As I said earlier, this page is taking no presumptions about what you already know. Jokes aside, I think many people would struggle to correctly explain the
+difference between a rocket and a plane and especially the difference between the spaceshuttle and a plane. So let's clear it up a bit.
+
+A rocket is a vehicle that does <strong>not</strong> use surrounding air but exclusively internal systems - meaning rocket engines and the thrust they generate - to fly up into orbit. A plane uses propellers to fly which require air from the atmosphere. 
+
+Now you might say: "Hey, I see hot gases and flames coming out of the rocket, fire needs air, so a rocket needs air, too.". And yes, it does! But it doesn't require air from the atmosphere. In fact, rockets have their own oxidizers included in their propulsion systems, so they could in fact even fly in a vacuum.
+
+## Parts of a rocket
+If you are not yet familiar with rockets and how they work, they might look like one big object to you that you don't understand. We'll try to change that today. The easiest way to do so is to break up whatever you're trying to understand into it's smallest parts and understand them first before putting them all together.
+
+A (manned) rocket most commonly consists of 4 parts. Let's look at where those are located.
+
+<br />
+<figure>
+<Image src={require(".//../../../resources/images/starship1.jpg")} alt="SpaceX' Starship on the moon " />
+<figcaption>SpaceX' Starship imagined on the moon. Source: <strong>[SpaceX](https://www.spacex.com/human-spaceflight/moon/)</strong></figcaption>
+</figure>
+
+Starting from the bottom left, first we have the
+
+### Propulsion System
+The propulsion system arguably is the biggest part of most modern rockets and includes anything that makes or helps the rocket to fly, such as the propellant tanks, pumps, preburners and combustion chamber(s). We will discuss this system in much more detail in the next section - <strong>[Rocket Engines](https://guidetothegalaxy.vercel.app/aerospace_engineering/rockets/engines)</strong>.
+
+### Guideance System
+The guideance system includes radars, communication systems and on-board computers to maneuver the rocket or intervene whenever necessary. Another job of the guideance system is to ensure stability of the rocket during flight so that it doesn't hurl. This can be achieved by adding weight to the top part of the rocket which often takes place at the guideance system.
+
+### Payload System
+The payload system carries whatever payload the rocket is supposed to "deliver". Now, delivering can mean very different things depending on the context. Missiles for example carry explosives as their payload, the Apollo 11 rocket however carried humans as it's payload to the Moon.
+
+### Structural System
+The structural system or often referred to as the frame of the rocket covers all other systems and defines the final shape of the rocket. It also consists of thermal protection and heat shields. 
+
+
+## Summary
+As you can see, a rocket isn't as complicated of a system as you might have thought. At the end of the day, it's "just" the propulsion system, computers, the payload and a frame that's wrapped around the 3 other systems. Obviously, all of those systems themselves are very complex but it's important to have a grasp of what parts make up a rocket so that you don't stare at a rocket and have not the slightest of clues about what's going on inside.
+
+Now as I announced earlier, in the next chapter we're taking an in-depth look into the propulsion system!
+
+<Analytics />
