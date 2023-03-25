@@ -1,0 +1,58 @@
+import Image from "next/image";
+import { Analytics } from '@vercel/analytics/react';
+
+# Autonomous Landing
+
+How do you land a rocket autonomously?
+
+<br />
+<figure>
+<Image src={require(".//../../../../resources/images/landing.jpg")} alt="Landing of Falcon Booster visualized" />
+<figcaption>Landing visualization. Source: <strong>[SpaceX](https://www.spacex.com/mission/)</strong></figcaption>
+</figure>
+
+We're going to be looking at differents parts of hardware and software that aid rockets and boosters, specifically SpaceX Falcons in this case, during the landing process.
+2 boosters are part of the Falcon Heavy at takeoff until they are seperated from the main part of the rocket in orbit, where they initiate all processes that are necessary to land themselves savely again.
+
+
+## Re-ignitable engines
+Since we're looking at landing a rocket here, the first course of actions in the landing process would be to adjust the aircraft's direction so that it faces the ground with the correct side and angle during landing. SpaceX Falcon 9 is equipped with the in-house Merlin engines which are re-ignitable, meaning they can be re-ignited during the landing sequence to slow down the booster or redirect it into the desired direction. This is done with TVC (thrust-vector-control) systems in the SpaceX Merlin engine that give the booster the ability to alter the direction and angle of the booster by changing thrust in individual engines or throttling them to flip the booster towards the desired side. Hydraulic levers appended to the booster engines help in changing the direction of engine thrust, which, together with re-ignitability, allows for precise readjustments of the booster during the landing sequence.
+
+TVCs generally aren't particularly uncommon or new in aircrafts since they are necessary for most orbital missions. Unsurprisingly, both the Spaceshuttle and the Saturn V rocket had this technology. As you can imagine, it is a vital component in the landing process because you obviously have to be able to alter the course and direction of a booster to be able to guarantee it will land upright.
+
+<br />
+<figure>
+<Image src={require(".//../../../../resources/images/entryburn.jpg")} alt="Merlin engines on the booster firing during entry burn" />
+<figcaption>Merlin engines on the booster firing during entry burn. Source: <strong>[SpaceX](https://www.spacex.com/mission/)</strong></figcaption>
+</figure>
+
+In the case of SpaceX Falcon boosters, those re-ignitable engines are used to land savely by first doing what's called a "boost-back" burn to reverse the boosters course. As soon as the booster re-enters earth's atmosphere, another re-ignition, called the "entry burn" is taking place. This time, by partially powering the engines, the booster decreases the speed at which it travels through the atmosphere to tackle heating during atmospheric re-entry. Right before landing, the last and quite powerful re-ignition takes place to reduce the speed at which the booster falls to the ground, almost to a hovering state, to ensure save landing.
+
+## Deployable landing legs
+The approximately 18 meters wide landing legs extend outwards at the time of landing to stabilize the rocket. In the remaining time, they are attached to the booster's body.
+
+<br />
+<figure>
+<Image src={require(".//../../../../resources/images/landinglegs.jpg")} alt="Landing Legs of the Falcon Booster" />
+<figcaption>Landing legs of the Falcon Booster attached to it's body. Source: <strong>[SpaceX](https://www.spacex.com/mission/)</strong></figcaption>
+</figure>
+
+## Cold Gas (Nitrogen) Thrusters
+During landing, you might see some kind of white smoke being shot out of the boosters. This is compressed nitrogen gas and the thrusters are located on the upper part of the booster. The thrusters are responsible for helping the booster flip and adjusting it afterwards to keep it's desired orientation.
+
+## Hypersonic Grid Fins
+A total of 4 deployable Grid fins are located at the bottom part of the interstage - which connects the first and second stage of the rocket. Arranged in an x-configuration, the grid fins also control and position the rocket during re-entry by moving the center of pressure. They also help with decelleration as it makes the rocket less aerodynamic.
+
+<br />
+<figure>
+<Image src={require(".//../../../../resources/images/landingfins.png")} alt="Hypersonic grid fins attached to the Falcon 9" />
+<figcaption>Hypersonic grid fins attached to the Falcon 9. Source: <strong>[SpaceX](https://www.spacex.com/mission/)</strong></figcaption>
+</figure>
+
+## Autonomous Spaceport Drone Ship
+On missions where fuel is scarse, the boosters sometimes land on automated droneships in the ocean instead of the launch site. This droneship is controlled by an AI that takes real-time GPS and camera data to determine the correct position for the booster to land on it savely. It is equipped with 4 diesel powered thrusters that guarantee fast repositioning during the landing sequence to catch the booster.
+
+## Conclusio
+Now that we found out how rockets can be made reusable and don't have to be disposed after every flight, we can scale things up since our costs per flight have been decreased drastically! Feel free to find out more about other aircrafts like the Starship and the ISS in the following article or skip to the first chapter <strong>[Mars](https://www.google.com)</strong> if you like.
+
+<Analytics />
