@@ -13,7 +13,11 @@ export default function Manifest() {
     <section className={styles.section}>
       <div className={styles.sidebar}>
         <div className={styles.gradient} />
-        <motion.a whileHover={{ scale: 1.1 }} href="https://www.linkedin.com/in/gianlucajahn/" target="_blank">
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          href="https://www.linkedin.com/in/gianlucajahn/"
+          target="_blank"
+        >
           <Image
             src={require(`.//../../resources/images/linkedin${
               hoverLinkedin ? "hovered" : ""
@@ -25,7 +29,11 @@ export default function Manifest() {
             onMouseLeave={() => setHoverLinkedin(false)}
           />
         </motion.a>
-        <motion.a  whileHover={{ scale: 1.15 }} href="https://discordapp.com/users/556559991062921217" target="_blank">
+        <motion.a
+          whileHover={{ scale: 1.15 }}
+          href="https://discordapp.com/users/556559991062921217"
+          target="_blank"
+        >
           <Image
             src={require(`.//../../resources/images/discord${
               hoverDiscord ? "hovered" : ""
