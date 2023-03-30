@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./hero.module.scss";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
     <section className={styles.section}>
       <div className={styles.logoContainer}>
-        <p style={{ opacity: 1 }}>🌌</p>
+        <motion.p style={{ opacity: 1 }} whileHover={{ scale: 1.15, transition: { duration: 0.7, type: "spring", bounce: 0.5 } }}>🌌</motion.p>
       </div>
       <Image src={require(".//../../resources/images/guidetothegalaxy.png")} alt="GUIDE TO THE GALAXY" width={420} height={36} className={styles.image} />
 

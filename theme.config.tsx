@@ -12,7 +12,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/gianlucajahn/guidetothegalaxy',
   footer: {
-    text: 'Copyright © 2023. The open-sourced guide on spacetravel.',
+    text: 'Copyright © 2023 - Guide To The Galaxy, the open-sourced guide to spacetravel',
   },
   i18n: [
     { locale: 'en', text: 'English' },

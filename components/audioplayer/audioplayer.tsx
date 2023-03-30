@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "./audioplayer.module.scss";
 import { useRouter } from 'next/router';
 import convertTimestamp from "../../helpers/convertTimestamp";
+import { motion } from "framer-motion";
 
 export interface AudioPlayerProps {}
 
