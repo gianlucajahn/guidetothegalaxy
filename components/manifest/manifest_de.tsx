@@ -81,7 +81,6 @@ export default function Manifest() {
             </p>
           </div>
           <div className={styles.splineContainer}>
-            <Spline scene="https://prod.spline.design/st7ENbZoNXAenxQE/scene.splinecode" />
           </div>
         </div>
       </div>
