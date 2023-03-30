@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./manifest.module.scss";
 import Image from "next/image";
-import Spline from "@splinetool/react-spline";
+import Spline, { SplineEvent } from "@splinetool/react-spline";
 import { motion } from "framer-motion";
 
 export default function Manifest() {
