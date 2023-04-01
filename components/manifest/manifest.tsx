@@ -47,10 +47,10 @@ export default function Manifest() {
         </motion.a>
       </div>
       <div className={styles.main}>
-        <h1>Learn about the future of spaceflight</h1>
+        <h1 className={styles.inter}>Learn about the future of spaceflight</h1>
         <div className={styles.content}>
           <div className={styles.left}>
-            <p>
+            <p className={styles.inter}>
               <Image
                 src={require(".//../../resources/images/ufo.png")}
                 alt="UFO"
@@ -67,7 +67,7 @@ export default function Manifest() {
               whileHover={{ scale: 1.07 }}
               transition={{ duration: 0.3 }}
             >
-              ✨ Feel free to join our community if you like it here!
+              ✨ Join our Community!
             </motion.p>
             <a href="https://guidetothegalaxy.vercel.app/documentation/introduction">
               <motion.button
