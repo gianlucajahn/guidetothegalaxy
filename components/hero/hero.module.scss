@@ -31,6 +31,19 @@
     padding-top: 8.85%;
     position: relative;
 
+    @media screen and (max-width: 1050px) and (min-height: 929px) {
+        height: 135vh;
+    }
+
+    @media screen and (max-width: 928px) and (min-width: 601px) {
+        padding-top: 35% !important;
+        height: 92.5vh;
+    }
+
+    @media screen and (max-width: 600px) and (max-height: 730px) {
+        padding-top: 20% !important;
+    }
+
     .license {
         font-size: 14px;
         margin-top: 22px;
@@ -100,6 +113,10 @@
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b9b9b9",endColorstr="#ffffff",GradientType=1);
         background-clip: text;
         animation: 2s 1 forwards entry;
+
+        @media screen and (max-width: 928px) {
+            max-width: 90% !important;
+        }
     }
 
     .slogan {
@@ -109,6 +126,10 @@
         max-width: 35%;
         text-align: center;
         animation: 2s 1 forwards entry;
+
+        @media screen and (max-width: 928px) {
+            max-width: 70%;
+        }
     }
 
     .image {
