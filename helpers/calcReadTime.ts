@@ -7,7 +7,7 @@ const calcReadTime = () => {
         wordCount += pContent.split(" ").length;
     }
     wordCount /= 110;
-    let readTime = Math.round(wordCount);
+    let readTime = Math.round(wordCount + 5);
     return readTime;
 }
 
