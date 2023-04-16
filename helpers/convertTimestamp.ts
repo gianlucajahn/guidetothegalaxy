@@ -2,7 +2,7 @@ const convertTimestamp = (timestamp: number) => {
     let output = "";
     if (timestamp < 60) {
         if (timestamp < 10) {
-            output = `0:0${Math.floor(timestamp)}`
+            output = `0:${Math.floor(timestamp)}`
         } else {
             output = `0:${Math.floor(timestamp)}`
         }
