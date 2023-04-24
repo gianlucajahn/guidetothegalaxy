@@ -117,7 +117,7 @@ export default function AudioPlayer(props: AudioPlayerProps) {
 
   return (
     <div className={styles.container}>
-      <button className={styles.playButton} onClick={(e) => {playAudio(); clickButton()}}>
+      <button className={styles.playButton} onClick={(e) => {playAudio(); }}>
         <Image
           src={require(`../../resources/images/${
             playing ? audiobook.currentTime == audiobook.duration ? "play" : "pause" : "play"
