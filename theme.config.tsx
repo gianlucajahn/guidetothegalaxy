@@ -4,6 +4,9 @@ import styles from "./theme.module.scss";
 
 const config: DocsThemeConfig = {
   logo: <span className={styles.logo}>🌌 GUIDE TO THE GALAXY</span>,
+  sidebar: {
+    defaultMenuCollapseLevel: 1
+  },
   project: {
     link: 'https://github.com/gianlucajahn/guidetothegalaxy',
   },
