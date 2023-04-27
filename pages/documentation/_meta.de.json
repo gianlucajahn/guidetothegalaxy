@@ -1,5 +1,14 @@
 {
     "introduction": "Einführung",
     "fundamentals": "Grundlagen",
-    "aerospace_engineering": "Raumfahrttechnik"
+    "aerospace_engineering": "Raumfahrttechnik",
+    "---": {
+        "type": "separator"
+      },
+    "mars": "Kapitel 1: Mars",
+    "venus": "Kapitel 2: Venus",
+    "space_habitats": "Kapitel 3: Space Habitats",
+    "alien_life": "Kapitel 4: Außerirdisches Leben",
+    "solarsystems": "Kapitel 5: Fremde Systeme",
+    "universe": "Kapitel 6: Die Zukunft des Universums"
 }
