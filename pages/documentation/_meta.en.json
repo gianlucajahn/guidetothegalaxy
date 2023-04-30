@@ -5,10 +5,11 @@
     "---": {
         "type": "separator"
       },
-    "mars": "Chapter 1: Mars",
-    "venus": "Chapter 2: Venus",
-    "space_habitats": "Chapter 3: Space Habitats",
-    "alien_life": "Chapter 4: Alien Life",
-    "solarsystems": "Chapter 5: Distant Systems",
-    "universe": "Chapter 6: Future of the Universe"
+    "moon": "Chapter 1: Moon",
+    "mars": "Chapter 2: Mars",
+    "venus": "Chapter 3: Venus",
+    "space_habitats": "Chapter 4: Space Habitats",
+    "alien_life": "Chapter 5: Alien Life",
+    "solarsystems": "Chapter 6: Distant Systems",
+    "universe": "Chapter 7: Future of the Universe"
 }
