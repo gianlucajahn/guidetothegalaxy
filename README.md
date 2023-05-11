@@ -26,6 +26,10 @@ Cause it's cool.
       - Destinations
    - Aerospace Engineering
       - Rockets
+         - Rocket Basics
+         - Rocket Engines
+         - Autonomous Landing
+         - Reusability
       - Boosters
       - Space Stations
 - FAQ
