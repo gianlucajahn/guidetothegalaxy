@@ -43,8 +43,7 @@
 
     .playButton {
         background-color: #0077d6;
-        height: 3rem;
-        width: 3.15rem;
+        padding: 12px;
         border-radius: 10px;
         margin-top: 20px;
         display: flex;
@@ -61,8 +60,8 @@
         }
 
         .icon {
-            height: 42.5%;
-            width: 42.5%;
+            height: 20px;
+            width: 20px;
             margin-left: 1px;
         }
     }
@@ -102,12 +101,12 @@
             cursor: grabbing;
             cursor: -moz-grabbing;
             cursor: -webkit-grabbing;
+            z-index: 5;
             pointer-events: none;
             height: 10px;
             width: 10px;
             bottom: -0.46em;
             border-radius: 50%;
-            z-index: 50;
             background-color: white;
             cursor: pointer;
         }
