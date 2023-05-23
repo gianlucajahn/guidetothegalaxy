@@ -5,6 +5,12 @@
     gap: 16px;
 }
 
+@media screen and (max-width: 700px) {
+    .headline {
+        font-size: 28px !important;
+    }
+}
+
 .headline {
     background: linear-gradient(300deg,#000000,#000000,#ff0000,#ff7200,#0092ff,#0092ff);
     background-size: 360% 360%;
@@ -12,7 +18,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 54px;
+    font-size: 48px;
     cursor: pointer;
     margin-bottom: -16px;
     margin-top: 20px;
