@@ -1,0 +1,58 @@
+.spoiler {
+    margin-top: 24px;
+    border: 1px solid transparent;
+    padding: 10px 14px;
+    font-family: "Inter";
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    cursor: pointer;
+    max-height: 46px;
+
+    h2 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 7px;
+        animation-name: fadeIn;
+        animation-duration: 0.4s;
+    }
+
+    p {
+        font-size: 15px;
+        font-weight: 400;
+        animation-name: fadeIn;
+        animation-duration: 0.4s;
+    }
+}
+
+.isExpanded {
+    transition: max-height 0.7s ease-in-out, background-color 0.3s, transform 0.3s;
+
+    &:hover {
+        transform: scale(1.03);
+        background-color: rgb(59, 138, 255) !important;
+    }
+}
+
+.isFolded {
+    transition: max-height 0.8s ease-in-out, background-color 0.3s, transform 0.3s;
+
+    &:hover {
+        transform: scale(1.03);
+        background-color: #404146 !important;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
