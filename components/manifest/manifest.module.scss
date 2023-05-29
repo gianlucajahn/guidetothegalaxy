@@ -231,6 +231,11 @@
                 @media screen and (max-width: 1000px) {
                     font-size: 18px;
                 }
+
+                @media screen and (max-width: 650px) {
+                    margin-top: 12px;
+                    margin-bottom: 0px;
+                }
             }
 
             .disclaimer {
@@ -242,6 +247,10 @@
                 backdrop-filter: none;
                 padding-left: 0px;
                 position: relative;
+
+                @media screen and (max-width: 650px) {
+                    margin-left: 12px;
+                }
 
                 span {
                     color: rgb(62, 183, 253);
@@ -363,21 +372,7 @@
             }
 
             @media screen and (max-width: 650px) {
-                height: 90.5vh;
-                width: 90.5vw;
-                margin-left: 36px;
-                margin-top: -120px;
-            }
-
-            @media screen and (max-width: 480px) {
-                margin-left: 28px;
-                height: 92.5vh;
-                width: 92.5vw;
-                margin-top: -280px;
-            }
-
-            @media screen and (max-width: 390px) {
-                margin-top: -206px;
+                display: none;
             }
         }
     }
@@ -454,5 +449,9 @@
 .explore {
     @media screen and (max-width: 1290px) {
         width: 348px !important;
+    }
+
+    @media screen and (max-width: 650px) {
+        margin-top: 6px !important;
     }
 }
