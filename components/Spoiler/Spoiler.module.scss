@@ -5,6 +5,7 @@
     font-family: "Inter";
     display: flex;
     justify-content: center;
+    color: #fff;
     border-radius: 12px;
     cursor: pointer;
     max-height: 46px;
@@ -15,6 +16,7 @@
         margin-bottom: 7px;
         animation-name: fadeIn;
         animation-duration: 0.4s;
+        color: #fff;
     }
 
     p {
@@ -22,6 +24,7 @@
         font-weight: 400;
         animation-name: fadeIn;
         animation-duration: 0.4s;
+        color: #fff;
     }
 }
 
