@@ -5,11 +5,11 @@
     "---": {
         "type": "separator"
       },
-    "moon": "Kapitel 1: Der Mond",
-    "mars": "Kapitel 2: Mars",
-    "venus": "Kapitel 3: Venus",
-    "space_habitats": "Kapitel 4: Space Habitats",
-    "alien_life": "Kapitel 5: Außerirdisches Leben",
-    "solarsystems": "Kapitel 6: Fremde Systeme",
-    "universe": "Kapitel 7: Die Zukunft des Universums"
+    "moon": "1 • Der Mond",
+    "mars": "2 • Terraforming des Mars",
+    "venus": "3 • Kolonisation der Venus",
+    "space_habitats": "4 • Space Habitats",
+    "alien_life": "5 • Außerirdisches Leben",
+    "solarsystems": "6 • Fremde Systeme",
+    "universe": "7 • Die Zukunft des Universums"
 }
