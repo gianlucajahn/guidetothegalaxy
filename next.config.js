@@ -15,4 +15,9 @@ module.exports = withNextra({
 
     return config;
   },
+  head: {
+    title: 'Guide To The Galaxy',
+    description: 'The open-sourced guide on spacetravel.',
+    image: './resources/images/hero5.png',
+  },
 })
