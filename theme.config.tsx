@@ -7,6 +7,13 @@ const config: DocsThemeConfig = {
   sidebar: {
     defaultMenuCollapseLevel: 1
   },
+  head: (
+    <>
+      <meta property="og:title" content="Guide To The Galaxy" />
+      <meta property="og:description" content="The open-sourced guide on spacetravel." />
+      <meta property="og:image" content="./resources/images/hero5.png" />
+    </>
+  ),
   project: {
     link: 'https://github.com/gianlucajahn/guidetothegalaxy',
   },
