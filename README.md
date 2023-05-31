@@ -3,7 +3,7 @@
 <h1 align="center">The Guide to the Galaxy</h1>
 <p align="center">An optimistic glance into the future of human spaceflight, padded with a pinch of sarcasm.</p>
 
-![](https://i.imgur.com/QEJF2eJ.png)
+![](https://i.imgur.com/68HSOsa.png)
 <p align="center">An open-source learning platform</p>
  
  </div>
