@@ -14,6 +14,11 @@ const config: DocsThemeConfig = {
       <meta name="theme-color" content="#1374FF"></meta>
       <meta property="og:description" content="A thought-experiment through the future of mankind. &#x0A; Hand-crafted to inform and inspire." />
       <meta property="og:image" content="https://camo.githubusercontent.com/3d8670c2ca3bbf10006321157a1adaa8f6f5bb8bcc9f9e735d32068b0b65c277/68747470733a2f2f692e696d6775722e636f6d2f51454a4632654a2e706e67" />
+      <meta name="twitter:site" content="Guide To The Galaxy"></meta>
+      <meta name="twitter:title" content="Guide To The Galaxy"></meta>
+      <meta name="twitter:description" content="A thought-experiment through the future of mankind. Hand-crafted to inform and inspire."></meta>
+      <meta name="twitter:card" content="summary_large_image"></meta>
+      <meta name="twitter:image:src" content="https://camo.githubusercontent.com/3d8670c2ca3bbf10006321157a1adaa8f6f5bb8bcc9f9e735d32068b0b65c277/68747470733a2f2f692e696d6775722e636f6d2f51454a4632654a2e706e67"></meta>
     </>
   ),
   project: {
