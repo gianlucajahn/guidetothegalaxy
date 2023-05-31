@@ -1,6 +1,7 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import styles from "./theme.module.scss";
+import { useRouter } from 'next/router';
 
 const config: DocsThemeConfig = {
   logo: <span className={styles.logo}>🌌 GUIDE TO THE GALAXY</span>,
@@ -34,9 +35,12 @@ const config: DocsThemeConfig = {
     "defaultTheme": "dark"
   },
   useNextSeoProps() {
+    const route = useRouter();
+    const title = route.pathname.includes('index') ? 'Home - Guide To The Galaxy' : '%s – Guide To The Galaxy';
+  
     return {
-      titleTemplate: '%s – Guide To The Galaxy'
-    }
+      titleTemplate: title
+    };
   }
 }
 
