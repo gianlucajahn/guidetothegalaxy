@@ -32,6 +32,38 @@ Cause it's cool.
          - Reusability
       - Boosters
       - Space Stations
+  - Moon Expeditions
+      - Dear Moon Mission
+      - Artemis Lunar Basecamp
+  - Terraforming Mars
+      - Basecamp
+      - First City on Mars
+      - Terraforming Mars
+  - Colonizing Venus
+      - Why Venus now?
+      - Problems of Venus
+      - Venus Cloud Cities
+  - Space Habitats
+      - The Concept
+      - Gathering Resources
+      - Potential
+      - Power Supply
+  - Alien Life
+      - Search for Alien Life
+      - The Fermi Paradox
+         - The Kardashev Scale
+         - The Great Filter
+         - Solutions
+     - Conclusion
+  - Distant Systems
+     - Proxima Centauri
+     - The Trappist System
+  - Future of the Universe
+     - The Local Group
+     - Life in the Universe
+     - Ages of the Universe
+     - Death of the Universe
+     - Philosophy
 - FAQ
 - Contact
 
