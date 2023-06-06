@@ -12,9 +12,8 @@
 }
 
 .headline {
-    background: linear-gradient(300deg,#000000,#000000,#ff0000,#ff7200,#0092ff,#0092ff);
+    background: #0092ff;
     background-size: 360% 360%;
-    animation: gradient-animation 24s ease infinite, 3s infinite forwards hovering;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

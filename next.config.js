@@ -16,8 +16,8 @@ module.exports = withNextra({
     return config;
   },
   head: {
-    title: 'Multiplanetary',
-    description: 'The open-source library for space exploration.',
+    title: 'Beyond Earth',
+    description: 'The open-source guide on space exploration.',
     image: './resources/images/hero5.png',
   },
 })

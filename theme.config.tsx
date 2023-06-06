@@ -4,18 +4,18 @@ import styles from "./theme.module.scss";
 import { useRouter } from 'next/router';
 
 const config: DocsThemeConfig = {
-  logo: <span className={styles.logo}>🌌 MULTI PLANETARY</span>,
+  logo: <span className={styles.logo}>🌌 BEYOND EARTH</span>,
   sidebar: {
     defaultMenuCollapseLevel: 1
   },
   head: (
     <>
-      <meta content="Multiplanetary" property="og:site_name"></meta>
+      <meta content="Beyond Earth" property="og:site_name"></meta>
       <meta name="theme-color" content="#3c98ed"></meta>
       <meta property="og:description" content="A thought-experiment through the future of mankind. Hand-crafted to inform and inspire." />
       <meta property="og:image" content="https://i.imgur.com/68HSOsa.png" />
-      <meta name="twitter:site" content="Multiplanetary"></meta>
-      <meta name="twitter:title" content="Multiplanetary"></meta>
+      <meta name="twitter:site" content="Beyond Earth"></meta>
+      <meta name="twitter:title" content="Beyond Earth"></meta>
       <meta name="twitter:description" content="A thought-experiment through the future of mankind. Hand-crafted to inform and inspire."></meta>
       <meta name="twitter:card" content="summary_large_image"></meta>
       <meta name="twitter:image:src" content="https://i.imgur.com/68HSOsa.png"></meta>
@@ -29,7 +29,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/gianlucajahn/guidetothegalaxy',
   footer: {
-    text: 'Copyright © 2023 - Multiplanetary | The future of human spaceflight.',
+    text: 'Copyright © 2023 - Beyond Earth | The open-sourced guide on spacetravel.',
   },
   i18n: [
     { locale: 'en', text: 'English' },
@@ -41,7 +41,7 @@ const config: DocsThemeConfig = {
   },
   useNextSeoProps() {
     const route = useRouter();
-    const title = route.pathname.includes('index') ? 'Home - Multiplanetary' : '%s – Multiplanetary';
+    const title = route.pathname.includes('index') ? 'Home - Beyond Earth' : '%s – Beyond Earth';
   
     return {
       titleTemplate: title
