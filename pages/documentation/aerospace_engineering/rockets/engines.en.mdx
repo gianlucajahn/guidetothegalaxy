@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Callout } from 'nextra-theme-docs'
 import { Analytics } from '@vercel/analytics/react';
+import AdditionalResources from "../../../../components/AdditionalResources/AdditionalResources.tsx";
 
 # Rocket Engines
 An in-depth look at the propulsion system of rockets.
@@ -31,7 +32,7 @@ You could now go ahead and actually build bigger and thicker propellant tanks or
 ## Enthalpy
 One way of increasing the energy output of our engine is to increase it's enthalpy. Now, what is enthalpy?
 
-Enthalpy ```E``` is the sum of the internal energy of our system (or temperature) ```t``` and the product of it's pressure ```p``` and volume ```V```, therefore: ```E = t + p * V```. That means our best bet to increase our energy output would be to increase it's temperature, volume or pressure.
+Enthalpy $E$ is the sum of the internal energy of our system (or temperature) $t$ and the product of it's pressure $p$ and volume $V$, therefore: $E = t + pV$. That means our best bet to increase our energy output would be to increase it's temperature, volume or pressure.
 One way to achieve this would be by increasing the amount of propellant that can be transported into the combustion chamber, which is basically the exhaust of a rocket, per timeframe. The most "straightforward" way one would come up with might be appending an engine to the pump to power it and make it turn faster. However, an engine for this specific use case would have to be insanely
 strong. What modern rocket engines instead utilize is a small miniature rocket engine appended to the pump to make it spin extremely fast. This concept is called a preburner!
 
@@ -46,7 +47,7 @@ Let's check out how this would look like to get a better grasp of stuff.
 
 We're going to move through this illustration in a timely chronological manner. First of all, the fuel and oxidizer move from their tanks through pumps. Those pumps move a significant part of the fuel and oxidizer into the combustion chamber where combustion takes place. Combustion is a chemical process in which a substance - in our case called fuel - reacts rapidly with oxygen and gives off heat. 
 
-Apart from that, as you can see, a small chunk of both the fuel and oxidizer is transported towards the preburner through smaller pipes. Upon meeting in the preburner, combustion takes place and lots of thrust is created that is faced towards the turbine next to the preburner. The turbine is connected to the pumps via a small shaft that runs through a hole in the middle of both the pumps and the turbine. As soon as the turbine starts spinning really fast due to the thrust coming from the preburner, the pumps are turned faster, meaning they can transport more fuel and oxidizer towards the preburner, creating more more thrust, making the turbine and pumps turn even faster - and so on. 
+Apart from that, as you can see, a small chunk of both the fuel and oxidizer is transported towards the preburner through smaller pipes. Upon meeting in the preburner, combustion takes place and lots of thrust is created that is faced towards the turbine next to the preburner. The turbine is connected to the pumps via a small shaft that runs through a hole in the middle of both the pumps and the turbine. As soon as the turbine starts spinning really fast due to the thrust coming from the preburner, the pumps are turned faster, meaning they can transport more fuel and oxidizer towards the preburner, creating more thrust, making the turbine and pumps turn even faster - and so on. 
 
 Basically, this is the core concept behind all of the rocket systems we're going to look at in here. The only difference between them is their way of dealing with efficiency. As you can see, after being used to power the turbine, excess gas from the preburner is discarded through the pipe on the left. This is why it's called the "Open Cycle". But that can't be very efficient, right? 
 
@@ -107,10 +108,20 @@ When comparing these two, as crazy as the Full Flow cycle is, keep in mind that 
 
 However, the difference is still remarkable. As you will remember, in an open cycle you only want to use as little fuel and oxidizer in the preburner as possible because all of it is going to be discarded through the preburner exhaust and can't be reused in the combustion process. In the full flow cycle, you literally just throw all the fuel and all the oxidizer into their respective preburners. Additionally, you don't have to worry too much about sealing those because even if some fuel would leak through the seal on the shaft, it would only get in touch with more fuel. If you're scrolling up towards the closed fuel-rich cycle, you'd see why this is an improvement: If fuel from the preburner that powers the oxidizer pump would leak through the seal of the shaft, it would get in touch with the oxidizer and cause a combustion reaction right at the turbopump which obviously is catastrophic.
 
-## Conclusio
+## Conclusion
 
 I personally think it's extremely impressive how the team of engineers at SpaceX solved a rocket cycle that has never been demonstrated to fly to orbit before, simply because you cannot properly anticipate the problems you're going to be facing if you're the first one to do it. 
 
 Anyway, this is it for our deep dive into rocket engines. Impressed you sticked through! If you want to learn more about the reasons that made SpaceX come up with methane as fuel for their raptor engines, I highly recommend watching <strong>[Everyday Astronauts](https://www.youtube.com/watch?v=LbH1ZDImaI8)</strong> video on this topic. Even apart from that, most of this chapter is inspired from it, I learned most of what I know about engines from them and all of the cycle illustrations I used have been designed by them, either, so they are definitely worth checking out if you just found out you're into rocket science!
+
+## Additional Resources
+<AdditionalResources>
+  <div>
+    <span>1. </span><li>In <a href="https://www.youtube.com/watch?v=LbH1ZDImaI8" target="_blank">this video</a>, Tim Dodd goes into greater detail about the engines we talked about, also showing some more illustrations and videos, potentially making it easier to understand.</li>
+  </div>
+  <div>
+    <span>2. </span><li>If you prefer learning at your own pace, <a href="https://everydayastronaut.com/raptor-engine/" target="_blank">this article version of the previously mentioned video</a> might be for you.</li>
+  </div>
+</AdditionalResources>
 
 <Analytics />

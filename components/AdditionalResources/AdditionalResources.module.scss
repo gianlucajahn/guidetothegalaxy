@@ -1,19 +1,30 @@
 .addRes {
     background-color: rgb(31 41 55/1);
     box-shadow: inset 0 1px 0 0 hsla(0,0%,100%,.05);
-    padding: 24px 36px;
+    padding: 24px 36px 18px 36px;
     border-radius: 0.75rem;
     margin-top: 22px;
     border: 0 solid #e5e7eb;
     transition: 0.2s all;
-    cursor: pointer;
+
+    @media screen and (max-width: 650px) {
+        padding: 24px 28px 18px 28px;
+    }
 
     &:hover {
-        transform: translateY(-8px);
+        transform: translateY(-4px);
+    }
+
+    div {
+        display: flex;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 650px) {
+            margin-bottom: 18px;
+        }
     }
 
     li {
-        margin-bottom: 10px;
         font-family: "Inter", sans-serif;
         font-weight: 400;
         color: #d1d5db;
@@ -21,6 +32,8 @@
         a {
             color: #a9792b;
             text-decoration: underline;
+            font-weight: 600;
+            cursor: pointer;
         }
 
         &:hover {
@@ -28,12 +41,13 @@
                 color: #fff;
             }
         }
+    }
 
-        span {
-            transition: color 0.2s;
-            color: #9ca3af;
-            margin-right: 10px;
-            font-weight: 500;
-        }
+    span {
+        transition: color 0.2s;
+        color: #9ca3af;
+        margin-right: 10px;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
     }
 }
