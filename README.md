@@ -1,10 +1,7 @@
 <div align="center">
  
-<<<<<<< HEAD
 <h1 align="center">BEYOND EARTH</h1>
-=======
-<h1 align="center">BEYOND EARTH.gg</h1>
->>>>>>> 9e6a4ce0370334d01e1afb45f4627784b320b11f
+
 <p align="center">An optimistic glance into the future of human spaceflight, padded with a pinch of sarcasm.</p>
 
 ![](https://i.imgur.com/68HSOsa.png)
