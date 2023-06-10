@@ -18,15 +18,13 @@
         "pagination": true
       }
     },
+    "about": {
+      "title": "About",
+      "type": "page"
+    },
     "faq": {
       "title": "FAQ",
       "type": "page"
-    },
-    "contact": {
-      "title": "Kontakt ↗",
-      "type": "page",
-      "href": "https://twitter.com/0xGianni",
-      "newWindow": true
     }
   }
   
