@@ -24,22 +24,31 @@
 .about {
     background-color: black;
     width: 100%;
-    height: 500%;
+    height: 100%;
     position: absolute;
     left: 0;
-    padding-top: 72px;
+    padding-top: 66px;
 
     section {
         height: 100%;
 
         &.firstSection {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            gap: 140px;
             height: 100vh;
             width: 98vw;
 
+            .divider {
+              width: 80vw;
+              height: 1px;
+              background-color: #1c1c1c;
+              position: absolute;
+              bottom: 120px;
+            }
+
             h1 {
-                font-size: 64px;
+                font-size: 70px;
                 color: white;
                 font-weight: 600;
                 font-family: "Inter", sans-serif;
@@ -58,7 +67,7 @@
 
             h3 {
               position: absolute;
-              margin-top: 94px;
+              margin-top: 104px;
               font-size: 24px;
               font-family: "Inter", sans-serif;
               font-weight: 300;
@@ -66,9 +75,73 @@
             }
 
             .info {
-                margin-top: 238px;
+                margin-top: 250px;
                 display: flex;
                 flex-direction: column;
+
+                .socials {
+                  margin-top: 34px;
+                  transform: rotateX(1.5deg) rotateY(13deg) skew(7deg);
+                  margin-left: 20px;
+                  display: flex;
+                  gap: 26px;
+
+                  .socialButton {
+                    margin: 0 !important;
+                    padding: 10px 20px !important;
+                    font-size: 18px !important;
+                    border-radius: 18px;
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                    transition: 0.25s all;
+
+                    &:hover {
+                      transform: scale(1.05);
+                    }
+
+                    &.github {
+                      &:hover {
+                        background: rgb(134, 134, 134);
+                      }
+                    }
+
+                    &.linkedin {
+                      &:hover {
+                        background: rgb(8, 86, 255);
+                      }
+                    }
+
+                    &.spotify {
+                      &:hover {
+                        background: rgb(6, 158, 6);
+                      }
+                    }
+
+                    &.discord {
+                      &:hover {
+                        background: rgb(78, 134, 255);
+                      }
+                    }
+
+                    &.website {
+                      padding: 10px !important;
+                    }
+
+                    .icon {
+                      height: 30px;
+                      width: 30px;
+                    }
+
+                    span {
+                      text-shadow: none;
+                    }
+
+                    &:after {
+                      inset: -0.5rem !important;
+                    }
+                  }
+                }
 
                 .textbox {
                     background-color: rgba(40, 40, 40, 0.8);
@@ -117,10 +190,86 @@
             }
 
             .profile {
+              margin-top: 250px;
 
+              .selfieBox {
+                padding: 0;
+                border-radius: 48px;
+
+                .selfie {
+                  height: 308px;
+                  width: 308px;
+                  border-radius: 36px;
+                  cursor: pointer;
+                }
+              }
             }
         }
     }
+}
+
+.socials {
+  margin-top: 34px;
+  transform: rotateX(1.5deg) rotateY(13deg) skew(7deg);
+  margin-left: 20px;
+  display: flex;
+  gap: 26px;
+
+  .socialButton {
+    margin: 0 !important;
+    padding: 10px 20px !important;
+    font-size: 18px !important;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: 0.25s all;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &.github {
+      &:hover {
+        background: rgb(134, 134, 134);
+      }
+    }
+
+    &.linkedin {
+      &:hover {
+        background: rgb(8, 86, 255);
+      }
+    }
+
+    &.spotify {
+      &:hover {
+        background: rgb(6, 158, 6);
+      }
+    }
+
+    &.discord {
+      &:hover {
+        background: rgb(78, 134, 255);
+      }
+    }
+
+    &.website {
+      padding: 10px !important;
+    }
+
+    .icon {
+      height: 30px;
+      width: 30px;
+    }
+
+    span {
+      text-shadow: none;
+    }
+
+    &:after {
+      inset: -0.5rem !important;
+    }
+  }
 }
 
 @keyframes move-background {
@@ -196,6 +345,38 @@
       
 }
 
+.cred {
+  transform: rotateX(1.5deg) rotateY(13deg) skew(-3deg);
+  margin-left: -18px;
+
+  .socialButton {
+    padding: 12px 18px !important;
+    gap: 10px !important;
+    background-color: rgba(40, 40, 40, 0.8);
+    transition: 0.2s all;
+
+    &.location {
+      padding-left: 14px !important;
+      gap: 10px !important;
+
+      &:hover {
+        background: red;
+      }
+    }
+
+    &.work {
+      &:hover {
+        background: red;
+      }
+    }
+
+    .icon {
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
+
 :root {
 
   }
@@ -229,7 +410,9 @@
     border-radius: 1rem;
   
     position: relative;
-  
+  }
+
+  .text {
     transform-style: preserve-3d;
     transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
   }
@@ -285,3 +468,104 @@
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   }
+
+.secondSection {
+  height: 90vh !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -70px;
+  position: relative;
+
+  .spoti {
+    color: #2ebd59;
+    filter: drop-shadow(0px 0px 10px #2ebd59);
+    cursor: pointer;
+  }
+
+  .apple {
+    color: #b84fea;
+    filter: drop-shadow(0px 0px 10px #b84fea);
+    cursor: pointer;
+  }
+
+  .cta1 {
+    font-size: 24px;
+    max-width: 850px;
+    text-align: center;
+    line-height: 1.1;
+    margin-top: 4px;
+    color: #ccc;
+  }
+
+  .cta2 {
+    font-size: 28px;
+    max-width: 900px;
+    text-align: center;
+    line-height: 1.1;
+    margin-top: 170px;
+    color: white;
+    font-weight: 600;
+  }
+
+  .divider {
+    width: 80vw;
+    height: 1px;
+    background-color: #1c1c1c;
+    position: absolute;
+    bottom: 140px;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    position: relative;
+    font-weight: 600;
+  }
+
+  .boxes {
+    margin-top: 90px;
+    display: flex;
+    gap: 20px;
+
+    .boxesLeft,
+    .boxesMiddle {
+      border-right: 1px solid #1c1c1c;;
+      position: relative;
+      padding-right: 20px;
+    }
+
+    .boxesLeft,
+    .boxesMiddle,
+    .boxesRight {
+      display: flex;
+      gap: 20px;
+
+      .box {
+        border: 0.91rem solid rgba(40, 40, 40, 0.5);
+        background-color: rgba(40, 40, 40, 0.5);
+        height: 210px;
+        width: 210px;
+        position: relative;
+        border-radius: 36px;
+        transition: 0.2s all;
+        cursor: pointer;
+
+        span {
+          position: absolute;
+          bottom: -74px;
+          text-align: center;
+        }
+
+        .teaser {
+          border-radius: 24px;
+        }
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
