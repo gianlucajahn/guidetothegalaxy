@@ -1,10 +1,33 @@
+@keyframes waveAnimation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .about {
     background-color: black;
     width: 100%;
     height: 500%;
     position: absolute;
     left: 0;
-    top: 64px;
+    padding-top: 72px;
 
     section {
         height: 100%;
@@ -12,33 +35,84 @@
         &.firstSection {
             display: flex;
             justify-content: space-around;
-            padding-top: 92px;
+            height: 100vh;
+            width: 98vw;
 
             h1 {
-                font-size: 56px;
+                font-size: 60px;
                 color: white;
-                font-weight: 500;
+                font-weight: 600;
                 font-family: "Inter", sans-serif;
                 position: absolute;
 
+                .grad {
+                  background: linear-gradient(300deg,#35b0ff,#004aeb,#00cbff,#0020ff);
+                  background-size: 240% 240%;
+                  animation: gradientAnimation 5s ease infinite;
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  background-clip: text;
+                  font-weight: 700;
+                }
             }
 
-            .textbox {
-                background-color: #242424;
-                border-radius: 24px;
-                font-family: "Inter", sans-serif;
-                color: white;
-                height: 300px;
-                margin-top: 180px;
+            h3 {
+              position: absolute;
+              margin-top: 88px;
+              font-size: 24px;
+              font-family: "Inter", sans-serif;
+              font-weight: 300;
+              color: #b8b8b8;
+            }
 
-                h2 {
-                    font-size: 24px;
-                }
+            .info {
+                margin-top: 238px;
+                display: flex;
+                flex-direction: column;
 
-                p {
-                    font-size: 16px;
-                    color: white;
+                .textbox {
+                    background-color: rgba(40, 40, 40, 0.8);
+                    backdrop-filter: blur(2px);
+                    border-radius: 36px;
                     font-family: "Inter", sans-serif;
+                    color: white;
+                    cursor: pointer;
+                    max-width: 40vw;
+                    max-height: 308px;
+                    box-sizing: border-box;
+                    padding: 18px 55px 40px 38px;
+                    z-index: 3;
+                    transition: 0.125s all;
+    
+                    h2 {
+                        font-size: 32px;
+                        margin-bottom: 14px;
+                        font-weight: 500;
+                        padding-left: 48px;
+
+                        .hand {
+                            animation-name: waveAnimation;  /* Refers to the name of your @keyframes element below */
+                            animation-duration: 2.5s;        /* Change to speed up or slow down */
+                            animation-iteration-count: infinite;  /* Never stop waving :) */
+                            transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+                            height: 40px;
+                            width: 40px;
+                            position: absolute;
+                            left: 34px;
+                        }
+                    }
+    
+                    p {
+                        font-size: 16px;
+                        color: white;
+                        font-family: "Inter", sans-serif;
+                        line-height: 1.35;
+                        font-weight: 300;
+
+                        span {
+                            font-weight: 500;
+                        }
+                    }
                 }
             }
 
@@ -48,3 +122,166 @@
         }
     }
 }
+
+@keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  @-webkit-keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  @-moz-keyframes move-background {    
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+      @-webkit-keyframes move-background {
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  .backgroundContainer{
+      position: fixed;
+      top: 0;
+      left:0;
+      bottom: 0;
+      right: 0;
+  }
+  
+  .stars {
+   background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+   position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: block;
+        z-index: 0;
+  }
+  
+  .twinkling{
+      width:10000px;
+      height: 100%;
+      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+      background-size: 1000px 1000px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 2;
+      
+      -moz-animation:move-background 20s linear infinite;
+    -ms-animation:move-background 20s linear infinite;
+    -o-animation:move-background 20s linear infinite;
+    -webkit-animation:move-background 20s linear infinite;
+    animation:move-background 20s linear infinite;
+      
+}
+
+:root {
+
+  }
+  
+  .body {
+    background: hsl(224, 32%, 12%);
+    background-image: conic-gradient(
+      from 0deg at 50% 50%,
+      blue,
+      rgb(27, 135, 223),
+      rgb(27, 135, 223),
+      blue
+    );
+    background-blend-mode: multiply;
+    min-block-size: 100dvh;
+    display: grid;
+    place-items: center;
+  }
+  
+  .textbox {
+    --selector: hsl(204, 70%, 55%);
+    --property: hsl(183, 70%, 62%);
+    --punctuation: hsl(334, 7%, 95%);
+    --undefined: hsl(334, 7%, 95%);
+  
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--undefined);
+    background: hsl(222, 45%, 7%);
+    padding: 2rem;
+    border-radius: 1rem;
+  
+    position: relative;
+  
+    transform-style: preserve-3d;
+    transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
+  }
+  
+  .textbox > * {
+    text-shadow: 0 0 0.3em currentColor;
+  }
+  
+  .textbox::before,
+  .textbox::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+  }
+  
+  /* shadow */
+  .textbox::before {
+    inset: 0.75rem;
+    border-radius: inherit;
+    background: black;
+    z-index: -1;
+    transform: translateZ(-50px);
+    filter: blur(15px);
+    opacity: 0.5;
+  }
+  
+  /* gradient thingy */
+  .textbox::after {
+    z-index: -2;
+    inset: -0.91rem;
+    background-color: rgba(40, 40, 40, 0.5);
+    transform: translateZ(-50px);
+  }
+  
+  .selector {
+    color: var(--selector);
+  }
+  
+  .property {
+    color: var(--property);
+  }
+  
+  .punctuation {
+    color: var(--punctuation);
+  }
+  
+  .property + .punctuation {
+    color: var(--property);
+  }
+  
+  .pre-container {
+    position: relative;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  }
