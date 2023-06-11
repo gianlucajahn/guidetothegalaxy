@@ -230,7 +230,7 @@ export default function About() {
                 src={require(".//../../resources/images/spotifyteaser1.png")}
                 alt="Location"
               />
-              <span><strong>German Podcast</strong> on Spotify</span>
+              <span><strong>German Audiobook</strong> on Spotify</span>
             </div>
             <div className={css.box}>
               <Image
@@ -238,7 +238,7 @@ export default function About() {
                 src={require(".//../../resources/images/spotifyteaser2.png")}
                 alt="Location"
               />
-              <span><strong>English Podcast</strong> on Spotify</span>
+              <span><strong>English Audiobook</strong> on Spotify</span>
             </div>
           </div>
 
@@ -249,7 +249,7 @@ export default function About() {
                 src={require(".//../../resources/images/applepodcasts1.png")}
                 alt="Location"
               />
-              <span><strong>German Podcast</strong> on Apple Podcasts</span>
+              <span><strong>German Audiobook</strong> on Apple Podcasts</span>
             </div>
             <div className={css.box}>
               <Image
@@ -257,7 +257,7 @@ export default function About() {
                 src={require(".//../../resources/images/applepodcasts2.png")}
                 alt="Location"
               />
-              <span><strong>English Podcast</strong> on Apple Podcasts</span>
+              <span><strong>English Audiobook</strong> on Apple Podcasts</span>
             </div>
           </div>
         </div>
