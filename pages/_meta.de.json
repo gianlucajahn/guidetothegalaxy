@@ -21,10 +21,6 @@
     "about": {
       "title": "About",
       "type": "page"
-    },
-    "faq": {
-      "title": "FAQ",
-      "type": "page"
     }
   }
   

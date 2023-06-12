@@ -30,6 +30,7 @@
     background-repeat: no-repeat;
     padding-top: 8.85%;
     position: relative;
+    overflow-x: hidden !important;
 
     @media screen and (max-width: 1050px) and (min-height: 929px) {
         height: 135vh;

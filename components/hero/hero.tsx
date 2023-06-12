@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./hero.module.scss";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Hero() {
+  useEffect(() => {
+    document.body.style.overflowX = "hidden";
+  }, [])
+
   return (
     <section className={styles.section}>
       <div className={styles.logoContainer}>

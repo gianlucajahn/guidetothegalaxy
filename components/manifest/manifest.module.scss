@@ -13,6 +13,7 @@
     position: relative;
     padding-left: 8.5%;
     padding-top: 105px;
+    overflow-x: hidden !important;
 
     @media screen and (max-width: 1050px) {
         padding-top: 70px;
