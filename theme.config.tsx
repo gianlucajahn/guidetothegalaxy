@@ -24,6 +24,9 @@ const config: DocsThemeConfig = {
   project: {
     link: 'https://github.com/gianlucajahn/guidetothegalaxy',
   },
+  search: {
+    placeholder: "Search documentation..."
+  },
   chat: {
     link: 'https://discordapp.com/users/556559991062921217',
   },
