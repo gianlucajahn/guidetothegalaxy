@@ -83,9 +83,9 @@ export default function About() {
       </div>
       <section className={css.firstSection} id="first">
         <h1>
-          About Beyond <span className={css.grad}>Earth©</span>
+          Über Beyond <span className={css.grad}>Earth©</span>
         </h1>
-        <h3>The open-sourced guide on spacetravel</h3>
+        <h3>Die Online-Bibliothek zur Raumfahrt</h3>
         <div className={css.info}>
           <div
             className={`${css.textbox} ${css.text}`}
@@ -93,20 +93,16 @@ export default function About() {
             id="textbox"
           >
             <h2>
-              <div className={css.hand}>👋</div> Hey, I'm Gianluca,
+              <div className={css.hand}>👋</div> Hey, Ich bin Gianluca,
             </h2>
             <p>
-              and I am the creator and author of this page.{" "}
-              <span>Beyond Earth©</span> is a project aiming to increase
-              awareness for the aerospace engineering and space exploration
-              industry. My goal is to inspire as many people as possible for
-              this niche and I felt a project like this could be a great first
-              step, so I took it. You decide if you want to read our content at
-              your own pace or if you would like to listen to our audiobooks.
+              und ich bin der Ersteller und Author dieser Website.{" "}
+              <span>Beyond Earth©</span> ist ein Projekt mit dem Ziel,
+              das Bewusstsein für die Raumfahrttechnik und Weltraumforschung zu stärken. Mein persönliches
+              Ziel ist es, so viele Menschen wie möglich für diese Nische zu begeistern. 
+              Du entscheidest, ob du die Inhalte dieses Projekts in deinem eigenen Tempo lesen oder dir die Hörbücher anhören möchtest.
               <br /> <br />
-              <span>Beyond Earth©</span> is designed to be accessible and free
-              for everyone and is natively open-source. Feature Requests and
-              active participation in this project is greatly appreciated!
+              <span>Beyond Earth©</span> ist konzipiert, um für jede/n zugänglich und kostenlos zu sein und ist von Haus aus Open Source. Feature Requests und aktive Beteiligung an diesem Projekt sind jederzeit willkommen!
             </p>
           </div>
 
@@ -196,7 +192,7 @@ export default function About() {
                 src={require(".//../../resources/images/work.png")}
                 alt="Work"
               />
-              <span>Developer</span>
+              <span>Entwickler</span>
             </button>
             <button
               className={`${css.textbox} ${css.socialButton} ${css.location}`}
@@ -206,7 +202,7 @@ export default function About() {
                 src={require(".//../../resources/images/location.png")}
                 alt="Location"
               />
-              <span>Germany</span>
+              <span>Bochum</span>
             </button>
           </div>
         </div>
@@ -214,23 +210,23 @@ export default function About() {
       </section>
 
       <section className={css.secondSection}>
-        <h1>Check us out on your preferred platform!</h1>
+        <h1>Besuch' uns auf deiner Lieblingsplattform!</h1>
         <h2 className={css.cta1}>
-          Our content is available on{" "}
-          <strong className={css.spoti}>Spotify</strong> and on{" "}
-          <strong className={css.apple}>Apple Podcasts</strong>!
+          Unser Content ist sowohl auf{" "}
+          <strong className={css.spoti}>Spotify</strong> als auch{" "}
+          <strong className={css.apple}>Apple Podcasts</strong> verfügbar!
         </h2>
 
         <div className={css.boxes}>
           <div className={css.boxesLeft}>
             <div className={css.box}>
               <span>
-                <strong>German Articles</strong> on our Website
+                <strong>Deutsche Artikel</strong> auf unserer Website
               </span>
             </div>
             <div className={css.box}>
               <span>
-                <strong>English Articles</strong> on our Website
+                <strong>Englische Artikel</strong> auf unserer Website
               </span>
             </div>
           </div>
@@ -243,7 +239,7 @@ export default function About() {
                 alt="Location"
               />
               <span>
-                <strong>German Audiobook</strong> on Spotify
+                <strong>Deutsches Hörbuch</strong> auf Spotify
               </span>
             </div>
             <div className={css.box}>
@@ -253,7 +249,7 @@ export default function About() {
                 alt="Location"
               />
               <span>
-                <strong>English Audiobook</strong> on Spotify
+                <strong>Englisches Hörbuch</strong> auf Spotify
               </span>
             </div>
           </div>
@@ -266,7 +262,7 @@ export default function About() {
                 alt="Location"
               />
               <span>
-                <strong>German Audiobook</strong> on Apple Podcasts
+              <strong>Deutsches Hörbuch</strong> auf Apple Podcasts
               </span>
             </div>
             <div className={css.box}>
@@ -276,20 +272,20 @@ export default function About() {
                 alt="Location"
               />
               <span>
-                <strong>English Audiobook</strong> on Apple Podcasts
+              <strong>Englisches Hörbuch</strong> auf Apple Podcasts
               </span>
             </div>
           </div>
         </div>
 
         <h3 className={css.cta2}>
-          Leave a like or a follow if you don't want to miss future content!
+          Hinterlass' einen Like oder Follow, wenn du zukünftige Inhalte nicht verpassen willst!
         </h3>
         <div className={css.divider} />
       </section>
 
       <section className={css.thirdSection}>
-        <h1>Frequently Asked Questions</h1>
+        <h1>Häufig gestellte Fragen</h1>
 
         <div className={css.questionBox}>
           <div
@@ -301,22 +297,17 @@ export default function About() {
               src={require(".//../../resources/images/arrow.png")}
               alt="Arrow"
             />
-            <p>What is this page about?</p>
+            <p>Worum geht es auf dieser Website?</p>
           </div>
           <div className={`${css.answer} ${firstFAQ ? css.expanded : css.none}`}>
             <p>
-              Within this page, we're going to take a chronological leap through
-              the future of human spaceflight. We're going to be looking at
-              what's on the agenda and how we can achieve it and we're also
-              going to take a look at what might come long after all current
-              plans for future space colonization ends. The goal here is to give
-              readers a clear and concise glance into our future without causing
-              confusion or sensory overload.
+                Innerhalb dieser Seite unternehmen wir eine zeitlich chronologische Reise durch die Zukunft der
+                menschlichen Raumfahrt. Wir werden uns anschauen, was so auf der Agenda steht, wie wir all das erreichen können und
+                auch beleuchten, was weit jenseits der Menschheit liegt. Das Ziel hier ist es, Lesern einen klaren und prägnanten Blick in unsere Zukunft zu verschaffen,
+                ohne Verwirrung oder Reizüberflutung zu stiften.
               <br />
               <br />
-              After reading through our page, readers are very likely to have
-              the fundamentals on spaceflight down and can engage in meaninful
-              and constructive conversations about our possible future/s.
+              Nach dem Durchforsten dieser Seite werden Leser mit großer Wahrscheinlichkeit die Grundlagen der Raumfahrt verstehen und können sich an sinnvollen und konstruktiven Gesprächen über unsere mögliche/n Zukünfte beteiligen.
             </p>
           </div>
         </div>
@@ -330,11 +321,11 @@ export default function About() {
               src={require(".//../../resources/images/arrow.png")}
               alt="Arrow"
             />
-            <p>Do you work in this field?</p>
+            <p>Arbeitest du in dieser Branche?</p>
           </div>
           <div className={`${css.answer} ${secondFAQ ? css.expanded : css.none}`}>
             <p>
-              No, not currently. I am considering enrollment a part-time Bachelor of Science in Aerospace Engineering but I'm currently working as a Software Developer. My ultimate goal is to help shape and form the future of the spacetravel industry in a bigger fashion than "just" a job in the field though, so I am most likely to continue the (well-paid) path of a Software Engineer and ramp up enough money to start my own company in the Aeronautics & Aerospace Engineering field.
+            Nein, derzeit nicht. Ich erwäge, einen Teilzeit-Bachelor of Science in Luft- und Raumfahrttechnik zu absolvieren, aber ich arbeite derzeit als Softwareentwickler. Mein ultimatives Ziel ist es, die Zukunft der Raumfahrtindustrie mitzugestalten, und zwar auf eine größere Art und Weise als "nur" durch einen Job in diesem Bereich. Daher werde ich höchstwahrscheinlich den (gut bezahlten) Weg eines Software-Ingenieurs fortsetzen und genug Geld auftreiben, um mein eigenes Unternehmen im Bereich Luft- und Raumfahrttechnik zu gründen.
             </p>
           </div>
         </div>
@@ -348,10 +339,10 @@ export default function About() {
               src={require(".//../../resources/images/arrow.png")}
               alt="Arrow"
             />
-            <p>Where can I request a topic or feature?</p>
+            <p>Wo kann ich ein Feature oder Thema anfragen?</p>
           </div>
           <div className={`${css.answer} ${thirdFAQ ? css.expanded : css.none}`}>
-            <p>Anywhere you want, really, as long as it's probable for me to notice it. You choose between the GitHub repository, my LinkedIn inbox, Discord or even the e-mail option on my portfolio website.</p>
+            <p>Tatsächlich wo immer du willst, solange es hinreichend wahrscheinlich ist, dass ich es über diesen Weg mitbekomme. Du hast die freie Wahl zwischen GitHub, LinkedIn, Discord oder sogar der E-Mail Option auf meiner Portfolio-Website.</p>
           </div>
         </div>
         <div className={css.questionBox}>
@@ -364,11 +355,14 @@ export default function About() {
               src={require(".//../../resources/images/arrow.png")}
               alt="Arrow"
             />
-            <p>Do you think you'll ever be on Mars?</p>
+            <p>Glaubst du, du wirst jemals auf dem Mars sein?</p>
           </div>
           <div className={`${css.answer} ${fourthFAQ ? css.expanded : css.none}`}>
             <p>
-              Tough one. The correct answer to this question is, especially if you know me well enough, much more dependant on my health situation than on the progression speed of spacetravel. If I get to live 70+ years, I think it's pretty likely. If not, I don't think I will, honestly. <br /><br />It's not about me, though. I am not even excited to be there, even if we had a colony up on Mars. What's important to me is accelerating progress and for that, my location doesn't matter at all. If I was an outside observer looking at humans and their progress, I wouldn't care for a single human so why should I now? Because I just so happen to be him? 
+              Schwierige Frage. Die korrekte Antwort darauf hängt, besonders wenn man mich gut kennt, deutlich eher von meinem zukünftigen Gesundheitszustand als dem menschlichen Fortschritt ab. Sollte ich die Ehre haben, 70 oder mehr Jahre lang zu leben, halte ich das tatsächlich für recht wahrscheinlich. Andernfalls nicht.
+
+              <br /><br />
+              Es geht aber auch überhaupt nicht um mich. Ich wäre nicht außerordentlich euphorisch darüber, Teil einer Kolonie auf dem Mars sein zu können. Wichtig ist mir die Beschleunigung des technologischen Fortschritts, für welchen mein Aufenthaltsort völlig unerheblich ist. Wäre ich ein außenstehender Beobachter, der auf die Menschheit herabsieht, würde ich mich wohl kaum für einen einzelnen Menschen sondern für ihren Fortschritt und ihre Entwicklung interessieren. Warum sollte es für mich also anders sein? Weil ich zufällig dieser einzelne Mensch bin?
             </p>
           </div>
         </div>
@@ -382,11 +376,11 @@ export default function About() {
               src={require(".//../../resources/images/arrow.png")}
               alt="Arrow"
             />
-            <p>How can I contribute?</p>
+            <p>Wie kann ich mich an diesem Projekt beteiligen?</p>
           </div>
           <div className={`${css.answer} ${fifthFAQ ? css.expanded : css.none} ${css.last}`}>
             <p>
-              Lots of ways! Apart from the very obvious one being fulfilling feature requests or writing chapters that the both of us agreed on, simply sharing this page will help increase awareness already. Give it a like on Spotify, Apple Podcasts or GitHub, if you like. Everything helps :)
+            Es gibt viele Möglichkeiten! Abgesehen von der sehr offensichtlichen Möglichkeit, Feature-Wünsche zu erfüllen oder Kapitel zu schreiben, auf die wir uns beide geeinigt haben, hilft schon das Teilen dieser Seite dabei, deren Bekanntheit zu steigern. Gib uns ein Like auf Spotify, Apple Podcasts oder GitHub, wenn du magst. Alles hilft :)
             </p>
           </div>
         </div>

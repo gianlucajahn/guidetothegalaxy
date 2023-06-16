@@ -1,6 +1,6 @@
 {
   "index": {
-    "title": "About",
+    "title": "Index",
     "type": "page",
     "display": "hidden",
     "theme": {
@@ -20,6 +20,13 @@
   },
   "about": {
     "title": "About",
-    "type": "page"
+    "type": "page",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": true,
+      "pagination": true
+    }
   }
 }
