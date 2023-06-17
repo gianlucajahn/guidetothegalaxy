@@ -9,8 +9,14 @@ export default function About() {
   const [thirdFAQ, setThirdFAQ] = React.useState(false);
   const [fourthFAQ, setFourthFAQ] = React.useState(false);
   const [fifthFAQ, setFifthFAQ] = React.useState(false);
+  const [portfolio, setPortfolio] = React.useState<string | undefined>();
 
   React.useEffect(() => {
+    if (window.innerWidth <= 600) {
+      setPortfolio("My Portfolio");
+      return
+    }
+
     if (typeof document === "undefined") {
     } else {
       if (isRendered) {
@@ -174,6 +180,7 @@ export default function About() {
                   src={require(".//../../resources/images/website.png")}
                   alt="Website"
                 />
+                {portfolio ? <span>{portfolio}</span> : null}
               </button>
             </a>
           </div>
@@ -214,7 +221,7 @@ export default function About() {
       </section>
 
       <section className={css.secondSection}>
-        <h1>Check us out on your preferred platform!</h1>
+        <h1>Check us out{portfolio ? ' here!': ''}{portfolio ? '' : ' on your preferred platform!'}</h1>
         <h2 className={css.cta1}>
           Our content is available on{" "}
           <strong className={css.spoti}>Spotify</strong> and on{" "}
