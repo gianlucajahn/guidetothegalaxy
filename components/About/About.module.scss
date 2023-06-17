@@ -56,6 +56,18 @@
               height: 160vh !important;
             }
 
+            @media screen and (max-width: 562px) {
+              height: 161vh !important;
+            }
+
+            @media screen and (max-width: 535px) {
+              height: 163vh !important;
+            }
+
+            @media screen and (max-width: 515px) {
+              height: 166vh !important;
+            }
+
             .divider {
               width: 80vw;
               height: 1px;
@@ -78,6 +90,12 @@
                   transform: translate(-50%, 0);
                   left: 50%;
                   text-align: center;
+                }
+
+                @media screen and (max-width: 515px) {
+                  font-size: 38px;
+                  width: 300px !important;
+                  line-height: 1.2;
                 }
 
                 .grad {
@@ -105,12 +123,20 @@
                 text-align: center;
                 font-size: 18px;
               }
+
+              @media screen and (max-width: 515px) {
+                margin-top: 138px;
+              }
             }
 
             .info {
                 margin-top: 250px;
                 display: flex;
                 flex-direction: column;
+
+                @media screen and (max-width: 515px) {
+                  margin-top: 280px;
+                }
 
                 .socials {
                   margin-top: 34px;
@@ -207,6 +233,10 @@
                         font-weight: 500;
                         padding-left: 48px;
 
+                        @media screen and (max-width: 506px) {
+                          font-size: 28px;
+                        }
+
                         .hand {
                             animation-name: waveAnimation;  /* Refers to the name of your @keyframes element below */
                             animation-duration: 2.5s;        /* Change to speed up or slow down */
@@ -238,6 +268,18 @@
 
               @media screen and (max-width: 600px) {
                 margin-top: 870px;
+              }
+
+              @media screen and (max-width: 562px) {
+                margin-top: 898px;
+              }
+
+              @media screen and (max-width: 535px) {
+                margin-top: 924px;
+              }
+
+              @media screen and (max-width: 515px) {
+                margin-top: 956px;
               }
 
               .cred {
@@ -619,6 +661,10 @@
       margin-top: 60px;
     }
 
+    @media screen and (max-width: 515px) {
+      margin-left: 16px;
+    }
+
     .boxesLeft,
     .boxesMiddle {
       border-right: 1px solid #1c1c1c;;
@@ -645,6 +691,11 @@
         border-radius: 36px;
         transition: 0.2s all;
         cursor: pointer;
+
+        @media screen and (max-width: 515px) {
+          height: 195px;
+          width: 195px;
+        }
 
         span {
           position: absolute;
@@ -794,5 +845,17 @@
     max-width: 85vw !important;
     border-radius: 32px !important;
     max-height: 410px !important;
+  }
+
+  @media screen and (max-width: 562px) {
+    max-height: 432px !important;
+  }
+
+  @media screen and (max-width: 535px) {
+    max-height: 454px !important;
+  }
+
+  @media screen and (max-width: 506px) {
+    max-height: 504px !important;
   }
 }
