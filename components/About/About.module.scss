@@ -267,6 +267,12 @@
                           padding-left: 38px;
                         }
 
+                        @media screen and (max-width: 399px) {
+                          font-size: 20px !important;
+                          padding-left: 38px;
+                          margin-bottom: 10px;
+                        }
+
                         .hand {
                             animation-name: waveAnimation;  /* Refers to the name of your @keyframes element below */
                             animation-duration: 2.5s;        /* Change to speed up or slow down */
@@ -330,6 +336,10 @@
 
               @media screen and (max-width: 402px) {
                 margin-top: 1078px;
+              }
+
+              @media screen and (max-width: 399px) {
+                margin-top: 1044px;
               }
 
               .cred {
@@ -946,5 +956,11 @@
 
   @media screen and (max-width: 402px) {
     max-height: 580px !important;
+  }
+
+  @media screen and (max-width: 399px) {
+    height: 534px !important;
+    max-height: 534px !important;
+    padding: 15px 42px 15px 30px !important;
   }
 }
