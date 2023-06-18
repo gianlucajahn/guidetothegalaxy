@@ -68,6 +68,22 @@
               height: 166vh !important;
             }
 
+            @media screen and (max-width: 480px) {
+              height: 170vh !important;
+            }
+
+            @media screen and (max-width: 449px) {
+              height: 175vh !important;
+            }
+
+            @media screen and (max-width: 449px) {
+              height: 177vh !important;
+            }
+
+            @media screen and (max-width: 402px) {
+              height: 179vh !important;
+            }
+
             .divider {
               width: 80vw;
               height: 1px;
@@ -126,6 +142,10 @@
 
               @media screen and (max-width: 515px) {
                 margin-top: 138px;
+              }
+
+              @media screen and (max-width: 419px) {
+                font-size: 16px;
               }
             }
 
@@ -237,6 +257,16 @@
                           font-size: 28px;
                         }
 
+                        @media screen and (max-width: 465px) {
+                          font-size: 24px !important;
+                          padding-left: 42px;
+                        }
+
+                        @media screen and (max-width: 425px) {
+                          font-size: 22px !important;
+                          padding-left: 38px;
+                        }
+
                         .hand {
                             animation-name: waveAnimation;  /* Refers to the name of your @keyframes element below */
                             animation-duration: 2.5s;        /* Change to speed up or slow down */
@@ -280,6 +310,26 @@
 
               @media screen and (max-width: 515px) {
                 margin-top: 956px;
+              }
+
+              @media screen and (max-width: 498px) {
+                margin-top: 978px;
+              }
+
+              @media screen and (max-width: 465px) {
+                margin-top: 1000px;
+              }
+
+              @media screen and (max-width: 449px) {
+                margin-top: 1030px;
+              }
+
+              @media screen and (max-width: 419px) {
+                margin-top: 1056px;
+              }
+
+              @media screen and (max-width: 402px) {
+                margin-top: 1078px;
               }
 
               .cred {
@@ -581,6 +631,10 @@
     height: 140vh !important;
   }
 
+  @media screen and (max-width: 449px) {
+    height: 130vh !important;
+  }
+
   h1 {
     @media screen and (max-width: 600px) {
       font-size: 30px !important;
@@ -628,6 +682,13 @@
     @media screen and (max-width: 600px) {
       margin-top: 140px;
       max-width: 80vw;
+    }
+
+    
+    @media screen and (max-width: 402px) {
+      margin-top: 140px;
+      max-width: 75vw;
+      font-size: 24px;
     }
   }
 
@@ -697,6 +758,17 @@
           width: 195px;
         }
 
+        @media screen and (max-width: 465px) {
+          height: 185px;
+          width: 185px;
+        }
+
+        @media screen and (max-width: 419px) {
+          height: 162px;
+          width: 162px;
+          border: 0.65rem solid rgba(40, 40, 40, 0.5);
+        }
+
         span {
           position: absolute;
           bottom: -74px;
@@ -734,6 +806,11 @@
     @media screen and (max-width: 600px) {
       font-size: 30px;
       text-align: center;
+    }
+    
+    @media screen and (max-width: 402px) {
+      font-size: 24px;
+      margin-top: -25px;
     }
   }
 
@@ -857,5 +934,17 @@
 
   @media screen and (max-width: 506px) {
     max-height: 504px !important;
+  }
+
+  @media screen and (max-width: 449px) {
+    max-height: 532px !important;
+  }
+
+  @media screen and (max-width: 419px) {
+    max-height: 556px !important;
+  }
+
+  @media screen and (max-width: 402px) {
+    max-height: 580px !important;
   }
 }
