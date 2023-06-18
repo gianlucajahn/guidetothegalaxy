@@ -39,7 +39,7 @@ export default function Manifest() {
         </motion.a>
       </div>
       <div className={styles.main}>
-        <h1>Lern' mehr über die Raumfahrt</h1>
+        <h1 id="int">Lern' mehr über die Raumfahrt</h1>
         <div className={styles.content}>
           <div className={styles.left}>
             <p>
@@ -58,7 +58,7 @@ export default function Manifest() {
             >
               ✨ Tritt gern unserer Community bei, wenn du magst!
             </motion.p>
-            <a href="https://guidetothegalaxy.vercel.app/documentation/introduction">
+            <a href="https://guidetothegalaxy.vercel.app/about">
               <motion.button
                 className={styles.explore}
                 whileHover={{ scale: 1.07 }}
@@ -73,7 +73,7 @@ export default function Manifest() {
                   width={20}
                   className={styles.image}
                 />
-                Explore now
+                Erfahre mehr
               </motion.button>
             </a>
             <p className={styles.disclaimer}>

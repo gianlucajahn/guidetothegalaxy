@@ -432,6 +432,10 @@
 .main {
     h1 {
         font-family: "Inter", sans-serif !important;
+
+        @media screen and (max-width: 450px) {
+            font-size: 30px;
+        }
     }
 
     @media screen and (max-width: 1000px) {
