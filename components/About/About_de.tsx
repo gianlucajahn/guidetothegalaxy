@@ -96,7 +96,7 @@ export default function About() {
               <div className={css.hand}>👋</div> Hey, Ich bin Gianluca,
             </h2>
             <p>
-              und ich bin der Ersteller und Author dieser Website.{" "}
+              und ich bin der Ersteller und Autor dieser Website.{" "}
               <span>Beyond Earth©</span> ist ein Projekt mit dem Ziel,
               das Bewusstsein für die Raumfahrttechnik und Weltraumforschung zu stärken. Mein persönliches
               Ziel ist es, so viele Menschen wie möglich für diese Nische zu begeistern. 
