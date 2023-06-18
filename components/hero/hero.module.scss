@@ -250,3 +250,10 @@
         margin-bottom: 0px;
     }
 }
+
+@media screen and (max-width: 520px) {
+    h1.title {
+        font-size: 32px;
+        margin-bottom: -70px;
+    }
+}
