@@ -28,6 +28,7 @@
     position: absolute;
     left: 0;
     padding-top: 66px;
+    overflow-x: hidden !important;
 
     section {
         height: 100%;
@@ -69,19 +70,7 @@
             }
 
             @media screen and (max-width: 480px) {
-              height: 170vh !important;
-            }
-
-            @media screen and (max-width: 449px) {
-              height: 175vh !important;
-            }
-
-            @media screen and (max-width: 449px) {
-              height: 177vh !important;
-            }
-
-            @media screen and (max-width: 402px) {
-              height: 179vh !important;
+              height: 192vh !important;
             }
 
             .divider {
@@ -929,7 +918,8 @@
   transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
 
   @media screen and (max-width: 600px) {
-    max-width: 85vw !important;
+    max-width: 81.5vw !important;
+    min-width: 81.5vw !important;
     border-radius: 32px !important;
     max-height: 410px !important;
   }
