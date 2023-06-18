@@ -70,7 +70,7 @@
             }
 
             @media screen and (max-width: 480px) {
-              height: 192vh !important;
+              height: 220vh !important;
             }
 
             .divider {
@@ -145,6 +145,10 @@
 
                 @media screen and (max-width: 515px) {
                   margin-top: 280px;
+                }
+
+                @media screen and (max-width: 430px) {
+                  margin-left: 2px;
                 }
 
                 .socials {
@@ -631,7 +635,7 @@
   }
 
   @media screen and (max-width: 449px) {
-    height: 130vh !important;
+    height: 155vh !important;
   }
 
   h1 {
