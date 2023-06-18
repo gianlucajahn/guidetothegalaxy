@@ -28,7 +28,10 @@
     position: absolute;
     left: 0;
     padding-top: 66px;
-    overflow-x: hidden !important;
+
+    @media screen and (max-width: 600px) {
+      overflow-x: hidden !important;
+    }
 
     section {
         height: 100%;
@@ -233,7 +236,7 @@
                     font-family: "Inter", sans-serif;
                     color: white;
                     cursor: pointer;
-                    max-width: 40vw;
+                    max-width: 750px;
                     max-height: 308px;
                     box-sizing: border-box;
                     padding: 18px 55px 40px 38px;
