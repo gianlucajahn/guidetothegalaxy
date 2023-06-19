@@ -1,0 +1,56 @@
+import Image from "next/image";
+import { Callout } from 'nextra-theme-docs'
+import { Analytics } from '@vercel/analytics/react';
+
+# Raketen
+Wie werden sie angetrieben, wie landen sie und wie finanzieren wir sie?
+
+<Callout type="info" emoji="ℹ️">
+  Das gesamte Raumfahrttechnik-Kapitel ist rein ergänzend, sprich nicht zwingend notwendig, um den Rest dieser Seite zu verstehen. Überspring' es also gern, falls du denkst, das sei nicht wirklich dein Fall. Andernfalls, bleib gern dabei.
+</Callout>
+
+<br />
+<figure>
+<Image src={require(".//../../../../resources/images/falconheavy.jpg")} alt="SpaceX' Falcon Heavy during takeoff" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>SpaceX' Falcon Heavy während des Takeoffs. Source: <strong>[Teslarati](https://www.teslarati.com/spacex-third-falcon-heavy-launch-livestream-webcast/)</strong></figcaption>
+</figure>
+
+## Was ist eine Rakete?
+Wie schon gesagt, wir fangen hier wirklich ganz von vorn an, ohne irgendwelches Vorwissen von euch zu erwarten. Spaß beiseite, aber ich denke, vielen Menschen würde es schwer fallen, korrekt zu erklären, wo der Unterschied zwischen einer Rakete und einem Flugzeug liegt, besonders aber wo der Unterschied zwischem dem Spaceshuttle und Flugzeugen liegt. Deshalb wollen wir das Ganze etwas aufklären.
+
+Eine Rakete ist ein Transportmittel, das bis auf kleinste Mengen beim Start keine umliegende Luft, sondern lediglich interne Systeme benötigt, um sich selbst in die Luft zu befördern. Ein Flugzeug im Gegenzug verwendet Propeller, die nicht ohne umliegende Luft aus der Atmosphäre verwendet werden können.
+
+Jetzt könntest du sagen: "Hey, bei Raketenstarts sehe ich heiße Gase und Flammen, die die Triebwerke verlassen, Feuer braucht Luft, also braucht auch eine Rakete Luft!". Und damit lägst du richtig! Raketen verwenden allerdings keine Luft aus ihrer umliegenden Atmosphäre. Sie nutzen stattdessen interne Oxidationsmittel, die zusammen mit Brennstoff in die Brennkammer geführt werden um dort miteinander zu reagieren. Mehr dazu aber später.
+
+## Teile einer Rakete
+Solltest du noch nicht sonderlich vertraut mit Raketen sein, könnten Sie dir wie ein großes, komplexes Objekt vorkommen, das du nicht verstehst. Das wollen wir heute ändern. Der einfachste Weg, einen komplexen Prozess zu verstehen, ist, ihn in hinreichend viele, kleinere, weniger komplexe Teilprozesse aufzuspalten, bis man diese versteht und sie wieder zusammenfügen kann. Und genau das tun wir jetzt.
+
+Eine (bemannte) Rakete besteht in den meisten Fällen auf 4 Teilen. 
+
+<br />
+<figure>
+<Image src={require(".//../../../../resources/images/starship1.jpg")} alt="SpaceX' Starship on the moon " />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Ein CGI Render des SpaceX' Starships auf dem Mond. Source: <strong>[SpaceX](https://www.spacex.com/human-spaceflight/moon/)</strong></figcaption>
+</figure>
+
+Von unten nach oben gelesen haben wir hier...
+
+### Das Antriebssystem
+Das Antriebssystem, welches in den meisten modernen Raketen einen Großteil dessen Struktur ausmacht, beinhaltet alles, was den Start der Rakete begünstigt, darunter Treibstofftanks, Pumpen, Vorbrenner sowie Brennkammern. Dieses hochkomplexe System werden wir noch sehr genau unter die Lupe nehmen, und zwar im nächsten Kapitel - <strong>[Raketentriebwerke](https://guidetothegalaxy.vercel.app/de/documentation/aerospace_engineering/rockets/engines)</strong>.
+
+### Das Guidance System
+Das Guidance System, benannt nach dem englischen Begriff "guide", zu deutsch "leiten/führen", beinhaltet umfasst Radare, Kommunikationssysteme und Bordcomputer, um die Rakete zu manövrieren oder bei Bedarf einzugreifen. Eine weitere Aufgabe des Führungssystems ist es, die Stabilität der Rakete während des Fluges zu gewährleisten, damit sie nicht weggeschleudert wird. Dies kann erreicht werden, indem der obere Teil der Rakete mit Gewicht beschwert wird, was häufig ohnehin innerhalb des Guidance Systems geschieht.
+
+### Das Payload System
+Das Payload-System beinhaltet, was auch immer die Rakete transportieren soll. Das kann je nach Kontext der Mission alles Mögliche sein: Von Rovern zum Mars über Satelliten für Starlink hin zu Menschen zu einem anderen Planeten, alles ist möglich.
+
+### Das Struktursystem
+Das Struktursystem, oft auch als Rahmen der Rakete bezeichnet, umfasst alle anderen Systeme und bestimmt die endgültige Form der Rakete. Es umfasst ebenso Wärmeschutz und Hitzeschilde.
+
+
+## Zusammenfassung
+Wie du siehst sind Raketen keine Hexerei. Am Ende des Tages bestehen sie "nur" aus den Triebwerken, ein paar Onboard-Computer, einer Payload und einer Hülle, die all diese Systeme zusammenhält. Selbstverständlich sind manche dieser Systeme intrinsisch etwas komplexer, aber es ist wichtig, eine Grundvorstellung von dem Objekt zu haben, das uns letzten Endes zu unserer neuen Heimat fliegen soll. Ich persönlich fände es schade, wenn jemand eine Rakete anschaut und nicht die geringste Ahnung hätte, was darin vorgeht.
+
+Als nächstes schauen wir uns nun, wie zuvor angekündigt, das Antriebssystem genauer an!
+
+<Analytics />
