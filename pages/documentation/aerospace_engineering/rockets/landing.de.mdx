@@ -1,0 +1,64 @@
+import Image from "next/image";
+import { Analytics } from '@vercel/analytics/react';
+import AdditionalResources from "../../../../components/AdditionalResources/AdditionalResources.tsx";
+
+# Autonome Landungen
+
+Wie zur Hölle landet eine Rakete von selbst?
+
+<br />
+<figure>
+<Image src={require(".//../../../../resources/images/landing.jpg")} alt="Landing of Falcon Booster visualized" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Illustration eines Landeverfahrens von SpaceX. Quelle: <strong>[SpaceX](https://www.spacex.com/mission/)</strong></figcaption>
+</figure>
+
+Wir werden uns verschiedene Teile der Hard- und Software ansehen, die Raketen und Booster, in diesem Fall SpaceX Falcons, während des Landevorgangs unterstützen. 2 Booster sind Teil der Falcon Heavy beim Start, bis sie in der Umlaufbahn vom Hauptteil der Rakete getrennt werden, wo sie alle Prozesse einleiten, die notwendig sind, um wieder sicher zu landen.
+
+## Wieder-entzündbare Triebwerke
+Da es sich hier um die Landung einer Rakete handelt, besteht die erste Maßnahme beim Landevorgang darin, die Richtung des Flugkörpers so anzupassen, dass er bei der Landung mit der richtigen Seite und dem richtigen Winkel auf den Boden trifft. SpaceX Falcon 9 ist mit den hauseigenen Merlin-Triebwerken ausgestattet, die wiederentzündbar sind, d. h. sie können während der Landesequenz erneut gezündet werden, um die Rakete abzubremsen oder in die gewünschte Richtung zu lenken. Dies geschieht mit TVC-Systemen (Thrust-Vector-Control) im SpaceX-Merlin-Triebwerk, die dem Booster die Möglichkeit geben, die Richtung und den Winkel des Boosters zu ändern. Hier werden einzelne Triebwerke bspw. am linken Rand entzündet, um die Rakete leicht zurück nach rechts zu neigen bzw. ihn in die gewünschte Richtung zu kippen. Hydraulische Hebel an den Booster-Triebwerken helfen bei der Änderung der Ausrichtung des Triebwerks, was zusammen mit der Wiederentzündbarkeit eine präzise Nachjustierung des Boosters während der Landesequenz ermöglicht.
+
+TVCs sind im Allgemeinen keine Wundetechnologie und nicht besonders ungewöhnlich oder neu in Orbitalflugkörpern, da sie für die meisten Missionen erforderlich sind. Sowohl das Spaceshuttle als auch die Saturn-V-Rakete verfügten bereits über diese Funktion. Wie du dir vielleicht vorstellen kannst, handelt es sich dabei um eine wichtige Komponente für den Landevorgang, da man natürlich in der Lage sein muss, den Kurs und die Richtung einer Trägerrakete zu ändern, um zu gewährleisten, dass sie aufrecht landet.
+
+<br />
+<figure>
+<Image src={require(".//../../../../resources/images/entryburn.png")} alt="Merlin engines on the booster firing during entry burn" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Merlin-Triebwerke unterhalb eines Boosters bei Entry Burn. Quelle: <strong>[SpaceX](https://www.spacex.com/mission/)</strong></figcaption>
+</figure>
+
+Bei den Falcon-Boostern von SpaceX werden diese wiederentzündbaren Triebwerke für eine sichere Landung verwendet, indem zunächst ein so genannter "Boost-Back"-Brennvorgang durchgeführt wird, um den Kurs des Boosters umzukehren. Sobald der Booster wieder in die Erdatmosphäre eintritt, erfolgt eine weitere Wiederentzündung, das so genannte "Entry Burn". Diesmal wird die Geschwindigkeit, mit der der Booster die Atmosphäre durchquert, durch eine Teilzündung der Triebwerke verringert, um die Erwärmung während des Wiedereintritts in die Atmosphäre zumindest teilweise zu mitigieren. Unmittelbar vor der Landung erfolgt die letzte, sehr starke Zündung, um die Geschwindigkeit zu verringern, mit der der Booster auf den Boden fällt, fast bis zu einem Schwebezustand, um eine sichere Landung zu gewährleisten.
+
+## Ausfahrbare Landebeine
+Die 18 Meter breiten Landebeine fahren bei der Landung nach außen, um die Rakete zu stabilisieren. In der übrigen Zeit sind sie am Rumpf der Rakete befestigt.
+
+<br />
+<figure>
+<Image src={require(".//../../../../resources/images/landinglegs.png")} alt="Landing Legs of the Falcon Booster" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Landebeine des Falcon Booster am Rumpf befestigt. Quelle: <strong>[SpaceX](https://www.spacex.com/mission/)</strong></figcaption>
+</figure>
+
+## Kaltgas (Stickstoff) Triebwerke
+Solltest du schonmal eine Landung der Falcon Booster mit angesehen haben, ist dir vielleicht weißer Rauch aufgefallen, der aus den Boostern schießt. Dabei handelt es sich um komprimiertes Stickstoffgas, dessen Schubdüsen sich am oberen Teil des Boosters befinden. Die Schubdüsen sind dafür verantwortlich, dass der Booster kippt und anschließend die gewünschte Ausrichtung beibehält.
+
+## Hyperschall-Gitterlamellen
+Insgesamt 4 ausfahrbare Gitterflossen befinden sich am unteren Teil der Zwischenstufe, die die erste und zweite Stufe der Rakete miteinander verbindet. Die in einer X-Konfiguration angeordneten Grid-Fins steuern und positionieren die Rakete auch beim Wiedereintritt, indem sie den Druckmittelpunkt verschieben. Sie helfen auch bei der Abbremsung, da sie die Rakete weniger aerodynamisch machen.
+
+<br />
+<figure>
+<Image src={require(".//../../../../resources/images/landingfins.png")} alt="Hypersonic grid fins attached to the Falcon 9" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Hyperschall-Gitterflossen an der Falcon 9. Quelle: <strong>[SpaceX](https://www.spacex.com/mission/)</strong></figcaption>
+</figure>
+
+## Autonomes Raumhafen-Drohnenschiff
+Bei Missionen, bei denen der Treibstoff knapp ist, landen die Booster manchmal auf automatisierten Drohnenschiffen im Ozean statt auf dem Startplatz. Dieses Drohnenschiff wird von einer KI gesteuert, die anhand von GPS- und Kameradaten in Echtzeit die richtige Position für die sichere Landung des Boosters ermittelt. Es ist mit 4 dieselbetriebenen Schubdüsen ausgestattet, die eine schnelle Neupositionierung während der Landesequenz gewährleisten, um den Booster einzufangen.
+
+## Fazit
+Jetzt, da wir herausgefunden haben, wie Raketen wiederverwendbar gemacht werden können und nicht nach jedem Flug entsorgt werden müssen, können wir unseren ersten Missionen ins Visier nehmen, da unsere Kosten pro Flug nun drastisch gesunken sind! Du kannst nun mehr über andere Flugkörper wie das Starship und die ISS in nachfolgenden Artikeln erfahren oder zum ersten Kapitel über den Mars springen, wenn du möchtest.
+
+<Analytics />
+
+## Zusätzliche Ressourcen
+<AdditionalResources>
+  <div>
+    <span>1. </span><li>Solltest du mehr über autonome Landungen von SpaceX erfahren wollen, findest du <a href="https://www.spacex.com/launches/" target="_blank">innerhalb der "Landing" Sektion ihrer Website</a> sicherlich, wonach du suchst.</li>
+  </div>
+</AdditionalResources>

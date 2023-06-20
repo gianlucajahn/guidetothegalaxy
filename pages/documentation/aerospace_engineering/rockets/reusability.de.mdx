@@ -1,0 +1,21 @@
+import Image from "next/image";
+import { Callout } from 'nextra-theme-docs'
+import { Analytics } from '@vercel/analytics/react';
+
+# Reusability
+
+So now we looked at how to land a rocket savely for it to be reusable in another mission. But how does it get there again? How is it being restored to base state? There has to be some wear after a flight, right?
+
+Yeah. Right after landing a booster on - for example - the droneship, it is transported back to land by said droneship. A remote-controlled robot named Octagrabber is used to hold down and stabilize the booster while sailing home. After arriving at harbor, it is lifted up onto a stand where the landing legs are being folded onto the sides of the booster again. 
+
+<br />
+<figure>
+<Image src={require(".//../../../../resources/images/folding.png")} alt="SpaceX' Falcon Booster on a folding stand" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>SpaceX' Falcon Booster on a folding stand. Source: <strong>[NASA Spaceflight](https://www.youtube.com/watch?v=sRfsSr76Ow0)</strong></figcaption>
+</figure>
+
+After folding in the landing legs, the booster is laid horizontal for it's rollback on a special transporter to HangarX, which is SpaceX refurbishment hangar at the Kennedy Space Center. According to SpaceX, the actual process of refurbishing Falcon 9's or Falcon Boosters takes around 9-10 days. Afterwards, the rocket are being brought back to their respective launch pads and are being verticalized again. Generally speaking, Falcon 9's can launch from the Kennedy Space Center's LC (Launch Complex)39A or the SLC40 at Cape Canaveral.
+
+According to them, a launch for SpaceX Falcon 9 costs them around 10 to 15 million dollars. This is just a fraction of the cost you'd face building the rocket from scratch after every flight, so naturally they can generate a lot of revenue when delivering NASA and private company aircraft or satellites to orbit for around 50-60 million per flight.
+
+<Analytics />
