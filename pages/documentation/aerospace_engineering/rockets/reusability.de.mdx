@@ -2,20 +2,20 @@ import Image from "next/image";
 import { Callout } from 'nextra-theme-docs'
 import { Analytics } from '@vercel/analytics/react';
 
-# Reusability
+# Wiederverwendbarkeit
 
-So now we looked at how to land a rocket savely for it to be reusable in another mission. But how does it get there again? How is it being restored to base state? There has to be some wear after a flight, right?
+Wir haben uns also angesehen, wie man eine Rakete sicher landet, damit sie für eine weitere Mission wiederverwendet werden kann. Aber wie kommt sie wieder dorthin? Wie wird sie wieder in den Grundzustand versetzt? Nach einem solchen Orbitalflug muss es doch eine gewisse Abnutzung geben, oder?
 
-Yeah. Right after landing a booster on - for example - the droneship, it is transported back to land by said droneship. A remote-controlled robot named Octagrabber is used to hold down and stabilize the booster while sailing home. After arriving at harbor, it is lifted up onto a stand where the landing legs are being folded onto the sides of the booster again. 
+Ja! Direkt nach der Landung eines Boosters auf - zum Beispiel - dem Drohnenschiff wird er mit dem Drohnenschiff zurück an Land gebracht. Ein ferngesteuerter Roboter namens Octagrabber wird eingesetzt, um den Booster auf dem Heimweg zu halten und zu stabilisieren. Nach der Ankunft im Hafen wird er auf einen Ständer gehoben, wo die Landebeine wieder auf die Seiten des Boosters geklappt werden.
 
 <br />
 <figure>
 <Image src={require(".//../../../../resources/images/folding.png")} alt="SpaceX' Falcon Booster on a folding stand" />
-<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>SpaceX' Falcon Booster on a folding stand. Source: <strong>[NASA Spaceflight](https://www.youtube.com/watch?v=sRfsSr76Ow0)</strong></figcaption>
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>SpaceX' Falcon Booster neben einem Octagrabber. Quelle: <strong>[NASA Spaceflight](https://www.youtube.com/watch?v=sRfsSr76Ow0)</strong></figcaption>
 </figure>
 
-After folding in the landing legs, the booster is laid horizontal for it's rollback on a special transporter to HangarX, which is SpaceX refurbishment hangar at the Kennedy Space Center. According to SpaceX, the actual process of refurbishing Falcon 9's or Falcon Boosters takes around 9-10 days. Afterwards, the rocket are being brought back to their respective launch pads and are being verticalized again. Generally speaking, Falcon 9's can launch from the Kennedy Space Center's LC (Launch Complex)39A or the SLC40 at Cape Canaveral.
+Nach dem Einklappen der Landebeine wird der Booster für den Rücktransport auf einem Spezialtransporter zum HangarX, dem SpaceX Refurbishment-Hangar im Kennedy Space Center, horizontal abgelegt. Nach Angaben von SpaceX dauert der eigentliche Prozess der Generalüberholung von Falcon 9 oder Falcon Boostern etwa 9-10 Tage. Danach werden die Raketen zu ihren jeweiligen Startrampen zurückgebracht und wieder vertikalisiert. Im Allgemeinen können Falcon 9-Raketen vom LC (Launch Complex)39A des Kennedy Space Centers oder vom SLC40 in Cape Canaveral starten.
 
-According to them, a launch for SpaceX Falcon 9 costs them around 10 to 15 million dollars. This is just a fraction of the cost you'd face building the rocket from scratch after every flight, so naturally they can generate a lot of revenue when delivering NASA and private company aircraft or satellites to orbit for around 50-60 million per flight.
+Nach eigenen Angaben kostet ein Start der SpaceX Falcon 9 etwa 10 bis 15 Millionen Dollar. Das ist nur ein Bruchteil der Kosten, die anfallen würden, wenn man die Rakete nach jedem Flug von Grund auf neu bauen würde. So können sie natürlich eine Menge Einnahmen erzielen, wenn sie Flugzeuge oder Satelliten der NASA und privater Unternehmen für etwa 50-60 Millionen pro Flug in die Umlaufbahn bringen.
 
 <Analytics />
