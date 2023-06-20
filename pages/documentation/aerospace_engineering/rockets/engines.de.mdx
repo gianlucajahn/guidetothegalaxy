@@ -1,0 +1,122 @@
+import Image from "next/image";
+import { Callout } from 'nextra-theme-docs'
+import { Analytics } from '@vercel/analytics/react';
+import AdditionalResources from "../../../../components/AdditionalResources/AdditionalResources.tsx";
+
+# Raketentriebwerke
+
+<br />
+<figure>
+<Image src={require(".//../../../../resources/images/raptor_cgi.jpg")} alt="SpaceX' Starship CGI Render" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>SpaceX' Starship CGI Render. Quelle: <strong>[ErcX](https://twitter.com/ErcXspace)</strong></figcaption>
+</figure>
+
+<Callout type="warning" emoji="⚠️">
+Disclamer: Ein Großteil der Illustrationen auf dieser Unterseite wurden von <strong>[Everyday Astronaut](https://everydayastronaut.com/raptor-engine/)</strong> erstellt. Alle Bildrechte liegen bei Ihnen.
+</Callout>
+
+## Grundlagen der Schubkraft
+Zunächst einmal brechen wir die Komplexität von Raketentriebwerken zu einem Grad herunter, der es jedem Drittklässler erlaubt, sie zu verstehen: Eine Colaflasche mit eingeworfenem Mentos. Du hast richtig gelesen. Tatsächlich passiert in beiden Beispielen ziemlich genau das Selbe, um Auftrieb zu erzeugen. 
+
+Im Beispiel unserer Colaflasche wird beim Zersetzen des Mentos-Stückchen so viel Druck durch entstehende Kohlendioxidbläschen erzeugt, dass der Inhalt der Flasche durch dessen Öffnung versucht, zu fliehen. Dieses Verhalten lässt durch das <strong>[Gesetz von Bernoulli](https://de.wikipedia.org/wiki/Bernoulli-Gleichung)</strong> erklären, welches grob besagt, dass Flüssigkeiten stets versuchen, von Hochdruck- zu Niedrigdruckgebieten zu fließen. Eine Zunahme der Geschwindigkeit führt nach ihr zu einer Abnahme des Drucks, weshalb die Flüssigkeit schlagartig aus der Flasche strömt. Alles, was wir also wirklich brauchen, ist ein unter hohem Druck stehender Treibstofftank und ein Ventil an seinem Ende, das zum Boden zeigt, und schon haben wir eine funktionierende Rakete.
+
+<strong>Richtig?</strong> Joa. Schon. Diese rein druckbasierten Raketen haben jedoch ein Bottleneck (der war nicht geplant): Wie gerade erwähnt fließen Flüssigkeiten immer von Hoch- zu Niedrigdruckgebieten, weshalb die Treibstofftanks zu jedem Zeitpunkt der Ort mit dem höchsten Druck bleiben müsste, damit unser Treibstoff aus ihnen heraus fließt. Treibstofftanks, die sehr hohem Druck standhalten können, sind oft sehr dick und bestehen zum weitesten Teil aus dicken Wänden, was bedeutet, dass sie oft nur wenig Treibstoff tragen können.
+
+Wir könnten nun entweder her gehen und versuchen, größere und dickere Treibstofftanks zu bauen, oder einen Weg zu finden, um die Energieausbeute unserer Raketentriebwerke zu erhöhen. Im Idealfall sollte man wohl beides tun, aber wir werfen zunächst einen Blick auf Ersteres.
+
+## Enthalpie
+Ein Weg, die Energieausbeute unseres Triebwerks zu erhöhen ist Enthalpie. Aber was ist das?
+
+Enthalpie $E$ ist die Summe der internen Energie (oder auch Temperatur) unseres Systems, $t$, und dem Produkt aus Drucks $p$ und Volumen $V$, demnach: $E = t + pV$. Das bedeutet, um die Energieausbeute unseres Triebwerks zu maximieren, können wir die Temperatur, das Volumen oder den Druck erhöhen. Eine Möglichkeit, das zu erreichen, bestünde darin, die Treibstoffmenge zu erhöhen, die pro Zeiteinheit aus dem Tank in die Brennkammer, die im Grunde der Auspuff einer Rakete ist, transportiert werden kann. Die "einfachste" Möglichkeit wäre, einen Motor an die Pumpe anzubauen, die Treibstoff aus dem Tank pumpt. Dadurch würde diese angetrieben und ihre Drehzahl erhöht werden. Allerdings müsste ein Motor für diesen speziellen Anwendungsfall wahnsinnig stark sein. Bei modernen Raketentriebwerken wird stattdessen ein kleines Miniatur-Raketentriebwerk an die Pumpe angehängt, um sie extrem schnell drehen zu lassen. Dieses Konzept wird als Vorbrenner bezeichnet!
+
+Lasst uns dieses Zusammenwirken von Komponenten einmal genauer betrachten und visualisieren.
+
+## Der "Open Cycle"
+<br />
+<figure>
+<Image src={require(".//../../../../resources/images/rocketengines1.jpg")} alt="Open Cycle Rocket Engine" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Open Cycle Raketentriebwerk. Quelle: <strong>[Everyday Astronaut](https://www.youtube.com/watch?v=LbH1ZDImaI8)</strong></figcaption>
+</figure>
+
+Wir werden diese Illustration in zeitlicher Reihenfolge durchgehen. Zunächst werden der Brennstoff und das Oxidationsmittel aus den Tanks durch Pumpen befördert. Diese Pumpen befördern einen großen Teil des Brennstoffs und des Oxidationsmittels in die Brennkammer, wo die Verbrennung stattfindet. Die Verbrennung ist ein chemischer Prozess, bei dem eine Substanz - in unserem Fall der Brennstoff - schnell mit Sauerstoff reagiert und Wärme abgibt. 
+
+Zusätzlich dazu wird, wie wir sehen können, ein kleiner Teil sowohl des Brennstoffs als auch des Oxidationsmittels durch kleinere Rohre zum Vorbrenner transportiert. Wenn sie im Vorbrenner zusammentreffen, findet ihre gemeinsame Reaktion statt und jede Menge Wärme wird erzeugt, was wiederum Schub erzeugt, der auf die Turbine neben dem Vorbrenner gerichtet ist. Die Turbine ist mit den Pumpen über einen kleinen Schaft verbunden, der durch ein Loch in der Mitte sowohl der Pumpen als auch der Turbine verläuft. Sobald sich die Turbine aufgrund des vom Vorbrenner ausgehenden Schubs sehr schnell zu drehen beginnt, werden die Pumpen aufgrund ihrer Verbindung zum Vorbrenner schneller gedreht, was bedeutet, dass sie mehr Brennstoff und Oxidationsmittel zum Vorbrenner transportieren können, was wiederum mehr Schub erzeugt, wodurch sich die Turbine und die Pumpen noch schneller drehen - und so weiter.
+
+Dies ist im Grunde das Kernkonzept aller Raketensysteme, die wir uns hier ansehen werden. Der einzige Unterschied zwischen ihnen ist die Art und Weise, wie effizient sie mit ihren Ressourcen umgehen. Wie du siehst, wird das überschüssige Gas aus dem Vorbrenner, nachdem es zum Antrieb der Turbine verwendet wurde, durch das Rohr auf der linken Seite abgeleitet. Deshalb nennt man dieses Prinzip auch den "Open Cycle", zu deutsch also "offenen Kreislauf". Aber das kann doch nicht sonderlich effizient sein, oder?
+
+<br />
+<figure>
+<Image src={require(".//../../../../resources/images/rocketengines3.png")} alt="SpaceX Merlin" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>SpaceX Merlin, ein Triebwerk mit "Open Cycle" und abgeleitetem Rauch. Quelle: <strong>[SpaceX](https://www.youtube.com/watch?v=LbH1ZDImaI8)</strong></figcaption>
+</figure>
+
+Nein, nicht wirklich. Die Rakete mit einer optimalen Rate von Treibstoff zu Oxidationsmittel zu betreiben würde jedoch eine solch extreme Hitze erzeugen, dass die Legierungen um das Triebwerk herum zu schmelzen beginnen würden. Um das zu verhindern werden die meisten Raketen in nicht-optimalen Verhältnissen von Treibstoff zu Oxidationsmittel betrieben. Hier unterscheidet man zwischem einem "fuel rich", also treibstoffreichen, sowie einem "oxidizer rich", also oxidationsreichen Zyklus. Leider lassen sich die Probleme des offenen Zyklus nicht ganz so leicht lösen, wie man denken mag: Das Zurückreichen des Rauchs aus der Vorbrenner-Kammer in die Brennkammer würde durch den entstandenen Ruß deren Einspritzdüsen verstopfen und im Grunde das gesamte Triebwerk unbrauchbar machen. Aber keine Sorge, das ist noch lange nicht das Ende vom Lied.
+
+## Der "Closed Cycle"
+Die erste Lösung für das oben genannte Problem wurde von sowjetischen Raketeningenieuren entwickelt, die einen sauerstoffreichen geschlossenen Kreislauf einführten, den sogenannten "Closed Cycle".
+
+<br />
+<figure>
+<Image src={require(".//../../../../resources/images/rocketengines6.jpg")} alt="Closed Cycle, oxygen-rich" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Closed Cycle, oxidationsreich. Quelle: <strong>[Everyday Astronaut](https://www.youtube.com/watch?v=LbH1ZDImaI8)</strong></figcaption>
+</figure>
+
+Der Hauptunterschied zum offenen Kreislauf, den wir zuvor betrachtet haben, besteht darin, dass bei diesem geschlossenen Kreislauf nicht nur ein Teil des Oxidationsmittels durch den Vorbrenner und ein anderer Teil direkt in die Verbrennungskammer gelangt, sondern buchstäblich das gesamte Oxidationsmittel durch den Vorbrenner fließt, wo es dann, nach Antrieb der Turbine neben dem Vorbrenner, in die Verbrennungskammer umgeleitet wird.
+
+Bei diesem sauerstoffreichen, geschlossenen Kreislauf wird dem Vorbrenner gerade so viel Brennstoff zugeführt, dass die Turbine und die Pumpen schnell genug arbeiten, um so viel Brennstoff und Oxidationsmittel in die Brennkammer zu transportieren, wie es das optimale Verhältnis erlaubt.
+
+Etwas später unternahmen die USA einen weiteren Versuch mit einem geschlossenen Kreislauf, aber sie verfolgten einen etwas anderen Ansatz: Sie verwendeten einen treibstoffreichen Zyklus. Aber <strong>Moment mal</strong>, wir haben doch gerade gelernt, dass der Ruß des ganzen Treibstoffs die Brennkammer verstopfen würde, oder? Nun, ja, mit RP-1, dem Raketentreibstoff, der im offenen Zyklus des Merlin-Triebwerks von SpaceX verwendet wurde. Die amerikanischen Ingenieure umgingen dieses Problem, indem sie Wasserstoff anstelle von RP-1 als Treibstoff verwendeten.
+
+<br />
+<figure>
+<Image src={require(".//../../../../resources/images/rocketengines7.jpg")} alt="Closed Cycle, fuel-rich" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Closed Cycle, treibstoffreich. Quelle: <strong>[Everyday Astronaut](https://www.youtube.com/watch?v=LbH1ZDImaI8)</strong></figcaption>
+</figure>
+
+Wie du hier siehst und mittlerweile vermutlich selbst nachvollziehen kannst, verwendet dieser geschlossene Kreislauf der RS-25 nicht einen, sondern zwei Vorbrenner. Beide Turbopumpen erhalten ihren eigenen Vorbrenner, aber beide werden mit Brennstoff angereichert und der gesamte Brennstoff durchläuft Vorbrenner, bevor er in der Brennkammer auf das Oxidationsmittel trifft.
+
+## Der "Full Flow Staged Combustion Cycle"
+Der letzte Zyklus, den wir uns im Rahmen dieses Kapitels anschauen, ist wenig überraschend der vermutlich effizienteste, konnte bisher aber nur von einem einzigen Team von Ingenieuren praxisreif umgesetzt werden: Dem Team von SpaceX.
+
+Der größte, technische Unterschied zwischen diesem und den vorherigen Zyklen besteht darin, dass die vorherigen Zyklen <strong>entweder</strong> oxidationsreich <strong>oder</strong> treibstoffreich betrieben wurden, während der Full Flow Zyklus <strong>sowohl treibstoffreich als auch oxidationsreich</strong> betrieben wird. Gleichzeitig.
+
+<br />
+<figure>
+<Image src={require(".//../../../../resources/images/rocketengines9.jpg")} alt="Full Flow Cycle" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Full Flow Cycle. Quelle: <strong>[Everyday Astronaut](https://www.youtube.com/watch?v=LbH1ZDImaI8)</strong></figcaption>
+</figure>
+
+Dazu werden zwei Vorbrenner verwendet, von denen einer reich an Treibstoff ist und die Treibstoffpumpe antreibt und der andere reich an Sauerstoff ist und die Oxidationsmittelpumpe antreibt. Ein Problem, das bereits von den Sowjets gelöst wurde und vom Raptor-Team bei SpaceX erneut gelöst werden musste, bestand darin, dass erhitzter und unter hohem Druck stehender Sauerstoff praktisch alles zum Schmelzen bringt, was ihm begegnet. Ähnlich wie die Sowjets musste auch SpaceX eine eigene Superlegierung, nämlich SX500, entwickeln, um den unglaublichen Bedingungen standzuhalten, denen die Rakete bei einem sauerstoffreichen Zyklus ausgesetzt ist.
+
+Der Hauptvorteil dieses speziellen Aufbaus besteht darin, dass sowohl der Brennstoff als auch das Oxidationsmittel als Gas in die Verbrennungskammer gelangen, was eine bessere Verbrennung und potenziell höhere Maximaltemperaturen ermöglicht, was, wie wir bereits gelernt haben, die Enthalpie erhöht, was wiederum die Energieausbeute unseres Systems steigert.
+
+<br />
+<figure>
+<Image src={require(".//../../../../resources/images/rocketengines10.jpg")} alt="Full Flow and Open Cycle in comparison" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Full Flow (links) und Open Cycle im Vergleich. Quelle: <strong>[Everyday Astronaut](https://www.youtube.com/watch?v=LbH1ZDImaI8)</strong></figcaption>
+</figure>
+
+So verrückt der Full-Flow Cycle auch sein mag, müssen wir beim Vergleich zum Open Cycle bedenken, dass es sich nicht um schwarze Magie zur Lösung des Rußverstopfungsproblem handelt, das wir mit dem Open Cycle hatten. Mit demselben Treibstoff, den wir im Open Cycle verwendet haben, würden wir unsere Brennkammer hier genauso verstopfen wie zuvor im Open Cycle, also ist dies lediglich eine bessere Lösung mit einem anderen Treibstoff und keine magische Lösung für das Rußproblem.
+
+Der Unterschied ist jedoch immer noch bemerkenswert. Wie du dich vielleicht erinnerst, möchte man bei einem Open Cycle nur so wenig Treibstoff und Oxidationsmittel wie möglich im Vorbrenner verwenden, da alles über die Abgase des Vorbrenners entsorgt wird und im Verbrennungsprozess nicht wiederverwendet werden kann. Beim Full Flow Cycle wird buchstäblich der gesamte Treibstoff und das gesamte Oxidationsmittel in den jeweiligen Vorbrenner geworfen. Außerdem muss man sich nicht allzu viele Gedanken über die Abdichtung machen, denn selbst wenn etwas Treibstoff durch die Dichtung am Schaft austreten würde, käme er nur mit mehr Treibstoff in Berührung. Wenn du zum treibstoffreichen Closed Cycle hinaufscrollst, wirst du sehen, weshalb das eine Verbesserung darstellt: Wenn Kraftstoff aus dem Vorbrenner, der die Oxidationsmittelpumpe antreibt, durch die Schaftdichtung austreten würde, käme er mit dem Oxidationsmittel in Berührung und würde direkt an der Turbopumpe eine Verbrennungsreaktion auslösen, die natürlich katastrophal wäre.
+
+## Fazit
+
+Ich persönlich finde es extrem beeindruckend, dass das Ingenieursteam von SpaceX einen Raketenzyklus gelöst hat, der noch nie zuvor von anderen Teams demonstriert wurde, um in den Orbit zu fliegen, einfach weil man die Probleme, mit denen man konfrontiert wird, nicht richtig vorhersehen kann, wenn man der Erste ist, der diesen Weg einschlägt.
+
+Anyway, das war's jedenfalls für's Erste mit unserem tieferen Einblick in Triebwerkstechnik. Ich bin ehrlicherweise überrascht, dass du bis hier hin gelesen hast. Wenn du mehr über die Gründe erfahren willst, die SpaceX dazu bewogen haben, Methan als Treibstoff für ihre Raptor-Triebwerke zu verwenden, empfehle ich euch das <strong>[Video von Everyday Astronaut](https://www.youtube.com/watch?v=LbH1ZDImaI8)</strong> zu diesem Thema. Abgesehen davon ist der größte Teil dieses Kapitels davon inspiriert, ich habe das meiste, was ich über Triebwerke weiß, von ihnen gelernt und alle Zyklusillustrationen, die ich verwendet habe, wurden ebenfalls von ihnen entworfen, es lohnt sich also auf jeden Fall, einen Blick darauf zu werfen, wenn du gerade herausgefunden hast, dass du dich für Raketenwissenschaften interessierst!
+
+## Zusätzliche Ressourcen
+<AdditionalResources>
+  <div>
+    <span>1. </span><li>In <a href="https://www.youtube.com/watch?v=LbH1ZDImaI8" target="_blank">diesem Video</a>redet Tim Dodd etwas detaillierter über einige der Zyklen, die wir hier besprochen haben, was das Verständnis potenziell erleichtern könnte.</li>
+  </div>
+  <div>
+    <span>2. </span><li>Solltest du dich für den Inhalt des o.g. Videos interessieren, willst aber lieber in deiner eigenen Geschwindigkeit lernen, so könnte <a href="https://everydayastronaut.com/raptor-engine/" target="_blank">dieser Artikel zum Video</a> das Richtige für dich sein.</li>
+  </div>
+  <div>
+    <span>3. </span><li><a target="_blank" href="https://www.youtube.com/@EverydayAstronaut">Everyday Astronaut</a> hat ein <a href="https://www.youtube.com/watch?v=E7MQb9Y4FAE" target="_blank">Video zusammen mit Elon Musk hochgeladen</a>, in dem Musk das Raptor-Triebwerk etwas genauer erklärt, falls du dich spezifisch für dieses Triebwerk interessieren solltest.</li>
+  </div>
+</AdditionalResources>
+
+<Analytics />
