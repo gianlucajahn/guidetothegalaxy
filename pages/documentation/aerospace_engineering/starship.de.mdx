@@ -1,0 +1,54 @@
+import Image from "next/image";
+import { Callout } from 'nextra-theme-docs'
+import { Analytics } from '@vercel/analytics/react';
+import YoutubeEmbed from "../../../components/YoutubeEmbed/YoutubeEmbed.tsx";
+import AdditionalResources from "../../../components/AdditionalResources/AdditionalResources.tsx";
+
+# Starship
+
+<br />
+<figure>
+<Image src={require(".//../../../resources/images/marsentry.jpg")} alt="SpaceX' Starship entering Mars atmosphere" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>SpaceX' Starship bei Eintritt in die Atmosphäre des Mars. Quelle: <strong>[SpaceX](https://www.spacex.com/vehicles/starship/)</strong></figcaption>
+</figure>
+
+Dieser Haufen Blech soll also bis auf absehbare Zeit das Flagschiff der menschlichen Raumfahrt darstellen.<br />
+Lasst uns einen genaueren Blick auf dessen Vergangenheit werfen.
+
+## Grundlagen
+SpaceX' Starship-Raumschiff und der Super Heavy Booster stellen ein vollständig und schnell wiederverwendbares Transportsystem dar, das sowohl die Besatzung als auch die Fracht zum Mond, zum Mars und darüber hinaus befördern kann. Das habe ich ganz toll von ihrer Website kopiert, findest du nicht? Okay, Spaß beiseite.
+
+## Historie
+Die Entwicklung des Starship begann etwa 2012, obwohl SpaceX es erstmals 2010 bei einem Treffen des AIAA (American Institute of Aeronautics and Astronautics) erwähnte, bei dem auch bekannt wurde, dass das Unternehmen an größeren Triebwerken als den bisherigen Merlin-Systemen arbeiten würde, die die Falcon 1 und 9 antrieben. Damals stellte sich SpaceX vor, dass sie zwei separate Raketentriebwerke für die untere und obere Stufe von Starship planen und entwickeln würden. Das untere Triebwerk, das sie "Merlin 2" nannten, sollte mit RP-1 als Treibstoff betrieben werden, und das obere hieß eigentlich Raptor-Triebwerk, ähnlich dem, das sie kürzlich entwickelt haben, sollte aber mit LH2 (flüssigem Wasserstoff) betrieben werden. 
+
+Wie wir nun allerdings wissen und zuvor auch in der <strong>[Raketentriebwerke](https://guidetothegalaxy.vercel.app/documentation/aerospace_engineering/rockets/engines)</strong>-Sektion beleuchtet haben, hat SpaceX sich letzten Endes dafür entschieden, das selbe Triebwerk für Booster und Starship selbst zu verwenden. Beide nutzen hier Methan als Treibstoff anstelle von RP-1 und flüssigem Wasserstoff. Wie du dich vielleicht erinnerst wäre der Full Flow Cycle der Raptor Engine mit dem geplanten Treibstoff RP-1 aufgrund des Rußproblems gar nicht umsetzbar gewesen!
+
+### Frühe Versionen
+Das Starship-Programm von SpaceX hat zahlreiche Test- und Entwicklungsphasen durchlaufen. 
+
+Prototypes Mk1 and Mk2 were built and tested in Texas and Florida, respectively, and featured three Raptor engines with the capability to reach an altitude of 5km. Starship SN1 underwent successful pressurization tests in Boca Chica, but it was destroyed during a cryogenic pressurization test. SN3 and SN4 were destroyed during testing in April and May 2020. SN5 and SN6 underwent testing and flew up to 150m. 
+
+High-altitude test flights with SN8 and SN9 were mostly successful, but they crashed on landing due to low pressure in the methane header tank and the failure of one of the engines' oxygen pre-burner. SN10 successfully completed a cryogenic proof test and two static fire tests in February 2021. It attempted two launches in March, but the first was aborted due to an engine issue and the second resulted in a hard landing and explosion. SN11 underwent a cryogenic proof test and three static fire tests before a flight test on March 30, which ended in a mid-air explosion. SN12 through SN14 never launched, and SN16 through SN19 were either scrapped or never completed.
+
+As you can see in the video below, SN15 however featured several improvements, including updated software, propellant architecture, and Raptor design.
+
+<br />
+<YoutubeEmbed embedId="7CZTLogln34" />
+
+It completed several tests before conducting a successful 10 km flight test and landing in May 2021. It was subsequently retired and added to the Rocket Garden. The following prototypes were either not completed or scrapped up to SN24.
+
+Ship 24, as of December 2022, was planned to make an orbital test flight atop Booster 7. It underwent several tests, including cryogenic proof tests, spin prime tests, and static fire tests, before being stacked on top of Booster 7. On April 20, 2023, it finally had it's first integrated flight test. After a successful liftoff however, it failed at stage seperation and was subsequently destroyed by the Flight Termination System to prevent damage on potential ground collision.
+
+## Future Outlook
+In 2024, SpaceX dearMoon program plans to send 9 civilians on a journey around the moon in one of their Starships. One of these civilians is Yusaku Maezawa, a japanese billionaire who's also funding the project. 
+
+Shortly after this project and after conducting more integrated flight tests, first cargo rockets are planned to be sent to Mars to establish a baseline of materials, life support systems and infrastructure for the first manned mars mission.
+
+## Additional Resources
+<AdditionalResources>
+  <div>
+    <span>1. </span><li>You can learn more about <a href="https://www.youtube.com/watch?v=LbH1ZDImaI8" target="_blank">Starship on the official SpaceX website as they have a subpage for it</a>.</li>
+  </div>
+</AdditionalResources>
+
+<Analytics />
