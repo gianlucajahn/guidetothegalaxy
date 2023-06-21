@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section className={styles.section}>
       <div className={styles.logoContainer}>
-        <motion.p style={{ opacity: 1 }} whileHover={{ scale: 1.15, transition: { duration: 0.7, type: "spring", bounce: 0.5 } }}>🌌</motion.p>
+        <Image src={require(".//../../resources/images/logo_new.png")} alt="BEYOND EARTH" className={styles.logo} />
       </div>
       <Image src={require(".//../../resources/images/guidetothegalaxy.png")} alt="BEYOND EARTH" width={420} height={36} className={styles.image} />
 
