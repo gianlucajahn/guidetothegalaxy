@@ -1,0 +1,55 @@
+import Image from "next/image";
+import { Callout } from 'nextra-theme-docs'
+import { Analytics } from '@vercel/analytics/react';
+import YoutubeEmbed from "../../../components/YoutubeEmbed/YoutubeEmbed.tsx";
+
+# Terraforming des Mars
+Was ist das und wie würde es funktionieren? Ist es überhaupt umsetzbar?
+
+<br />
+<figure>
+<Image src={require(".//../../../resources/images/terraforming.png")} alt="An Artist's visualization of Mars being terraformed" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Eine künstlerische Visualisierung der Terraformierung des Mars. Quelle: <strong>[Daein Ballard](https://en.wikipedia.org/wiki/File:MarsTransitionV.jpg)</strong></figcaption>
+</figure>
+
+## Grundlagen
+Wenn unsere Marsbevölkerung nun also nicht aufgrund einer Epidemie, technischer Schwierigkeiten, kultureller Konflikte, eines Krieges oder der Übernahme durch eine abtrünnige KI zusammenbricht, sterben wir trotzdem, sobald wir unsere Wohnmodule verlassen, ganz gleich, wie groß die Stadt ist. Man könnte Kuppeln bauen und sie mit Parks und Wiesen füllen, aber das wäre ein enormer Aufwand, und der Mars wäre immer noch ein Ort, der für die Allgemeinheit zu gefährlich ist, um dort zu leben. Versuchen wir, dieses Problem zu lösen.
+
+## Was ist Terraforming?
+Terraforming bedeutet, die Umwelt eines Planeten oder Mondes so zu verändern, dass er der Erde ähnelt, damit Menschen und andere Lebensformen der Erde dort leben können. Dazu gehört die Veränderung der Atmosphäre, der Oberfläche und des Klimas des Planeten, um eine bewohnbare Umgebung zu schaffen. Das Ziel ist es, eine neue Heimat für Menschen und Lebewesen mit ähnlichen Überlebensvoraussetzungen im Weltraum zu schaffen.
+
+Im Kontext des Mars würden wir das tun, indem wir Treibhausgase in die Marsatmosphäre einleiten, um sie zu erwärmen, sodass die Pole schmelzen und das darin liegende, gefrorene Wasser wieder verflüssigt wird. 
+
+### Was wir tun müssen
+Um das notwendige Ergebnis unseres Terraforming-Prozesses zu bestimmen, um auf dem Mars leben zu können, müssen wir zunächst einmal klarstellen, was uns aktuell davon abhält, auf dem Mars zu überleben. In erster Linie brauchen Menschen sowie Pflanzen Luft und Wasser. In ihrem aktuellen Zustand ist die Bildung flüssigen Wassers in der Atmosphäre des Mars allerdings nicht möglich: Das ist dem <strong>[Tripelpunkt](https://de.wikipedia.org/wiki/Tripelpunkt)</strong> zu verschulden, einem thermodynamischen Druck- und Temperaturgleichgewichtspunkt, an dem der flüssige, feste und gasförmige Zustand einer Substanz koexistieren können. Zusätzlich benötigen wir zwar Sauerstoff, allerdings könnten wir Mikroorganismen nutzen, um Sauerstoff für uns zu erzeugen. More on that later.
+
+### Mögliche Verfahren
+Das herauszufinden, war zugegebenermaßen der zeitaufwendigste Teil meiner Recherchen für dieses Projekt. Viele Konzepte wurden vorgestellt, wenige wurden konkretisiert, und noch seltener wurden Beweise vorgelegt. Ich konnte kein Konzept finden, das für meinen Geschmack effizient genug war, weshalb ich mein eigenes - eine Kombination aus verschiedenen Vorschlägen - für euch vorbereitet habe. Ein Großteil des Konzepts stammt von James Lovelock, der sein Konzept erstmals 1984 vorstellte. Weitere Quellen findest du natürlich in der Liste zusätzlicher Ressourcen zum Ende dieses Artikels. Kommen wir nun zu den Details.
+
+Super-Treibhausgase, so genannte Perfluorkohlenwasserstoffe (PFC), wie zum Beispiel Tetrafluormethan (CF₄), Hexafluorethan (C₂F₆), Schwefelhexafluorid (SF₆) oder Oktafluorpropan (C₃F₈) würden in die Marsatmosphäre eingebracht werden. Dies würde mit Hilfe hunderter von Produktionsanlagen geschehen, von denen jede etwa so groß wie ein Auto ist und die das Sonnenlicht und dessen Reflektion auf den Marsboden zur Anreicherung der PFCs nutzen würden. Diese Super-Treibhausgase absorbieren die vom Sonnenlicht und dem Regolithgestein erzeugte Energie. 
+
+Es wäre effizient, Treibhausgase mit maximalem Wärmepotenzial zu verwenden, um sicherzustellen, dass die erzeugte Atmosphäre viele Jahre lang hält. Auf diese Weise minimieren wir die Zufuhr dieser Treibhausgase, die in 1.000-10.000+ Jahren zur Aufrechterhaltung der Marsatmosphäre benötigt würde. Wenn man eine Verbindung aus Tetrafluormethan, Hexafluorethan und Schwefelhexafluorid herstellt, kann man die benötigte Masse an Treibhausgasen von mehreren Milliarden Tonnen (wenn nur CO₂ verwendet wird) auf einige Millionen Tonnen reduzieren. Fluor könnte in die Atmosphäre freigesetzt werden und würde sich mit Kohlendioxid zu Tetrafluormethan verbinden. Darüber hinaus würde bei der Reaktion atembarer Sauerstoff entstehen.
+
+Diese deutlich effizientere Methode würde die Umsetzung des Terraforming-Konzepts deutlich eher ermöglichen als oftmals angenommen. Allerdings gibt es heiße Debatten darüber, wie wir den Mars nun terraformen sollen - oder ob wir das überhaupt tun sollten: Kurzgesagt hat zum Beispiel ein tolles Video über das Terraforming des Mars mit Lasern. Schau' gern vorbei, falls du Dinge lieber visualisiert lernst!
+
+<br />
+<YoutubeEmbed embedId="HpcTJW4ur54" />
+
+## Duration
+Nach etwa 100 Jahren würden die Temperaturen auf der Marsoberfläche im Durchschnitt etwa -40 °C betragen - statt wie bisher -60 °C. Der Luftdruck würde von 0,3 auf 2 bar ansteigen. Es würde allerdings weitere 500 Jahre dauern, bis sich das Wasser im Mars verflüssigt und die Oberfläche erreicht. Der erhöhte Atmosphärendruck würde die Verdunstung von Wasser verhindern, die zuvor durch den Tripelpunkt erklärt werden konnte. Nach einiger Zeit würden sich wieder Seen und Meere bilden.
+
+Nach insgesamt 600 Jahren wäre der Mars wieder in seinem alten Zustand, denn die Lebensbedingungen auf dem roten Planeten waren nicht immer so bedrohlich wie heute. Untersuchungen der NASA belegen, dass der Mars vor 3,8 bis 3,1 Milliarden Jahren alle Voraussetzungen für Leben erfüllte.
+
+<Analytics />
+
+import AdditionalResources from "../../../components/AdditionalResources/AdditionalResources.tsx";
+
+## Zusätzliche Ressourcen
+<AdditionalResources>
+  <div>
+    <span>1. </span><li>Mehr Informationen zum Terraforming des Mars finden sich auf <a href="https://www.spacex.com/human-spaceflight/mars/" target="_blank">SpaceX Unterseite zum Mars</a>.</li>
+  </div>
+  <div>
+    <span>2. </span><li>Kurzgesagt hat ein <a href="https://www.youtube.com/watch?v=HpcTJW4ur54&embeds_referring_euri=http%3A%2F%2Flocalhost%3A3000%2F&source_ve_path=Mjg2NjY&feature=emb_logo" target="_blank">wirklich großartiges und aufwendig animiertes Video zum Prozess des Terraformings veröffentlich</a>, das dein Verständnis erleichtern könnte.</li>
+  </div>
+</AdditionalResources>
