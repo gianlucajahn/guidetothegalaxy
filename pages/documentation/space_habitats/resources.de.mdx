@@ -1,0 +1,89 @@
+import Image from "next/image";
+
+# Ressourcen
+
+<br/>
+<figure>
+<Image src={require(".//../../../resources/images/asteroidbelt.png")} alt="Artistic rendition of the Asteroid Belt" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Eine künstlerische Darstellung des Asteroidengürtels. Quelle: <strong>[WorldAtlas](https://www.worldatlas.com/space/how-big-is-the-asteroid-belt.html)</strong></figcaption>
+</figure>
+
+## Notwendige Ressourcen
+Wie du vielleicht schon vermutet hast, brauchen wir eine Menge Materialien. Der einfachste Weg, diese zu bekommen, ohne auf einem nahe gelegenen Planeten zu landen, diesen abzubauen und Raketen mit den gewonnenen Ressourcen zu starten, wäre entweder der Bau einer Schleuder von einem Planeten aus oder die Suche nach einem Ort, an dem wir die Leere des Weltraums nicht verlassen müssen, um Materialien zu bekommen. Die erste Möglichkeit sollten wir nicht ganz außer Acht lassen. Wir werden später darauf zurückkommen, und werden erfahren, warum wir uns das für ein anderes zukünftiges Vorhaben aufheben wollen.
+
+Neben den Bausteinen für unsere Habitate brauchen wir auch Wasser, für die Lebenserhaltung von Bauarbeitern (auch wenn diese zu diesem Zeitpunkt bereits rein robotisch sein könnten), für die Landwirtschaft, für mineralogische und chemische Prozesse der Ressourcenverarbeitung sowie für die Kraftstoffherstellung.
+
+Verstehe, wir brauchen sowohl Materialien als auch Wasser, also sollten wir prüfen, ob Asteroiden uns beides liefern können.
+
+## Typen von Asteroiden
+Zunächst einmal gibt es 5 verschiedene Arten von Asteroiden, die für uns interessant sein könnten:
+
+- C-Typen: Kohlenstoffhaltige Chondrite, die Kohlenstoff, Wasser und Mineralien enthalten.
+- D-Typen: Asteroiden mit Eis in ihrem Inneren
+- M-Typen: Bestehend aus Eisen, Nickel und Platin
+- S-Typen: Metallisches Eisen gemischt mit Eisen- und Magnesiumsilikaten
+- Extinct Comets: Quelle von Wasser und organischem Material
+
+Aus dem aufgetauten Eis können durch Elektrolyseprozesse Wasser und Sauerstoff gewonnen werden. Allerdings kommt nur ein kleiner Prozentsatz der Asteroiden als potenzieller Träger dieses Eises in Frage, so dass wir woanders nach Wasser suchen müssen. Ein kleiner Trost ist, dass sich der Asteroidengürtel gut für den Abbau von Gestein eignet, das wir zum Bau unserer Space Habs verwenden können.
+
+## Die Suche nach Wasser
+Wo sollen wir anfangen zu suchen? Das nächstgelegene Objekt, das als mögliche Wasserquelle für den erdnahen Teil des Sonnensystems in Frage kommt, ist der Marsmond Deimos. Die Oberfläche von Deimos ist sehr dunkel und ähnelt der von kohlenstoffhaltigen Asteroiden. Es gibt jedoch keine Eigenschaften, die auf chemisch gebundenes Wasser hinweisen. 
+
+<br/>
+<figure>
+<Image src={require(".//../../../resources/images/deimos.png")} alt="Color-enhanced view of Deimos" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Farbverbesserte Ansicht von Deimos. Quelle: <strong>[NASA/JPL-Caltech](https://solarsystem.nasa.gov/moons/mars-moons/deimos/in-depth/)</strong></figcaption>
+</figure>
+
+Wasser wird als "chemisch gebunden" bezeichnet, wenn es in die Struktur eines festen Körpers eingebaut ist - z. B. in feuchten Wohnungen, in denen Wasser in die Wände eingedrungen ist. Chemisch gebundenes Wasser kann entstehen, wenn interstitielles Wasser auf eine Temperatur erhitzt wird, die ausreicht, um das Wasser an einen nahe gelegenen Festkörper zu binden. Andererseits beschreibt interstitielles Wasser flüssiges Wasser, das in einem Hohlraum eines anderen Körpers eingeschlossen ist. Das mag ein bisschen viel sein, aber wir lernen daraus:
+
+Wenn es jemals Wasser im Inneren von Deimos gab, wurde es nicht chemisch gebunden. Aufgrund seiner geringen Dichte wird angenommen, dass Deimos einst zu den oben erwähnten "D-Typ"-Asteroiden gehörte, die in ihrem Inneren Wasser (Eis) enthielten. Aufgrund dieser Hinweise auf die Hypothese, dass Deimos der nächstgelegene kosmische Wasserlieferant in unserem Sonnensystem sein könnte, präsentierte David Kuch 1998 erstmals seinen Vorschlag, eine "Deimos Water Company" zu gründen, um den erdnahen Raum mit der wertvollen Ressource zu versorgen. Für die Umsetzung setzt Kuck auf "Kuck-Mosquitoes", die das Wasser aus Deimos "saugen" sollen. Während du versuchst, die zweideutigen Gedanken diesbezüglich zu unterdrücken, erkläre ich mal weiter:
+
+<br/>
+<figure>
+<Image src={require(".//../../../resources/images/deimosdrill.png")} alt="Kuck Mosquitoes as envisioned by  David Kuck" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Kuck Mosquitoes nach der Vision von David Kuck. Quelle: <strong>[Space Future](http://www.spacefuture.com/archive/the_deimos_water_company.shtml)</strong></figcaption>
+</figure>
+
+Diese kleinen, unbemannten Raumfahrzeuge sollen aus nicht viel mehr als Bohrgeräten, Heizelementen und einem Speichertank bestehen. Sie fliegen nach Deimos, um Wasser heraus zu fördern und einen kleinen Teil des geförderten Wassers als Treibstoff für den erneuten Start und Rückflug zu verwenden.
+
+## Transport
+Wenn wir versuchen, riesige Space Habs aus Asteroiden zu bauen, werden wir im Laufe der Zeit viele Reisen rund um das Sonnensystem unternehmen müssen. Wird das nicht sehr teuer, sowohl in Bezug auf Treibstoff als auch auf Geld? Wahrscheinlich, aber wir werden in der Lage sein, diese Kosten bis zu einem gewissen Grad zu senken, indem wir das <strong>Interplanetary Transport Network</strong> nutzen.
+
+### Interplanetary Transport Network
+
+Dabei handelt es sich nicht um eine interstellare Version der deutschen Autobahn, wie der Name vermuten lässt, sondern um ein Transportnetz, das aus einer Sammlung von Gravitationskräften verschiedener Körper in unserem Sonnensystem besteht. Zusammen bilden sie ein Reisemittel für Objekte, das sehr wenig Energie benötigt. Jedes Objekt, das keinen Antrieb verwendet, um Schub zu erzeugen, würde dabei zwei Körper gleichzeitig an ihren so genannten "Lagrange-Punkten" umkreisen. 
+
+### Lagrange-Punkte
+Lagrange-Punkte, benannt nach dem italienisch-französischen Mathematiker Joseph-Louis Lagrange, sind bestimmte Punkte im Gravitationsfeld zweier Himmelskörper, an denen ein kleines Objekt eine stabile Position relativ zu diesen Körpern einnehmen kann, ohne dass ein Antrieb oder Schub erforderlich ist. Bei diesen Punkten handelt es sich um Positionen des Gravitationsgleichgewichts, in denen die von den beiden größeren Körpern ausgeübten Gravitationskräfte die Zentrifugalkraft des kleineren Objekts ausgleichen.
+
+<br/>
+<figure>
+<Image src={require(".//../../../resources/images/itn.png")} alt="The Interplanetary Transport Network" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Das Interplanetary Transport Network. Quelle: <strong>[NASA](https://www.jpl.nasa.gov/releases/2002/release_2002_147.html)</strong></figcaption>
+</figure>
+
+Ein gängiger Ansatz besteht darin, Lagrange-Punkte als "Parkbahnen" oder "Wegpunkte" für Satelliten zu verwenden, um die Flugbahn des Satelliten zu ändern und ihn zu seinem vorgesehenen Ziel umzuleiten. So kann beispielsweise ein Raumschiff auf einer Mission zur Erkundung der äußeren Planeten die Lagrange-Punkte der Planeten, auf die es trifft (z. B. die Lagrange-Punkte des Jupiter), nutzen, um seine Flugbahn zu ändern und eine Gravitationshilfe zu erhalten. 
+
+Mit dieser Technik kann das Raumfahrzeug durch die Anziehungskraft des Planeten an Schwung gewinnen und ihn quasi "umrunden", um seine Geschwindigkeit zu erhöhen und Treibstoff zu sparen.
+
+## Zusammenfassung
+Wir können möglicherweise Wasser sammeln, indem wir Kuck Mosquitos zum Marsmond Deimos schicken, und wir können die Materialien für unsere Space Habs aus Asteroiden im Asteroidengürtel unseres Sonnensystems gewinnen. Wir haben auch herausgefunden, dass es einen kostengünstigen Weg gibt, sie an jeden gewünschten Ort zu schicken. 
+
+Aber ist das alles überhaupt machbar? Gibt es genug Asteroiden? Lies weiter, um das herauszufinden. 💁‍♂️
+
+import AdditionalResources from "../../../components/AdditionalResources/AdditionalResources.tsx";
+
+## Zusätzliche Ressourcen
+<AdditionalResources>
+  <div>
+    <span>1. </span><li>Wenn du mehr über David Kucks Idee, Deimos als Wasserquelle zu nutzen, erfahren möchtest, schau beim <a href="https://spacefuture.com/archive/the_deimos_water_company.shtml" target="_blank">ausführlicher Artikel auf SpaceFuture darüber</a> vorbei.</li>
+  </div>
+<div>
+    <span>2. </span><li>Scott Manley hat ein <a href="https://www.youtube.com/watch?v=7PHvDj4TDfM" target="_blank">prägnantes und anschauliches Video zur Erklärung von Lagrange-Punkten</a> hochgeladen. Schau gern auch dort vorbei, falls du das Konzept noch nicht ganz verstanden haben solltest.</li>
+  </div>
+</AdditionalResources>
+
+import { Analytics } from '@vercel/analytics/react';
+
+<Analytics />
