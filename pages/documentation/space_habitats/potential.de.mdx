@@ -1,0 +1,85 @@
+import Image from "next/image";
+import Spoiler from '../../../components/Spoiler/Spoiler';
+import { Callout } from 'nextra-theme-docs'
+
+# Potenzial
+
+<Callout type="warning" emoji="🧮">
+  <strong>Mathe voraus!</strong><br />Der folgende Artikel ist ziemlich rechenintensiv. Wenn du meinen Berechnungen Glauben schenkst oder einen anderen Grund haben solltest, sie zu ignorieren, kannst du gerne zum nächsten Abschnitt springen.
+</Callout>
+
+<br/>
+<figure>
+<Image src={require(".//../../../resources/images/ceres.png")} alt="A size comparison between Ceres and Earth" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Ein Größenvergleich zwischen Ceres und der Erde. Quelle: <strong>[Gregory H. Revera, NASA/JPL-Caltech](https://en.wikipedia.org/wiki/File:Ceres,_Earth_&_Moon_size_comparison.jpg)</strong></figcaption>
+</figure>
+
+## Rate mal
+
+Nachdem wir nun das "Wie?" geklärt haben, sollten wir anfangen, praktischer zu denken. Enthält der Asteroidengürtel überhaupt genug Asteroiden, damit wir daraus Space Habs bauen können? Bevor wir die Antwort auf diese Frage aufschlüsseln, lass uns raten. Was denkst du?
+
+Wie groß muss der Durchmesser eines Asteroiden sein, damit wir aus seinen Bestandteilen ein Space Habitat mit der gleichen Landmasse wie die Erde bauen können? Denk' eine Sekunde darüber nach, bevor du die Antwort offenlegst 🤔.
+
+<Spoiler headline="Einen Durchmesser von 129 Kilometer!" content="Schauen wir uns nun an, wie viel Masse wir tatsächlich an Asteroiden haben, um zu bestimmen, wie viele dieser erdgroßen Habitate wir bauen könnten." />
+
+## Tatsächliche Materialkosten
+Rechnen wir zunächst einmal das Ergebnis aus, das du so eben offengelegt hast. In einer relativ aktuellen Sommerstudie der NASA wurde geschätzt, dass man für ein Habitat mit einer Wohnfläche von 0,68 km² ungefähr 10 Millionen Tonnen Material benötigen würde. Da 0,68 km² 680.000 m² entspricht, muss man nur die 10 Millionen Tonnen durch 680.000 teilen, um die Menge an Masse zu erhalten, die für den Bau und die Abschirmung eines Quadratmeters Lebensraum erforderlich ist, also: <br />
+
+$\dfrac{10.000.000 t}{680.000m²} ~= 15$ $t/m²$
+
+Die Erde hat eine Fläche von 510.000.000 km², von der nur 29,2 % Land sind, der Rest ist von riesigen Ozeanen bedeckt. Damit verbleiben etwa 150.000.000 km² bewohnbare Fläche, die wir in unserem Space Habitat bereitstellen müssen, um es für ebenso viele Menschen bewohnbar zu machen wie die Erde. 150.000.000 km² entspricht 150.000.000.000.000 m² (150 Billionen Quadratmeter). Jetzt kennen wir also sowohl die Menge an Masse, die erforderlich ist, um einen Quadratmeter bewohnbaren Lebensraum zu schaffen, als auch die Anzahl der erforderlichen Quadratmeter, d. h. wir können beide einfach miteinander multiplizieren, um die Menge an Masse zu erhalten, die erforderlich ist, um ein Space Habitat in Erdgröße zu bauen.
+
+$150.000.000.000.000$ $m²$ $*$ $15$ $t$ = $2.250.000.000.000.000$ $t$
+
+<Callout type="info" emoji="📘">
+  <strong>Heads Up:</strong><br />Falls du Probleme hast, dem folgen: Was wir gerade berechnet haben, ist die Menge an Tonnen Asteroidenmaterial, die wir benötigen, um ein Space Habitat zu bauen, das genauso viel Lebensraum bietet wie die Erde.
+</Callout>
+
+## Unser Asteroid
+Da wir nun wissen, wie viel Masse für den Bau eines erdgroßen Space Habitat erforderlich ist, ist es an der Zeit, einen Asteroiden daraus zu machen, damit wir das Ergebnis verstehen können, das wir zuvor erhalten haben. Für dieses Beispiel nehmen wir den größten Asteroiden im Sonnensystem, Ceres. Ceres ist so groß, dass er eigentlich als Zwergplanet eingestuft wird. Seine Dichte beträgt etwa 2 Tonnen/m³. Wenn wir uns an Ceres orientieren, würde das bedeuten, dass unsere 2,25 Billiarden Tonnen, die zu einem Objekt mit einer ähnlichen Dichte wie Ceres kondensiert werden, 2 Tonnen pro m³ enthalten würden, was dem resultierenden Objekt ein Volumen von 1,125 Billiarden m³ geben würde.
+
+Wir haben nun ein Objekt mit einem Volumen von 1,125 Billiarden m³ und einer Masse von 2,25 Billiarden Tonnen. Legen wir dieses Volumen in eine Kugel und prüfen wir ihren Durchmesser. 
+
+Die Formel zur Berechnung des Durchmessers einer Kugel auf der Grundlage ihres Volumens lautet: 
+
+$D =\sqrt[3]{\cfrac{6 * V}{π} }$ <br /> <br />
+Jetzt können wir also unser Volumen einfügen: <br /> <br />
+$D =\sqrt[3]{\cfrac{6 * 1.125.000.000.000.000m^3}{π} }$ <br /> <br />
+= 129.038 Meter = 129 Kilometer. 
+
+Abgesehen davon, dass all diese Zahlen gigantisch erscheinen, bräuchte man "nur" einen Asteroiden mit einem Durchmesser von 129 Kilometern, um in einem Space Habitat ebenso viel Lebensraum wie auf der Erde zu schaffen.
+
+## Das volle Potenzial
+In der vorangegangenen Berechnung wurde lediglich versucht, die Größe - genauer gesagt, den Durchmesser - eines Asteroiden zu ermitteln, der in ein erdgroßes Space Habitat umgebaut werden kann. Aber wie viele davon könnten wir wirklich bauen?
+
+<br/>
+<figure>
+<Image src={require(".//../../../resources/images/colonyfive.png")} alt="A space colony envisioned by Blue Origin" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Eine Vision eines Stanford Torus von Blue Origin. Quelle: <strong>[Blue Origin](https://www.blueorigin.com/)</strong></figcaption>
+</figure>
+
+Keine Sorge, diese Berechnung ist deutlich einfacher als die vorherigen. Überprüfen wir zunächst, wie viele wir allein durch den Abbau von Ceres bauen könnten. Ceres hat eine Gesamtmasse von 940.000.000.000.000.000 Tonnen. Da wir 2.250.000.000.000.000 Tonnen für ein Space Habitat benötigen, müssen wir nur die Masse von Ceres durch die erforderliche Masse für ein Space Habitat teilen, um herauszufinden, wie viele wir bauen können.
+
+$\cfrac{940.000.000.000.000.000t}{2.250.000.000.000.000t} = 422,56$
+
+Allein durch den Abbau von Ceres könnten wir über 420 (🥦) erdgroße Space Habitats bauen! 
+
+Da Ceres nur etwa ein Drittel der Masse des Asteroidengürtels ausmacht, kann man davon ausgehen, dass durch den Abbau des Asteroidengürtels unseres Sonnensystems über 1.200 erdgroße Space Habitats gebaut werden können, die Lebensraum für mehrere Billionen Menschen auf einmal schaffen. 
+
+## Zusammenfassung
+Wie du siehst gibt es für uns keinen Grund, unser Sonnensystem in naher oder auch nur etwas fernerer Zukunft zu verlassen. Unter der Annahme, dass die Space Habitats keine Probleme mit sich bringen, über die im Jahr 2023 noch niemand nachgedacht hat, kann man mit Sicherheit sagen, dass sie für lange Zeit einer der größten Beiträge zum Wachstum unserer Spezies sein werden. Letztendlich werden sie es für immer bleiben, denn selbst wenn wir Zugang zu anderen Sonnensystemen erhalten, werden die meisten der neuen Bewohner dort ebenfalls in ähnlichen Weltraumkolonien leben.
+
+Eine Frage bleibt jedoch offen: <strong>Wie werden wir 1.200 dieser Space Habitats mit Strom versorgen?</strong> Lasst uns im nächsten Kapitel einen Weg finden, das zu tun.
+
+import AdditionalResources from "../../../components/AdditionalResources/AdditionalResources.tsx";
+
+## Zusätzliche Ressourcen
+<AdditionalResources>
+  <div>
+    <span>1. </span><li>Auch wenn ich einen anderen Ansatz für meine Berechnungen verwendet habe, ist <a href="http://www.science20.com/robert_inventor/blog/asteroid_resources_could_create_space_habs_trillions_land_area_thousand_earths-116541" target="_blank">Robert Walkers Artikel zu Space Habitats</a> hevorragend, umfangreich und hat einen großen Teil zu meiner Recherche beigetragen.</li>
+  </div>
+</AdditionalResources>
+
+import { Analytics } from '@vercel/analytics/react';
+
+<Analytics />
