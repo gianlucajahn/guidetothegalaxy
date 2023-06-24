@@ -307,7 +307,7 @@ export default function About() {
                 ohne Verwirrung oder Reizüberflutung zu stiften.
               <br />
               <br />
-              Nach dem Durchforsten dieser Seite werden Leser mit großer Wahrscheinlichkeit die Grundlagen der Raumfahrt verstehen und können sich an sinnvollen und konstruktiven Gesprächen über unsere mögliche/n Zukünfte beteiligen.
+              Nach dem Durchforsten dieser Seite werden Leser:innen mit großer Wahrscheinlichkeit die Grundlagen der Raumfahrt verstehen und können sich an sinnvollen und konstruktiven Gesprächen über unsere mögliche/n Zukünfte beteiligen.
             </p>
           </div>
         </div>
