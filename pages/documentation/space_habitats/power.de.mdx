@@ -1,0 +1,110 @@
+import Image from "next/image";
+
+# Energieversorgung
+
+<br/>
+<figure>
+<Image src={require(".//../../../resources/images/power.png")} alt="A Stanford Torus concept art, including outer solar panels" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Ein Stanford-Torus-Konzept, einschließlich der äußeren Sonnenkollektoren. Quelle: <strong>[NASA](https://upload.wikimedia.org/wikipedia/commons/7/73/Stanford_torus_under_construction.jpg)</strong></figcaption>
+</figure>
+
+## Vorwort
+Ursprünglich hatte ich diesen Abschnitt gar nicht eingeplant. Es erschien mir allerdings lächerlich, über 1.200 erdgroße Space Habitats zu sprechen, ohne einen halbwegs vernünftigen Einblick in ihre Energieversorgung zu geben. Lasst uns also unsere Optionen dafür abschätzen.
+
+## Energieerzeugung im Weltraum
+Wenn wir aus irgendeiner Energiequelle Strom erzeugen wollen, müssen wir natürlich zunächst nach einer solchen Energiequelle <strong>suchen</strong>. Nun, wir müssen nicht lange suchen, denn der einzige realistische Kandidat für eine Energiequelle, die ausreicht, um 1.200 Space Habitats mit Strom zu versorgen, ist unsere Sonne. Wir werden eine mögliche Stromerzeugung durch dunkle Energie nicht berücksichtigen, denn dies ist eine Dokumentation, die sich um Naturwissenschaften dreht und kein Kurs zur Verteidigung gegen die dunklen Künste.
+
+Spaß beiseite: Dunkle Energie und andere abstrakte Formen der Stromerzeugung könnten irgendwann in unserer Zukunft eine spannende Konkurrenz für die Solarenergie sein, können aber nicht berücksichtigt werden, solange wir sie nicht verstehen.
+
+Der einfachste Weg, um Strom für unsere Space Habitats zu erzeugen, wäre das Anbringen von Solarzellen auf der Außenschicht der Habitate. Allerdings stoßen wir bei diesem Ansatz auf ein paar Probleme.
+
+### Das Kausalitätsdilemma
+Hast du schon einmal von dem <strong>["Huhn oder Ei?"](https://en.wikipedia.org/wiki/Chicken_or_the_egg)</strong> Kausalitätsdilemma gehört? Es wirft die Frage auf, ob das Ei oder das Huhn zuerst da war, während beide Antworten zu einer Abhängigkeitsschleife führen, weil sowohl das Huhn als auch das Ei voneinander abhängig sind. Jetzt, wo wir darüber reden, ist es eigentlich ziemlich interessant. Du solltest dir das mal ansehen.
+
+Im Kontext unserer Energieversorgung will ich sagen: Wenn wir uns auf Solarenergie verlassen, die durch Solarpaneele an der Außenseite unserer Space Habs erzeugt wird, wie werden wir dann das erste Habitat bauen? Oder noch besser: Wie sollen wir all die (wahrscheinlich sehr ineffizienten) Maschinen antreiben, die für den Abbau von Asteroiden notwendig sind, um diese überhaupt zu einem Space Hab umbauen zu können?
+
+### Kleine Oberfläche
+Unser Torus/Donut/Ring (wie auch immer du ihn nun nennen willst) hat nicht nur eine geringe Oberfläche, sondern kann aufgrund seiner Form auch nur mit einer Seite der Sonne zugewandt sein, was die Menge an Strom, die wir hier erzeugen können, weiter einschränkt.
+
+Deshalb müssen wir ein Konzept entwickeln, das beide Probleme löst und unabhängig davon funktioniert.
+
+## Dyson-Sphären
+Die Dyson-Sphäre ist eine der populärsten, aber auch eine der effektivsten Möglichkeiten, Strom aus der Sonne zu gewinnen. Freeman Dyson konzipierte sie als Hohlkugel, die den Stern eines beliebigen Systems umschließt, mit Sonnenkollektoren auf der dem Stern zugewandten Innenseite, sodass 100% der vom inneren Stern ausgestrahlten Sonnenenergie von den Sonnenkollektoren um den Stern herum eingefangen werden kann.
+
+<br/>
+<figure>
+<Image src={require(".//../../../resources/images/dyson.png")} alt="A Dyson Sphere artwork by Kurzgesagt" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Ein Artwork einer Dyson Sphäre, courtesy of kurzgesagt.org. Quelle: <strong>[Kurzgesagt](https://www.youtube.com/watch?v=pP44EPBMb8A)</strong></figcaption>
+</figure>
+
+Bei oberflächlicher Betrachtung ist die Dyson-Sphäre ein großartiges wenn auch ehrgeiziges Konzept. Bei näherer Betrachtung stößt man jedoch auf eine Reihe von Problemen.
+
+### Energiespeicherung
+Die Sonne strahlt in jedem nur denkbaren Zeitraum eine unermessliche Energiemenge aus und hört nie auf. Sie kümmert sich nicht um Wetterbedingungen, Tag und Nacht oder andere irdische Faktoren. Davon abgesehen ist es für uns schwer, wenn nicht gar unmöglich, die gesamte Energie zu speichern, die wir mit einer solchen Dyson-Sphäre aufnehmen würden.
+
+### Energieüberschuss
+Da der KI Sektor weiter fortschreitet und stetig Verbesserung meldet, werden wir in Zukunft viele Dinge höchstwahrscheinlich nicht nur gänzlich anders sondern auch mit deutlich geringerem Energieverbrauch tun. Die Möglichkeit, Strom aus 100% der von unserem Stern ausgestrahlten Sonnenenergie zu erzeugen, klingt großartig, wäre aber wahrscheinlich unnötig, selbst wenn wir 1.200 Space Habs hätten. Das wäre kein Problem, wenn es nicht das vorherige Problem, die Energiespeicherung, gäbe.
+
+### Anziehung kleinerer Körper
+Aufgrund der großen Masse der Sonne zieht sie ständig kleinere Körper im Sonnensystem an, die in sie hineinfallen. Für unsere Sonne ist das überhaupt kein Problem, aber wenn wir eine Kugel um sie herum errichten wollen, würde diese Kugel ziemlich schnell in Stücke zerbrechen, da sie ständig mit Asteroiden beschossen werden würde.
+
+<strong>Lange Rede, kurzer Sinn:</strong> Wir brauchen eine bessere Lösung. Wie wäre es mit dem...
+
+## Dyson-Schwarm
+Ein Dyson-Schwarm ist die realistischste Variante des Konzepts von Freeman Dyson. Ein Dyson-Schwarm würde aus Billionen (oder noch mehr) von Sonnenkollektoren bestehen, die in die engere Umlaufbahn der Sonne geschleudert werden, um deren Sonnenenergie zu sammeln und sie an einen Ort zu leiten, an dem wir sie nutzen können. Sie würden im Wesentlichen genau dasselbe tun wie die Dyson-Sphäre, mit dem einzigen Unterschied, dass sie über eine bordeigene Technologie verfügen, die Kollisionen sowohl untereinander als auch mit Asteroiden verhindert.
+
+<br/>
+<figure>
+<Image src={require(".//../../../resources/images/swarm.png")} alt="Simple illustration of a Dyson Swarm" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Simple Illustration eines Dyson-Schwarms. Quelle: <strong>[Ralf C., Wikimedia](https://commons.wikimedia.org/wiki/File:Dyson_swarm.png)</strong></figcaption>
+</figure>
+
+Das einzige Problem bei diesem Konzept, das ansonsten recht einfach nachzuvollziehen ist, ist sein Umfang: Aufgrund der enormen Größe der Sonne bräuchten wir Billionen von Sonnenkollektoren, von denen jeder eine Fläche von etwa 1 km² hätte. Dies würde wiederum eine Tonne - eigentlich mehrere Quintillionen Tonnen - an Material erfordern. 
+
+Aber keine Sorge, um all diese Probleme zu lösen, werden wir uns ein recht modernes Konzept des Dyson-Schwarms von George Dvorsky und Stuart Armstrong aus dem Jahr 2012 ansehen. Das Konzept ist grob in 4 Schritte unterteilt:
+
+- 1. Der Abbau des Merkurs für Bauressourcen
+- 2. Schleudern fertiger Solarzellen aus der aktuellen Herstellungsiteration in die Sonnenumlaufbahn
+- 3. Energiegewinnung aus den fertigen Solarmodulen in der Sonnenumlaufbahn
+- 4. Wiederholung
+
+### 1. Der Abbau des Merkurs für Bauressourcen
+Der Planet Merkur ist der beste Kandidat für dieses Unterfangen, da er die geringe Entfernung zur Sonne mit einer geringen Anziehungskraft kombiniert, was unseren zweiten Schritt in Bezug auf den Energieverbrauch wesentlich einfacher macht. Der Abbau des Merkur würde autonom von Maschinen durchgeführt werden, damit wir die Produktion in späteren Iterationen entsprechend unkompliziert hochskalieren können.
+
+### 2. Inbetriebnahme der Solarzellen durch Slingshots
+Aufgrund der geringen Anziehungskraft des Merkurs und der Tatsache, dass unsere Solarmodule während ihrer Lebensdauer nirgendwo landen müssen, können wir unsere Solarmodule mit etwas, das wie eine Railgun aussieht, in den Weltraum schleudern, anstatt sie an Raketen zu befestigen, was uns eine Menge Energiekosten einsparen würde.
+
+<br/>
+<figure>
+<Image src={require(".//../../../resources/images/railgun.png")} alt="Visualization of the railgun by Kurzgesagt" />
+<figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Visualisierung einer solchen Railgun, courtesy of Kurzgesagt. Quelle: <strong>[Kurzgesagt](https://www.youtube.com/watch?v=pP44EPBMb8A)</strong></figcaption>
+</figure>
+
+### 3. Energiegewinnung
+Nach unserer ersten Iteration, d. h. nachdem wir alle Solarpaneele mit der ursprünglich verfügbaren Energie fertiggestellt in den Weltraum geschossen haben, ist es an der Zeit, die Früchte unserer Arbeit zu ernten. Mit jeder Iteration steigt die von unseren Solarzellen gewonnene Energiemenge.
+
+### 4. Wiederholung
+Aufgrund des exponentiellen Charakters unseres Projekts können wir die Leistung unserer Solarzellen in jeder Iteration verdoppeln: Aus der Energie von zwei Solarzellen können zwei weitere gebaut werden, vier in der nächsten Iteration, acht in der nächsten Iteration und so weiter. Nach "nur" 55 Iterationen ($2^{55} = 36.028.797.018.963.968$) hätten wir genug Sonnenkollektoren, um die gesamte Sonne zu umschließen. Mit der Energie, die wir jetzt sammeln, könnten wir den gesamten Planeten Venus in nur einem Jahr abbauen.
+
+## Zusammenfassung
+Auch wenn Armstrong behauptet hat, dass die Menschheit nach Abschluss dieses Projekts nie wieder Energieprobleme haben wird, glaube ich persönlich nicht, dass das stimmt. Wenn alles gut geht, werden wir noch Millionen von Jahren hier sein, und dieses Projekt könnte schon nach ein paar hundert Jahren abgeschlossen sein. Sobald wir unser Sonnensystem verlassen wollen, bringt die Verlagerung von Energie in ein anderes System nicht nur eigene Probleme mit sich, sondern würde wahrscheinlich auch bedeuten, dass wir den Weltraum in der Nähe von neuen Sternen besiedeln müssen, um die notwendige Infrastruktur für die Energieverteilung zu minimieren.
+
+Da wir nun aber so ziemlich alle oder die größten Chancen für eine Weiterentwicklung in unserem Sonnensystem ausgeschöpft haben, ist es an der Zeit, sich von konkretisierten Konzepten abzuwenden. Sollte die Menschheit in der gleichen zeitlichen Abfolge jemals bei diesem Kapitel ankommen, werden bis dahin hunderte, wenn nicht tausende von Jahren vergangen sein. Es wäre schlichtweg unprofessionell, zu glauben, dass man genaue Vorhersagen darüber machen könnte, was wir als nächstes tun werden. Unser derzeitiger technologischer Stand ist zu weit entfernt, um eine fundierte Vermutung darüber anzustellen.
+
+Doch jetzt, da wir herausgefunden haben, welche Art von Strukturen wir in unserer nahen Zukunft höchstwahrscheinlich bauen werden, fragen wir uns zu Recht: "Wo sind all die Dyson-Sphären, die andere, intelligente Lebensformen gebaut haben?". Tatsächlich sind Dyson-Sphären und Dyson-Schwärme ein so offensichtlicher und logischer Schritt in der technologischen Evolution jeder Spezies, dass die Suche nach ihnen in anderen Sonnensystemen als unser bester Weg gilt, andere Spezies zu finden. Haben wir welche gefunden? Ja? Nein? Was bedeutet die Antwort? Darüber wollen wir im nächsten Kapitel sprechen.
+
+import AdditionalResources from "../../../components/AdditionalResources/AdditionalResources.tsx";
+
+## Zusätzliche Ressourcen
+<AdditionalResources>
+  <div>
+    <span>1. </span><li>Falls du dich tatsächlich für das "Huhn oder Ei"-Kausalitätsdilemma interessierst, dass ich vorhin scherzeshalber eingeworfen hab, könnte die <a href="https://en.wikipedia.org/wiki/Chicken_or_the_egg" target="_blank">zugehörige Wikipedia-Seite interessant für dich sein</a>.</li>
+  </div>
+  <div>
+    <span>2. </span><li>Auch, wenn es im Internet aktuell nicht allzu viel nützliche Infos zu Dyson-Sphären und Schwärmen gibt, hat <a href="https://www.youtube.com/watch?v=9WbK7CafeZY" target="_blank">Kurzgesagt wie immer ein Ass im Ärmel</a>.</li>
+  </div>
+</AdditionalResources>
+
+import { Analytics } from '@vercel/analytics/react';
+
+<Analytics />
