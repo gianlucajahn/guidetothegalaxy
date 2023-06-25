@@ -17,12 +17,12 @@ const config: DocsThemeConfig = {
       <meta content="Beyond Earth" property="og:site_name"></meta>
       <meta name="theme-color" content="#3c98ed"></meta>
       <meta property="og:description" content="A thought-experiment through the future of mankind. Hand-crafted to inform and inspire." />
-      <meta property="og:image" content="https://i.imgur.com/68HSOsa.png" />
+      <meta property="og:image" content="https://i.imgur.com/q3p5h2s.png" />
       <meta name="twitter:site" content="Beyond Earth"></meta>
       <meta name="twitter:title" content="Beyond Earth"></meta>
       <meta name="twitter:description" content="A thought-experiment through the future of mankind. Hand-crafted to inform and inspire."></meta>
       <meta name="twitter:card" content="summary_large_image"></meta>
-      <meta name="twitter:image:src" content="https://i.imgur.com/68HSOsa.png"></meta>
+      <meta name="twitter:image:src" content="https://i.imgur.com/q3p5h2s.png"></meta>
     </>
   ),
   project: {
