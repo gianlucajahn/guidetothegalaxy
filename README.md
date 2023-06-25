@@ -3,7 +3,7 @@
 ![](https://i.imgur.com/xyEiJq1.png)
 
 <p align="center">An optimistic glance into the future of human spaceflight, padded with a pinch of sarcasm.</p>
-< align="center">Natively open-source and open for contribution.</p>
+<p align="center">Natively open-source and open for contribution.</p>
  
  </div>
  
