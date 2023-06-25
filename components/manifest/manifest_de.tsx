@@ -56,7 +56,7 @@ export default function Manifest() {
               whileHover={{ scale: 1.07 }}
               transition={{ duration: 0.3 }}
             >
-              ✨ Tritt gern unserer Community bei, wenn du magst!
+              ✨ Tritt gern unserer Community bei!
             </motion.p>
             <a href="https://guidetothegalaxy.vercel.app/about">
               <motion.button

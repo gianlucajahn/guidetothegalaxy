@@ -27,7 +27,7 @@
 
     h1 {
         font-size: 76px;
-        font-family: "Inter";
+        font-family: "Inter", sans-serif;
         font-weight: 700;
         max-width: 900px;
         line-height: 1.1;
@@ -435,6 +435,7 @@
 
         @media screen and (max-width: 450px) {
             font-size: 30px;
+            font-family: "Inter", sans-serif !important;
         }
     }
 
@@ -454,9 +455,11 @@
 .explore {
     @media screen and (max-width: 1290px) {
         width: 348px !important;
+        font-family: "Inter", sans-serif !important;
     }
 
     @media screen and (max-width: 650px) {
         margin-top: 6px !important;
+        font-family: "Inter", sans-serif !important;
     }
 }
