@@ -45,6 +45,10 @@
         padding-top: 20% !important;
     }
 
+    @media screen and (max-width: 550px) {
+        padding-top: 40% !important;
+    }
+
     .license {
         font-size: 14px;
         margin-top: 22px;
