@@ -1,6 +1,6 @@
 <div align="center">
  
-![](https://i.imgur.com/xyEiJq1.png)
+![](https://i.imgur.com/rU5kZCI.png)
 
 <p align="center">An optimistic glance into the future of human spaceflight, padded with a pinch of sarcasm.</p>
 <p align="center">Natively open-source and open for contribution.</p>
