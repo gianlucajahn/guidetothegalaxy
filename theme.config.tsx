@@ -2,9 +2,13 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import styles from "./theme.module.scss";
 import { useRouter } from 'next/router';
+import Logo from './components/Logo/Logo';
 
 const config: DocsThemeConfig = {
-  logo: <span className={styles.logo}>🌌 BEYOND EARTH</span>,
+  logo: <span className={styles.logo} style={{ display: "flex", gap: "8px" }}>
+     <Logo />
+     BEYOND EARTH
+    </span>,
   sidebar: {
     defaultMenuCollapseLevel: 1
   },
