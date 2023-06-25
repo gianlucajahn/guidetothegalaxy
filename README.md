@@ -1,10 +1,8 @@
 <div align="center">
  
-<h1 align="center">BEYOND EARTH</h1>
-
-<p align="center">An optimistic glance into the future of human spaceflight, padded with a pinch of sarcasm.</p>
-
 ![](https://i.imgur.com/xyEiJq1.png)
+
+<p align="center">An optimistic glance into the future of human spaceflight, padded with a pinch of sarcasm. Natively open-source and open for contribution.</p>
  
  </div>
  
