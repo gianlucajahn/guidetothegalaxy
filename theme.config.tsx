@@ -48,7 +48,7 @@ const config: DocsThemeConfig = {
   },
   useNextSeoProps() {
     const route = useRouter();
-    const title = route.pathname.includes('index') ? 'Home - Beyond Earth' : '%s – Beyond Earth';
+    const title = route.pathname.includes('index') ? 'Home | Beyond Earth' : '%s | Beyond Earth';
   
     return {
       titleTemplate: title
