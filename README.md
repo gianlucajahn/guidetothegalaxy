@@ -5,7 +5,6 @@
 <p align="center">An optimistic glance into the future of human spaceflight, padded with a pinch of sarcasm.</p>
 
 ![](https://i.imgur.com/xyEiJq1.png)
-<p align="center">An open-source learning platform</p>
  
  </div>
  
