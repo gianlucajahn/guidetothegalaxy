@@ -1,11 +1,9 @@
 <div align="center">
  
-<h1 align="center">BEYOND EARTH</h1>
+![](https://i.imgur.com/9ytFduv.png)
 
 <p align="center">An optimistic glance into the future of human spaceflight, padded with a pinch of sarcasm.</p>
-
-![](https://i.imgur.com/q3p5h2s.png)
-<p align="center">An open-source learning platform</p>
+<p align="center">Natively open-source and open for contribution.</p>
  
  </div>
  
