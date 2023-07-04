@@ -380,7 +380,7 @@ export default function About() {
           </div>
           <div className={`${css.answer} ${fifthFAQ ? css.expanded : css.none} ${css.last}`}>
             <p>
-            Es gibt viele Möglichkeiten! Abgesehen von der sehr offensichtlichen Möglichkeit, Feature-Wünsche zu erfüllen oder Kapitel zu schreiben, auf die wir uns beide geeinigt haben, hilft schon das Teilen dieser Seite dabei, deren Bekanntheit zu steigern. Gib uns ein Like auf Spotify, Apple Podcasts oder GitHub, wenn du magst. Alles hilft :)
+            Es gibt viele Möglichkeiten! Abgesehen von der sehr offensichtlichen Möglichkeit, Feature-Wünsche zu erfüllen oder Kapitel zu schreiben, auf die wir uns beide geeinigt haben, hilft schon das Teilen dieser Seite dabei, deren Bekanntheit zu steigern. Gib uns einen Like auf Spotify, Apple Podcasts oder GitHub, wenn du magst. Alles hilft :)
             </p>
           </div>
         </div>

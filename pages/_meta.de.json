@@ -28,6 +28,18 @@
         "toc": true,
         "pagination": true
       }
+    },
+    "imprint": {
+      "title": "Impressum",
+      "display": "hidden",
+      "type": "page",
+      "theme": {
+        "breadcrumb": true,
+        "footer": true,
+        "sidebar": false,
+        "toc": true,
+        "pagination": true
+      }
     }
   }
   

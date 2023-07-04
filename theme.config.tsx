@@ -36,7 +36,16 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/gianlucajahn/guidetothegalaxy',
   footer: {
-    text: 'Copyright © 2023 - Beyond Earth | The open-sourced guide on spacetravel.',
+    text: (
+      <span style={{ display: 'flex', gap: '6px' }}>
+        MIT {new Date().getFullYear()} ©{' '}
+        <a href="https://nextra.site" target="_blank">
+          Beyond Earth 
+        </a>
+        <p>|</p>
+        <a style={{ color: '#0092ff' }} href='/de/imprint'>Impressum</a>
+      </span>
+    )
   },
   i18n: [
     { locale: 'en', text: 'English' },
