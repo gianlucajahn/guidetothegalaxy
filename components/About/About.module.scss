@@ -721,11 +721,12 @@
   .boxes {
     margin-top: 110px;
     display: flex;
-    gap: 85px;
+    gap: 50px;
 
     @media screen and (max-width: 600px) {
       flex-direction: column;
       margin-top: 60px;
+      gap: 85px;
     }
 
     @media screen and (max-width: 515px) {
@@ -736,10 +737,11 @@
     .boxesMiddle {
       border-right: 1px solid #1c1c1c;;
       position: relative;
-      padding-right: 20px;
+      padding-right: 50px;
 
       @media screen and (max-width: 600px) {
         border-right: none;
+        padding-right: 10px;
       }
     }
 
