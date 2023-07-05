@@ -36,10 +36,16 @@
       "theme": {
         "breadcrumb": true,
         "footer": true,
-        "sidebar": false,
+        "sidebar": true,
         "toc": true,
         "pagination": true
       }
+    },
+    "shop": {
+      "title": "Shop",
+      "type": "page",
+      "href": "https://my-store-6112987.creator-spring.com",
+      "newWindow": true
     }
   }
   
