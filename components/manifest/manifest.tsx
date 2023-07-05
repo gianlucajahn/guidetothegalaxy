@@ -69,7 +69,7 @@ export default function Manifest() {
             >
               ✨ Join our Community!
             </motion.p>
-            <a href="https://guidetothegalaxy.vercel.app/about">
+            <a href="https://www.beyondearth.gg/about">
               <motion.button
                 className={styles.explore}
                 whileHover={{ scale: 1.07 }}

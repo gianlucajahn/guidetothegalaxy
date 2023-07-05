@@ -19,7 +19,7 @@ export default function Hero() {
       <p className={styles.slogan}>An optimistic glance into the future of human spaceflight, padded with a pinch of sarcasm.</p>
 
       <div className={styles.buttonContainer}>
-        <a href="https://guidetothegalaxy.vercel.app/documentation/introduction"><button className={styles.brightButton}>Start reading</button></a>
+        <a href="https://beyondearth.gg/documentation/introduction"><button className={styles.brightButton}>Start reading</button></a>
         <a href="https://github.com/gianlucajahn/guidetothegalaxy" target="_blank"><button className={styles.darkButton} style={{ color: "white !important" }}>GitHub</button></a>
       </div>
 
