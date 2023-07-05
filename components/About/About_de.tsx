@@ -220,11 +220,21 @@ export default function About() {
         <div className={css.boxes}>
           <div className={css.boxesLeft}>
             <div className={css.box}>
+              <Image
+                className={css.teaser}
+                src={require(".//../../resources/images/website_ger.png")}
+                alt="Location"
+              />
               <span>
                 <strong>Deutsche Artikel</strong> auf unserer Website
               </span>
             </div>
             <div className={css.box}>
+              <Image
+                className={css.teaser}
+                src={require(".//../../resources/images/website_eng.png")}
+                alt="Location"
+              />
               <span>
                 <strong>Englische Artikel</strong> auf unserer Website
               </span>

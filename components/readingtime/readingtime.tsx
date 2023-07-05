@@ -56,7 +56,7 @@ export default function ReadingTime(props: ReadingTimeProps) {
 
       <div className={styles.right}>
         <p>Reading Time: {readTime ? readTime : null} minutes</p>
-        <p>Audiobook: {audiobookDuration ? audiobookDuration : null} minutes</p>
+        <p>Audiobook: In the works ⚠️</p>
       </div>
     </div>
   );
