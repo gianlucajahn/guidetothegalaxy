@@ -1,10 +1,14 @@
 import GuideToTheGalaxy from "../../components/text/guidetothegalaxy.tsx";
 import AudioPlayer from "../../components/audioplayer/audioplayer.tsx";
 import ReadingTime from "../../components/readingtime/readingtime.tsx";
+import TestAuth from '../../components/testFirebase/TestAuth.jsx';
+import SaveArticleSection from '../../components/testFirebase/SaveArticleSection.jsx';
 import Image from "next/image";
 
 <GuideToTheGalaxy />
 An optimistic glance into the future of human spaceflight, padded with a pinch of sarcasm. <br/> <br/>
+
+<TestAuth />
 
 <ReadingTime />
 <AudioPlayer />
@@ -43,6 +47,8 @@ Sources for all the information provided on a page can be found in the "Addition
 ## News
 Upon being done summarizing all of our journey up to our current understanding of physics and space around us, I will also introduce a "News" section to this website. Spacetravel is and will for many decades be a growing field that does 
 not yet have any form of newspage that bundles all of the news around it. I intend to do that. Stay tuned or...
+
+<SaveArticleSection article="introduction"/>
 
 import { Callout } from 'nextra-theme-docs'
  
