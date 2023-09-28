@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import {
   GoogleAuthProvider,
   onAuthStateChanged,
@@ -6,17 +5,11 @@ import {
   signOut,
 } from "firebase/auth";
 import {
-  addDoc,
-  collection,
   doc,
   getDoc,
-  setDoc,
-  getDocs,
-  collectionGroup,
-  query,
+  setDoc
 } from "firebase/firestore";
 import { useState } from "react";
-import { FoodModal } from "./FoodModal";
 import { auth, db } from "/firebase.js";
 
 import styles from "./firebase.module.css";

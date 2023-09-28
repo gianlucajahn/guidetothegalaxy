@@ -1,23 +1,10 @@
-import classNames from "classnames";
 import {
-  addDoc,
-  collection,
   doc,
   getDoc,
-  setDoc,
-  getDocs,
-  collectionGroup,
-  query,
+  setDoc
 } from "firebase/firestore";
-import { useState, useEffect } from "react";
-import { FoodModal } from "./FoodModal";
+import { useEffect, useState } from "react";
 import { auth, db } from "/firebase.js";
-import {
-  GoogleAuthProvider,
-  onAuthStateChanged,
-  signInWithPopup,
-  signOut,
-} from "firebase/auth";
 
 import styles from "./firebase.module.css";
 
