@@ -1,0 +1,81 @@
+.button {
+  padding: 6px 12px;
+  background-color: rgba(249, 250, 251, 0.1);
+  border-radius: 8px;
+}
+
+.login {
+  border: 1px solid rgb(84, 69, 223);
+}
+
+.logout {
+  border: 1px solid rgb(226, 89, 107);
+}
+
+#body {
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 15px;
+}
+
+.articleRead {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(99, 158, 226, 0.2);
+  border: 1px solid rgba(99, 158, 226, 0.3);
+  border-radius: 8px;
+  padding: 10px 0px;
+}
+
+#articleReadButton {
+  background-color: rgba(26, 114, 214, 0.2);
+  border: 1px solid rgba(26, 114, 214, 0.3);
+}
+
+#articleReadButton:hover {
+  background-color: rgba(99, 158, 226, 0.2);
+}
+
+#articleReadButton:active {
+  box-shadow: 0 1px 3px 0 rgb(99, 158, 226, 0.3), 0 1px 2px -1px rgb(99, 158, 226, 0.3);
+}
+
+#notReadButton {
+  background-color: rgba(214, 70, 26, 0.2);
+  border: 1px solid rgba(214, 70, 26, 0.3);
+}
+
+#notReadButton:hover {
+  background-color: rgba(226, 139, 99, 0.2);
+}
+
+#notReadButton:active {
+  box-shadow: 0 1px 3px 0 rgb(226, 139, 99, 0.3), 0 1px 2px -1px rgb(226, 139, 99, 0.3);
+}
+
+.articlePrev {
+  width: 100%;
+  padding: 6px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.articleList {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+}

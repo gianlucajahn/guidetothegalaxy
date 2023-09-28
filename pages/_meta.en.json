@@ -18,6 +18,17 @@
       "pagination": true
     }
   },
+  "account": {
+    "title": "Account",
+    "type": "page",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": true,
+      "pagination": true
+    }
+  },
   "about": {
     "title": "About",
     "type": "page",
