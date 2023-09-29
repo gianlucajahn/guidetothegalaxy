@@ -3,7 +3,7 @@ import {
 } from "firebase/auth";
 import { useState } from "react";
 import SaveArticle from "./SaveArticle";
-import TestAuth from "./TestAuth";
+import LoginButton from "./LoginButton.jsx";
 import { auth } from "/firebase.js";
 
 export default function SaveArticleSection(props) {
@@ -14,6 +14,6 @@ export default function SaveArticleSection(props) {
   });
 
   return (
-    <>{user == undefined || user == null ? <TestAuth /> : <SaveArticle article={props.article} />}</>
+    <>{user == undefined || user == null ? <LoginButton /> : <SaveArticle article={props.article} />}</>
   );
 }

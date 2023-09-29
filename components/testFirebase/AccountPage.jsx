@@ -3,7 +3,7 @@ import {
 } from "firebase/auth";
 import { useState } from "react";
 import ArticleList from "./ArticleList";
-import TestAuth from "./TestAuth";
+import LoginButton from "./LoginButton.jsx";
 import { auth } from "/firebase.js";
 
 
@@ -15,6 +15,9 @@ export default function AccountPage() {
   });
 
   return (
-    <>{user == undefined || user == null ? <TestAuth /> : <ArticleList user={user} />}</>
+    <>{user == undefined || user == null ? <LoginButton /> : <>
+    <ArticleList user={user} />
+    <LoginButton />
+  </>}</>
   );
 }
