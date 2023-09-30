@@ -14,6 +14,6 @@ export default function SaveArticleSection(props) {
   });
 
   return (
-    <>{user == undefined || user == null ? <LoginButton /> : <SaveArticle article={props.article} />}</>
+    <>{user == undefined || user == null ? <LoginButton /> : <SaveArticle user={user} article={props.article} />}</>
   );
 }

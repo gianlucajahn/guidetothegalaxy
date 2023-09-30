@@ -1,11 +1,12 @@
 import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut } from "firebase/auth";
-import { doc, getDoc, setDoc } from "firebase/firestore";
+import { doc, setDoc } from "firebase/firestore";
 import { useState } from "react";
+import { getDocSnap } from "../../helpers/firebaseFunctions";
 import { auth, db } from "/firebase.js";
 
 import styles from "./firebase.module.css";
 
-export default function TestAuth() {
+export default function LoginButton() {
   const provider = new GoogleAuthProvider();
 
   const [loggedIn, setLoggedIn] = useState(false);
@@ -23,7 +24,7 @@ export default function TestAuth() {
   });
 
   async function addNewUserDoc(user) {
-    const docSnap = await getDoc(doc(db, "users", user.uid));
+    const docSnap = await getDocSnap(user.uid);
     if (!docSnap.exists()) {
       await setDoc(doc(db, "users", user.uid), {
         email: user.email,
