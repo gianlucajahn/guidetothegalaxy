@@ -1,4 +1,9 @@
-import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut } from "firebase/auth";
+import {
+  GoogleAuthProvider,
+  onAuthStateChanged,
+  signInWithPopup,
+  signOut,
+} from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import { useState } from "react";
 import { getDocSnap } from "../../helpers/firebaseFunctions";
@@ -51,15 +56,20 @@ export default function LoginButton() {
       logout
     </button>
   ) : (
-    <button className={`${styles.button} ${styles.login}`} onClick={login}>
-      login
-    </button>
+    <div className={styles.loginContainer}>
+      <button className={`${styles.button} ${styles.login}`} onClick={login}>
+        Login
+      </button>
+      <button className={`${styles.button} ${styles.login}`} onClick={login}>
+        Sign Up
+      </button>
+    </div>
   );
 
   return (
     <div id={styles.body}>
       <div className={styles.header}>
-        <div>{loggedIn ? currentUser.displayName : "Gast"}</div>
+        <div>{loggedIn ? currentUser.displayName : null}</div>
         {button}
       </div>
     </div>

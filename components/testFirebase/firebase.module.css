@@ -5,7 +5,20 @@
 }
 
 .login {
-  border: 1px solid rgb(84, 69, 223);
+  transition: 0.15s all;
+  padding: 6px 18px 8px 18px;
+  min-width: 218px;
+  max-width: 360px;
+}
+
+.login:hover {
+  background-color: #0093ff;
+}
+
+.loginContainer {
+  margin-top: 14px;
+  display: flex;
+  gap: 6px;
 }
 
 .logout {
@@ -20,7 +33,7 @@
 .header {
   margin-top: 10px;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   gap: 15px;
 }

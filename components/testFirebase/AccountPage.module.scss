@@ -1,0 +1,27 @@
+.account {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px 31%;
+
+    h1 {
+        font-size: 74px;
+        margin-bottom: 6px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.0125em;
+    }
+
+    p {
+        font-size: 18px;
+        font-family: "Inter", sans-serif;
+    }
+
+    figcaption {
+        margin-bottom: 14px;
+    }
+
+    .troll {
+        margin-top: 28px;
+    }
+}
