@@ -29,6 +29,17 @@
         "pagination": true
       }
     },
+    "account": {
+      "title": "Account",
+      "type": "page",
+      "theme": {
+        "breadcrumb": true,
+        "footer": true,
+        "sidebar": true,
+        "toc": true,
+        "pagination": true
+      }
+    },
     "imprint": {
       "title": "Impressum",
       "display": "hidden",

@@ -18,8 +18,8 @@
       "pagination": true
     }
   },
-  "account": {
-    "title": "Account",
+  "about": {
+    "title": "About",
     "type": "page",
     "theme": {
       "breadcrumb": true,
@@ -29,8 +29,8 @@
       "pagination": true
     }
   },
-  "about": {
-    "title": "About",
+  "account": {
+    "title": "Account",
     "type": "page",
     "theme": {
       "breadcrumb": true,
