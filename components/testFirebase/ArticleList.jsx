@@ -3,9 +3,10 @@ import { useEffect, useState } from "react";
 import { db } from "/firebase.js";
 import { auth } from "/firebase.js";
 import { onAuthStateChanged, signInWithPopup, signOut } from "firebase/auth";
-import styles from "./firebase.module.css";
+import styles from "./firebase.module.scss";
 import allArticles from "./allArticles";
 import { getDocSnap } from "../../helpers/firebaseFunctions";
+import Image from "next/image";
 
 export default function ArticleList({ user }) {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -63,17 +64,34 @@ export default function ArticleList({ user }) {
   const articles = allArticles.map((article) => (
     <div className={styles.articlePrev}>
       <h2>{article.title}</h2>
-      <p>{article.desc}</p>
-      <div className={styles.status}>{userArticles[article.title] ? "Article read" : "Not read"}</div>
+      <Image
+        src={require(`../../resources/images/${article.image}.png`)}
+        alt="Background"
+        className={`${styles.card} ${styles.background}`}
+      />
+      <p>{article.desc.slice(0, 45) + "..."}</p>
+      <div
+        className={`${styles.status} ${
+          userArticles[article.title] ? styles.read : styles.notread
+        }`}
+      >
+        {userArticles[article.title] ? "Article read" : "Not read"}
+      </div>
     </div>
   ));
 
   return (
     <div className={styles.articleList}>
       <h1 className={styles.greeting}>
-        Hey, {currentUser.displayName?.substring(0, currentUser.displayName.indexOf(" "))}
+        Hey,{" "}
+        {currentUser.displayName?.substring(
+          0,
+          currentUser.displayName.indexOf(" ")
+        )}
       </h1>
-      <div className={styles.array}>{articles}</div>
+      <div className={styles.list}>
+        <div className={styles.array}>{articles}</div>
+      </div>
     </div>
   );
 }

@@ -9,7 +9,7 @@ import { useState } from "react";
 import { getDocSnap } from "../../helpers/firebaseFunctions";
 import { auth, db } from "/firebase.js";
 
-import styles from "./firebase.module.css";
+import styles from "./firebase.module.scss";
 
 export default function LoginButton() {
   const provider = new GoogleAuthProvider();

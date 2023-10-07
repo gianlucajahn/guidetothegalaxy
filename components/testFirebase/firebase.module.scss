@@ -79,36 +79,62 @@
 }
 
 .articlePrev {
-  padding: 16px;
+  padding: 16px 10px;
   display: flex;
   flex-direction: column;
   gap: 6px;
   position: relative;
-  overflow: hidden;
+  cursor: pointer;
   height: 220px !important;
-  min-width: 300px !important;
-  max-width: 300px !important;
+  width: 300px !important;
   border-radius: 20px;
-  background-color: #0093ff;
+}
+
+.card {
+  height: 220px !important;
+  width: 300px !important;
+  border-radius: 20px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(6px);
 }
 
 .articlePrev p {
   padding-left: 8px;
-  max-width: 180px;
+  max-width: 260px;
+  max-height: 46px;
+  overflow: hidden;
+  margin-top: -6px !important;
 }
 
 .articlePrev h2 {
   font-size: 28px;
   font-family: "Inter", sans-serif;
   padding-left: 7px;
-  margin-top: 18px;
+  margin-top: 92px;
+  font-weight: 600;
 }
 
 .articlePrev .status {
   position: absolute;
-  top: 10pxpx;
-  left: 24px;
+  top: 12px;
+  left: 13px;
   z-index: 100;
+  padding: 4px 9px;
+  border-radius: 10px;
+
+  &.read {
+    background-color: rgb(0, 179, 0);
+  }
+
+  &.notread {
+    background-color: rgb(83, 83, 83);
+  }
 }
 
 .articleList {
@@ -118,13 +144,17 @@
   align-items: start;
   gap: 14px;
   padding: 50px 22%;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .array {
   display: flex;
-  gap: 24px;
-  overflow: scroll;
+  gap: 16px;
+}
+
+.list {
+  width: 100%;
+  overflow-x: scroll;
 }
 
 .greeting {

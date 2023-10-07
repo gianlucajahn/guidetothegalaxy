@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import styles from "./firebase.module.css";
+import styles from "./firebase.module.scss";
 
 import { getDocSnap, getReadArticles, setReadArticles } from "../../helpers/firebaseFunctions";
 
