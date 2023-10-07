@@ -4,9 +4,10 @@ import { db } from "/firebase.js";
 import { auth } from "/firebase.js";
 import { onAuthStateChanged, signInWithPopup, signOut } from "firebase/auth";
 import styles from "./firebase.module.scss";
-import allArticles from "./allArticles";
+import allArticles from "./allArticles.ts";
 import { getDocSnap } from "../../helpers/firebaseFunctions";
 import Image from "next/image";
+import allChapters from "./allArticles.ts";
 
 export default function ArticleList({ user }) {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -61,21 +62,34 @@ export default function ArticleList({ user }) {
     return unsub;
   });
 
-  const articles = allArticles.map((article) => (
-    <div className={styles.articlePrev}>
-      <h2>{article.title}</h2>
-      <Image
-        src={require(`../../resources/images/${article.image}.png`)}
-        alt="Background"
-        className={`${styles.card} ${styles.background}`}
-      />
-      <p>{article.desc.slice(0, 45) + "..."}</p>
-      <div
-        className={`${styles.status} ${
-          userArticles[article.title] ? styles.read : styles.notread
-        }`}
-      >
-        {userArticles[article.title] ? "Article read" : "Not read"}
+  const articles = allChapters.map((chapter) => (
+    <div className={styles.chapter}>
+      <h1 className={styles.chapterTitle}>{chapter.title}</h1>
+      <p className={styles.chapterDesc}>{chapter.desc}</p>
+
+      <div className={styles.array}>
+      {chapter.articles.map((art, i) => {
+        return (
+          <div>
+            <div className={styles.articlePrev}>
+              <h2>{art.title}</h2>
+              <Image
+                src={require(`../../resources/images/${art.image}`)}
+                alt="Background"
+                className={`${styles.card} ${styles.background}`}
+              />
+              <p>{art.desc.slice(0, 75) + "..."}</p>
+              <div
+                className={`${styles.status} ${
+                  userArticles[art.title] ? styles.read : styles.notread
+                }`}
+              >
+                {userArticles[art.title] ? "Article read" : "Not read"}
+              </div>
+            </div>
+          </div>
+        );
+      })}
       </div>
     </div>
   ));
@@ -89,9 +103,12 @@ export default function ArticleList({ user }) {
           currentUser.displayName.indexOf(" ")
         )}
       </h1>
-      <div className={styles.list}>
-        <div className={styles.array}>{articles}</div>
-      </div>
+      <p className={styles.introduction}>
+        This is your profile! Here, you can track your progress, mark articles
+        as read/listened to and jump to whichever article you'd like. Feel free
+        to look around.
+      </p>
+      {articles}
     </div>
   );
 }
