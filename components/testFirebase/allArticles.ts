@@ -95,7 +95,7 @@ const allChapters = [
             {
                 title: 'Marsian Basecamp',
                 desc: 'A visualization and explanation of what our first Marsian Basecamp could and most likely will look like once we shoot our first rockets there.',
-                image: 'basebuild1.jpg'
+                image: 'gateway.png'
             },
             {
                 title: 'First City',
