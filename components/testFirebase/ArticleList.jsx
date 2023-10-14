@@ -24,6 +24,10 @@ export default function ArticleList({ user }) {
     }
   });
 
+  const expandText = () => {
+
+  }
+
   async function addNewUserDoc(user) {
     const docSnap = await getDocSnap(user.uid);
     if (!docSnap.exists()) {
@@ -68,28 +72,53 @@ export default function ArticleList({ user }) {
       <p className={styles.chapterDesc}>{chapter.desc}</p>
 
       <div className={styles.array}>
-      {chapter.articles.map((art, i) => {
-        return (
-          <div>
-            <div className={styles.articlePrev}>
-              <h2>{art.title}</h2>
-              <Image
-                src={require(`../../resources/images/${art.image}`)}
-                alt="Background"
-                className={`${styles.card} ${styles.background}`}
-              />
-              <p>{art.desc.slice(0, 75) + "..."}</p>
-              <div
-                className={`${styles.status} ${
-                  userArticles[art.title] ? styles.read : styles.notread
-                }`}
-              >
-                {userArticles[art.title] ? "Article read" : "Not read"}
+        {chapter.articles.map((art, i) => {
+          const baseText = art.desc.slice(0, 75);
+          const additionalText = art.desc.slice(75, 125);
+          const [isHovered, setIsHovered] = useState(false);
+
+          useEffect(() => {
+            const text = document.getElementById('additional-text');
+            if (text) {
+              if (isHovered) {
+                if (!text) {
+                  return;
+                }
+                setTimeout(() => {
+                  text.style.opacity = 1;
+                }, 100)
+              } else {
+                if (!text) {
+                  return;
+                }
+                text.style.opacity = 0;
+              }
+            }
+          }, [isHovered]);
+
+          return (
+            <div>
+              <div className={styles.articlePrev}>
+                <Image
+                  src={require(`../../resources/images/${art.image}`)}
+                  alt="Background"
+                  className={`${styles.card} ${styles.background}`}
+                />
+                <div className={styles.info} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                  <h2>{art.title}</h2>
+                  <p>{baseText}{isHovered ? <span className={styles.additionalText} id="additional-text">{additionalText}</span> : '...'}</p>
+                </div>
+                <div
+                  className={`${styles.status} ${
+                    userArticles[art.title] ? styles.read : styles.notread
+                  }`}
+                >
+                  {userArticles[art.title] ? "Article read" : "Not read"}
+                </div>
               </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
       </div>
     </div>
   ));

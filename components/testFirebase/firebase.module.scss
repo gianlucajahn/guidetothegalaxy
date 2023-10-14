@@ -89,9 +89,26 @@
   min-width: 369px !important;
   border-radius: 20px;
 
-  &:hover {
-    h2 {
-      margin-top: 60px;
+  .info {
+    padding: 0 6px 6px 6px;
+    border-radius: 16px;
+    height: 100px;
+    margin-top: 105px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    transition: 0.2s all;
+
+    &:hover {
+      height: 140px;
+      margin-top: 65px;
+
+      h2 {
+        margin-top: 4px;
+      }
+
+      p {
+        max-height: 70px;
+      }
     }
   }
 }
@@ -119,11 +136,15 @@
   margin-top: -6px !important;
 }
 
+.additionalText {
+  transition: 0.2s all;
+  opacity: 0;
+}
+
 .articlePrev h2 {
   font-size: 28px;
   font-family: "Inter", sans-serif;
   padding-left: 7px;
-  margin-top: 92px;
   font-weight: 600;
   transition: 0.2s ease-in-out all;
 }

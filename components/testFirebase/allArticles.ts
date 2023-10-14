@@ -5,7 +5,7 @@ const allChapters = [
         articles: [
             {
                 title: 'Introduction',
-                desc: 'Introduction Section to help users accomodate with the aerospace engineering industry and the journey ahead of us',
+                desc: 'Introduction Section to help users accomodate with the aerospace engineering industry and the journey ahead of us.',
                 image: 'introduction.png'
             }
         ]
@@ -16,7 +16,7 @@ const allChapters = [
         articles: [
             {
                 title: 'Motivation',
-                desc: 'What is our motivation to travel to space? Is it a reasonable venture? Should we not pursue it at all?',
+                desc: 'What is our motivation to travel to space? Is it a reasonable venture? Should we not pursue it at all? Let us find out.',
                 image: 'starshipramp.jpg'
             },
             {
@@ -32,32 +32,32 @@ const allChapters = [
         articles: [
             {
                 title: 'Rocket Basics',
-                desc: 'How are Rockets powered, how do they land, how can we afford them, what are they even made of? We will look into all of those questions.',
+                desc: 'How are Rockets powered, how do they land, how can we afford them, what are they even made of? We will look into all of this!',
                 image: 'falconheavy.jpg'
             },
             {
                 title: 'Rocket Engines',
-                desc: 'An in-depth look into the physics and the functionality and different cycle models behind modern rocket engines, fuel and oxidizers.',
+                desc: 'An in-depth look into the physics, functionality and different cycle models behind modern rocket engines.',
                 image: 'raptor_cgi.jpg'
             },
             {
                 title: 'Autonomous Landing',
-                desc: 'Since rockets like the Falcon 9 do not land manually but autonomously, how do they do that? What is necessary to achieve this behaviour?',
+                desc: 'Since rockets like the Falcon 9 do not land manually but autonomously, how do they do that? Whats necessary to achieve this?',
                 image: 'landing.jpg'
             },
             {
                 title: 'Reusability',
-                desc: 'Check out what is necessary to re-use rockets after they have landed and how we can use these principles to cut down our cost-to-orbit significantly.',
+                desc: 'Check out what is necessary to re-use rockets after they have landed and how we can cut down our cost-to-orbit significantly.',
                 image: 'entryburn.png'
             },
             {
                 title: 'Starship',
-                desc: 'As the biggest rocket of our time and the trusted vehicle to fly NASA teams around and to the moon, we should take a look at Starships history.',
+                desc: 'As the biggest rocket of our time and NASAs trusted moon rocket, we should take a look at Starships history.',
                 image: 'starship1.webp'
             },
             {
                 title: 'Space Stations',
-                desc: 'We will find out what the first Space Stations looked like, what kind of a desaster they were and why we are financing space stations at all.',
+                desc: 'We will find out what the first Space Stations looked like, what kind of a desaster they were and why space stations exist.',
                 image: 'iss.png'
             },
         ]
@@ -73,12 +73,12 @@ const allChapters = [
             },
             {
                 title: 'Dear Moon Mission',
-                desc: 'Learn more about SpaceX and Yusaku Maezawa Dear Moon Mission, when its going to launch and who is going to be present on board.',
+                desc: 'Learn more about SpaceX and Yusaku Maezawa Dear Moon Mission and who is going to be on board.',
                 image: 'dearmoon.png'
             },
             {
                 title: 'Artemis Basecamp',
-                desc: 'A deep dive into NASAs plans for the Artemis Lunar Basecamp, their Lunar Terrain Vehicle and their new Space Station in lunar orbit.',
+                desc: 'A deep dive into NASAs plans for the Artemis Lunar Basecamp, their Lunar Terrain Vehicle and their new Space Station.',
                 image: 'gateway.png'
             },
         ]
@@ -94,17 +94,17 @@ const allChapters = [
             },
             {
                 title: 'Marsian Basecamp',
-                desc: 'A visualization and explanation of what our first Marsian Basecamp could and most likely will look like once we shoot our first rockets there.',
+                desc: 'A visualization and explanation of what our first Marsian Basecamp could and most likely will look like.',
                 image: 'gateway.png'
             },
             {
                 title: 'First City',
-                desc: 'A visualization and explanation of how we are going to build our first city on mars, what the government will be like and how decision on life within our colony will be made.',
+                desc: 'A visualization and explanation of how we are going to build our first city on mars and what the government will be like.',
                 image: 'basecamp.jpg'
             },
             {
                 title: 'Terraforming',
-                desc: 'An in-depth look at terraforming as a whole and a detailed plan to terraform Mars quicker than most commonly estimated, using super greenhouse gases.',
+                desc: 'An in-depth look at terraforming as a whole and a detailed plan to terraform Mars quicker than most commonly estimated.',
                 image: 'mars_astronauts.png'
             },
         ]
@@ -125,19 +125,19 @@ const allChapters = [
             },
             {
                 title: 'Problems of Venus',
-                desc: 'In this article, we will clarify why Venus is not all love and rainbows and why it will be hard if manageable at all for us to settle on it.',
+                desc: 'In this article, we will clarify why Venus is not all love and rainbows and why it will make a hard colonization target.',
                 image: 'venus.png'
             },
             {
                 title: 'Cloud Cities',
-                desc: 'Find out why flying cities may not be as futuristic as they sound, how we could build them on Venus and why they are our best option in the first place.',
+                desc: 'Find out why flying cities may not be as futuristic as they sound, how we could build them on Venus and why they are geat.',
                 image: 'venus2.png'
             },
         ]
     },
     {
         title: 'Space Habitats',
-        desc: 'Why land on a planet and accept the condition it faces us with if we can just live in space itself? Well, in this chapter we will find out how possible that is.',
+        desc: 'Why land on a planet and accept the condition it faces us with if we can just live in space itself? Well, in this chapter we will find out how.',
         articles: [
             {
                 title: 'Introduction',
@@ -151,17 +151,17 @@ const allChapters = [
             },
             {
                 title: 'Gathering Resources',
-                desc: 'To build Space Habitats as big as we imagined them in the last chapter, we will need lots of resources. We will find out how to get them within this article.',
+                desc: 'To build Space Habitats as big as we imagined them in the last chapter, we will need lots of resources. Let us gather them.',
                 image: 'ceres.png'
             },
             {
                 title: 'Potential',
-                desc: 'After looking at the necessary amount of resources for a Space Habitat, we can assess our solar systems capacity for them and ultimately its potential to support us in the future.',
+                desc: 'After looking at the necessary amount of resources for a Space Habitat, we can assess our solar systems capacity for them.',
                 image: 'colonyfive.png'
             },
             {
                 title: 'Power Supply',
-                desc: 'When trying to build dozens of Space Habitats, at some point you will nature lack the energy to do so. Let us find out how we could try to generate enough to sustain our Space Habitats for a while.',
+                desc: 'When trying to build dozens of Space Habitats, at some point you will naturally lack the energy to do so...',
                 image: 'power.png'
             },
         ]
@@ -172,7 +172,7 @@ const allChapters = [
         articles: [
             {
                 title: 'Introduction',
-                desc: 'An introduction to the topic of Alien Life and what we are going to explore in this chapter.',
+                desc: 'An introduction to the topic of Alien Life, how we can find it and what we are going to explore in this chapter.',
                 image: 'alienlife.png'
             },
             {
@@ -182,27 +182,27 @@ const allChapters = [
             },
             {
                 title: 'Fermi Paradox',
-                desc: 'Unraveling the famous Fermi Paradox, you will learn why we have very good reason to think there is no aliens in close proximity to Earth.',
+                desc: 'Unraveling the famous Fermi Paradox, you will learn why we have very good reason to think there is no aliens around us.',
                 image: 'fermi.png'
             },
             {
                 title: 'Kardashev Scale',
-                desc: 'The Kardashev Scale aims to categorize intelligent life after their current state of technological progress, making it easier for us to search for them.',
+                desc: 'The Kardashev Scale aims to categorize intelligent life after their current state of technological progress.',
                 image: 'kardashev.png'
             },
             {
                 title: 'The Great Filter',
-                desc: 'As one of the most famous explanations to the Fermi Paradox, The Great Filter does not come short in excitement in comparison with its counterpart.',
+                desc: 'As one of the most famous explanations to the Fermi Paradox, The Great Filter does not come short in excitement to it.',
                 image: 'filter.png'
             },
             {
                 title: 'Solutions',
-                desc: 'Finding solutions to the Fermi Paradox and explaining what the solutions mean for us as a species and for us as a species that is trying to make further progress in technology.',
+                desc: 'Finding solutions to the Fermi Paradox and explaining what the solutions mean for us as a species and for us as a species.',
                 image: 'milkyway.png'
             },
             {
                 title: 'Conclusion',
-                desc: 'A summary of the chapter, acknowledging our current position on the Kardashev Scale and my personal opinion on the Fermi Paradox.',
+                desc: 'A summary of the chapter, acknowledging our current position on the Kardashev Scale and my personal opinion on Fermi.',
                 image: 'years.png'
             },
         ]
@@ -218,12 +218,12 @@ const allChapters = [
             },
             {
                 title: 'Trappist-System',
-                desc: 'As one of our closest neighboring systems and the closest system with planets within the habitable zone, the Trappist-System is certainly an interesting system to keep an eye on.',
+                desc: 'One of our closest neighboring systems and the closest system with planets within the habitable zone, the Trappist-System.',
                 image: 'trappist1e.png'
             },
             {
                 title: 'Proxima Centauri',
-                desc: 'Being the closest neighboring system and the prime target of one of our observative missions, Proxima Centauri might not harbor life yet but might harbor us in the distant future.',
+                desc: 'The closest neighboring system and the prime target of one of our observative missions, Proxima Centauri.',
                 image: 'melody2.png'
             },
         ]
@@ -234,7 +234,7 @@ const allChapters = [
         articles: [
             {
                 title: 'Introduction',
-                desc: 'An introduction to the End. One last time, we will talk about what comes next.',
+                desc: 'An introduction to the End. One last time, we will talk about what comes next and what we can do about it.',
                 image: 'interstellar.png'
             },
             {
@@ -244,7 +244,7 @@ const allChapters = [
             },
             {
                 title: 'Life in The Universe',
-                desc: 'In this article, we will discuss the future of life within our universe and how it can survive the ever-darkening ages that lie in front of us.',
+                desc: 'In this article, we will discuss the future of life within our universe and how it can survive the ever-darkening universe.',
                 image: 'blackholes.png'
             },
             {
@@ -259,7 +259,7 @@ const allChapters = [
             },
             {
                 title: 'Philosophy',
-                desc: 'A philosophical epilogue of mine, reminiscing about the last chapters and giving my personal opinion towards the spectactle.',
+                desc: 'A philosophical epilogue of mine, reminiscing about the last chapters and giving my personal opinion towards it.',
                 image: 'particles.png'
             },
         ]
