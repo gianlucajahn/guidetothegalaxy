@@ -1,6 +1,7 @@
 import { onAuthStateChanged } from "firebase/auth";
 import { useState } from "react";
 import ArticleList from "./ArticleList";
+import ArticleListDE from "./ArticleList_de";
 import LoginButton from "./LoginButton.jsx";
 import { auth } from "/firebase.js";
 import css from './AccountPage.module.scss';
@@ -30,7 +31,7 @@ export default function AccountPage() {
         </div>
       ) : (
         <div>
-          <ArticleList user={user} />
+          <ArticleListDE user={user} />
           <LoginButton />
         </div>
       )}
