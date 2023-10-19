@@ -16,13 +16,13 @@ export default function SaveArticleSection(props) {
     <>
       {user == undefined || user == null ? (
         <div className={styles.articleRead}>
-          Log dich ein, um deinen Lesefortschritt zu speichern
+          Melde dich an, um deinen Lesefortschritt zu speichern
           <button
             id={styles.articleReadButton}
             className={styles.button}
             onClick={null}
           >
-            Login
+            Anmelden
           </button>
         </div>
       ) : (
