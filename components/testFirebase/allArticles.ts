@@ -56,7 +56,7 @@ const allChapters = [
                 title: 'Rocket Engines',
                 title_de: 'Raketentriebwerke',
                 desc: 'An in-depth look into the physics, functionality and different cycle models behind modern rocket engines.',
-                desc_de: 'Ein Deep Dive in die Physik von Raumfahrttriebwerken, verschiedenen Modellen und dem State Of The Art',
+                desc_de: 'Ein Deep Dive in die Physik von Raumfahrttriebwerken, verschiedenen Modellen und dem State Of The Art.',
                 image: 'raptor_cgi.jpg',
                 id: 'rocket-engines'
             },
