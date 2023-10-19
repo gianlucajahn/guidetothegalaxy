@@ -69,12 +69,12 @@ export default function ArticleListDE({ user }) {
   const articles = allChapters.map((chapter) => (
     <div className={styles.chapter}>
       <h1 className={styles.chapterTitle}>{chapter.title_de}</h1>
-      <p className={styles.chapterDesc}>{chapter.desc}</p>
+      <p className={styles.chapterDesc}>{chapter.desc_de}</p>
 
       <div className={styles.array}>
         {chapter.articles.map((art, i) => {
-          const baseText = art.desc.slice(0, 75);
-          const additionalText = art.desc.slice(75, 125);
+          const baseText = art.desc_de.slice(0, 75);
+          const additionalText = art.desc_de.slice(75, 125);
           const [isHovered, setIsHovered] = useState(false);
 
           useEffect(() => {
