@@ -1,9 +1,9 @@
 import { onAuthStateChanged } from "firebase/auth";
 import { useState } from "react";
-import SaveArticle from "./SaveArticle";
 import LoginButton from "./LoginButton.jsx";
 import { auth } from "/firebase.js";
 import styles from "./firebase.module.scss";
+import SaveArticleDE from "./SaveArticle_de";
 
 export default function SaveArticleSection(props) {
   const [user, setUser] = useState(auth.currentUser);
@@ -16,7 +16,7 @@ export default function SaveArticleSection(props) {
     <>
       {user == undefined || user == null ? (
         <div className={styles.articleRead}>
-          Login to log your reading progress
+          Log dich ein, um deinen Lesefortschritt zu speichern
           <button
             id={styles.articleReadButton}
             className={styles.button}
@@ -26,7 +26,7 @@ export default function SaveArticleSection(props) {
           </button>
         </div>
       ) : (
-        <SaveArticle user={user} article={props.article} />
+        <SaveArticleDE user={user} article={props.article} />
       )}
     </>
   );
