@@ -110,7 +110,7 @@ export default function ArticleList({ user }) {
                 </div>
                 <div
                   className={`${styles.status} ${
-                    userArticles[art.title] ? styles.read : styles.notread
+                    userArticles[art.id] ? styles.read : styles.notread
                   }`}
                 >
                   {userArticles[art.id] ? "Article read" : "Not read"}
