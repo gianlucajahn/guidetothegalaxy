@@ -113,7 +113,7 @@ export default function ArticleList({ user }) {
                     userArticles[art.title] ? styles.read : styles.notread
                   }`}
                 >
-                  {userArticles[art.title] ? "Article read" : "Not read"}
+                  {userArticles[art.id] ? "Article read" : "Not read"}
                 </div>
               </div>
             </div>
