@@ -1,4 +1,4 @@
-import { onAuthStateChanged, signInWithPopup } from "firebase/auth";
+import { onAuthStateChanged, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { useState } from "react";
 import SaveArticle from "./SaveArticle";
 import styles from "./firebase.module.scss";
@@ -7,13 +7,18 @@ import { getDocSnap } from "../../helpers/firebaseFunctions";
 
 export default function SaveArticleSection(props) {
   const [user, setUser] = useState(auth.currentUser);
+  const [loggedIn, setLoggedIn] = useState(false)
+
+  const provider = new GoogleAuthProvider();
 
   onAuthStateChanged(auth, (user) => {
     if (user) {
       setUser(user);
+      if (!loggedIn) setLoggedIn(true);
       addNewUserDoc(user);
-    } else {
+    } else if (loggedIn) {
       setUser({});
+      setLoggedIn(false);
     }
   });
 
@@ -38,7 +43,7 @@ export default function SaveArticleSection(props) {
 
   return (
     <>
-      {user == undefined || user == null ? (
+      {user == null || !user.uid || user == undefined ? (
         <div className={styles.articleRead}>
           Login to log your reading progress
           <button id={styles.articleReadButton} className={styles.button} onClick={login}>

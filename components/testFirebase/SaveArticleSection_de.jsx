@@ -43,7 +43,7 @@ export default function SaveArticleSection(props) {
 
   return (
     <>
-      {user == undefined || user == null ? (
+      {user == null || !user.uid || user == undefined ? (
         <div className={styles.articleRead}>
           Melde dich an, um deinen Lesefortschritt zu speichern
           <button
