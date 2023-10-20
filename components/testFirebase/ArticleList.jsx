@@ -86,8 +86,7 @@ export default function ArticleList({ user }) {
     const calculatedWith = 550 / progress;
     progressBar.style.width = `${calculatedWith}px`;
   }, [progress])
-
-  let progressVar = 0;
+  
   const articles = allChapters.map((chapter) => (
     <div className={styles.chapter}>
       <h1 className={styles.chapterTitle}>{chapter.title}</h1>

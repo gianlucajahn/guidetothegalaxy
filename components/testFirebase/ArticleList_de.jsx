@@ -12,6 +12,7 @@ import allChapters from "./allArticles";
 export default function ArticleListDE({ user }) {
   const [loggedIn, setLoggedIn] = useState(false);
   const [currentUser, setCurrentUser] = useState({});
+  const [progress, setProgress] = useState(0);
 
   onAuthStateChanged(auth, (user) => {
     if (user) {
@@ -23,10 +24,6 @@ export default function ArticleListDE({ user }) {
       setLoggedIn(false);
     }
   });
-
-  const expandText = () => {
-
-  }
 
   async function addNewUserDoc(user) {
     const docSnap = await getDocSnap(user.uid);
@@ -65,6 +62,26 @@ export default function ArticleListDE({ user }) {
   useEffect(() => {
     return unsub;
   });
+
+  useEffect(() => {
+    let progressVar = 0;
+
+    allChapters.map((chapter) => {
+      chapter.articles.map((article) => {
+        if (userArticles[article.id]) {
+          progressVar += 1;
+        }
+      })
+    })
+
+    setProgress(progressVar);
+  }, [userArticles])
+
+  useEffect(() => {
+    const progressBar = document.getElementById('progress');
+    const calculatedWith = 550 / progress;
+    progressBar.style.width = `${calculatedWith}px`;
+  }, [progress])
 
   const articles = allChapters.map((chapter) => (
     <div className={styles.chapter}>
@@ -135,6 +152,14 @@ export default function ArticleListDE({ user }) {
       <p className={styles.introduction}>
         Hier kannst du deinen Fortschritt tracken und dir einen Überblick über die Artikel verschaffen, die noch vor dir liegen. Über Klicks auf die Artikel-Karten gelangst du direkt zu ihnen.
       </p>
+
+      <h1 className={styles.chapterTitle}>Mein Fortschritt</h1>
+      <div className={styles.progressBarContainer}>
+        <div className={styles.progressBar}>
+          <div className={styles.progress} id="progress" />
+        </div>
+        <h2>40%</h2>
+      </div>
       {articles}
     </div>
   );
