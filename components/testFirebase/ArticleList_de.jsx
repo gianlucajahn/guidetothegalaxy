@@ -79,7 +79,7 @@ export default function ArticleListDE({ user }) {
 
   useEffect(() => {
     const progressBar = document.getElementById('progress');
-    const calculatedWith = 550 / progress;
+    const calculatedWith = 550 / (41 / progress);
     progressBar.style.width = `${calculatedWith}px`;
   }, [progress])
 
@@ -158,7 +158,7 @@ export default function ArticleListDE({ user }) {
         <div className={styles.progressBar}>
           <div className={styles.progress} id="progress" />
         </div>
-        <h2>40%</h2>
+        <h2>{Math.floor(41 / progress)}%</h2>
       </div>
       {articles}
     </div>
