@@ -21,4 +21,20 @@ async function setReadArticles(readArticles, uid) {
   await setDoc(doc(db, "users", uid), { "read-articles": readArticles }, { merge: true });
 }
 
-export { getReadArticles, setReadArticles, getDocSnap };
+async function markAsRead(user, article, setState = ()=>{}) {
+  const readArticles = await getReadArticles(user.uid);
+  // set article property to true - will create the property first if it doest exist yet
+  readArticles[article] = true;
+  await setReadArticles(readArticles, user.uid);
+  setState(readArticles[article]);
+}
+
+async function markAsNotRead(user, article, setState = ()=>{}) {
+  const readArticles = await getReadArticles(user.uid);
+  // set article property to true - will create the property first if it doest exist yet
+  readArticles[article] = false;
+  await setReadArticles(readArticles, user.uid);
+  setState(readArticles[article]);
+}
+
+export { getReadArticles, setReadArticles, getDocSnap, markAsNotRead, markAsRead };

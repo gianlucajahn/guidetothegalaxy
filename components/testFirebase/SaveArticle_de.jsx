@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import styles from "./firebase.module.scss";
 
-import { getDocSnap, getReadArticles, setReadArticles } from "../../helpers/firebaseFunctions";
+import { getDocSnap, markAsNotRead, markAsRead } from "../../helpers/firebaseFunctions";
 
 export default function SaveArticleDE({ user, article }) {
   const [articleIsRead, setArticleIsRead] = useState(false);
@@ -15,20 +15,12 @@ export default function SaveArticleDE({ user, article }) {
     readArticleStatus();
   }, [user]);
 
-  async function markAsRead() {
-    const readArticles = await getReadArticles(user.uid);
-    // set article property to true - will create the property first if it doest exist yet
-    readArticles[article] = true;
-    await setReadArticles(readArticles, user.uid);
-    setArticleIsRead(readArticles[article]);
+  async function read() {
+    markAsRead(user, article, setArticleIsRead)
   }
 
-  async function markAsNotRead() {
-    const readArticles = await getReadArticles(user.uid);
-    // set article property to true - will create the property first if it doest exist yet
-    readArticles[article] = false;
-    await setReadArticles(readArticles, user.uid);
-    setArticleIsRead(readArticles[article]);
+  async function notRead() {
+    markAsNotRead(user, article, setArticleIsRead)
   }
 
   return (
@@ -36,14 +28,14 @@ export default function SaveArticleDE({ user, article }) {
       {!articleIsRead ? (
         <>
           <p>Logge diesen Artikel als gelesen:</p>
-          <button id={styles.articleReadButton} className={styles.button} onClick={markAsRead}>
+          <button id={styles.articleReadButton} className={styles.button} onClick={read}>
             Artikel gelesen
           </button>
         </>
       ) : (
         <>
           <p>Logge diesen Artikel als nicht gelesen:</p>
-          <button id={styles.notReadButton} className={styles.button} onClick={markAsNotRead}>
+          <button id={styles.notReadButton} className={styles.button} onClick={notRead}>
             Artikel nicht gelesen
           </button>
         </>

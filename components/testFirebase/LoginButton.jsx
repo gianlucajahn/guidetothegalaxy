@@ -1,9 +1,4 @@
-import {
-  GoogleAuthProvider,
-  onAuthStateChanged,
-  signInWithPopup,
-  signOut,
-} from "firebase/auth";
+import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import { useState } from "react";
 import { getDocSnap } from "../../helpers/firebaseFunctions";
@@ -15,15 +10,12 @@ export default function LoginButton() {
   const provider = new GoogleAuthProvider();
 
   const [loggedIn, setLoggedIn] = useState(false);
-  const [currentUser, setCurrentUser] = useState({});
 
   onAuthStateChanged(auth, (user) => {
     if (user) {
-      setCurrentUser(user);
       if (!loggedIn) setLoggedIn(true);
       addNewUserDoc(user);
     } else if (loggedIn) {
-      setCurrentUser({});
       setLoggedIn(false);
     }
   });
@@ -34,14 +26,14 @@ export default function LoginButton() {
       await setDoc(doc(db, "users", user.uid), {
         email: user.email,
         id: user.uid,
-        "read-articles": { index: true },
+        "read-articles": {},
       });
     }
   }
 
   async function login() {
     try {
-      const result = await signInWithPopup(auth, provider);
+      await signInWithPopup(auth, provider);
     } catch (error) {
       console.log(error);
     }
@@ -51,9 +43,7 @@ export default function LoginButton() {
     signOut(auth);
   }
 
-  const button = loggedIn ? (
-    null
-  ) : (
+  const button = loggedIn ? null : (
     <div className={styles.loginContainer}>
       <button className={`${styles.button} ${styles.login}`} onClick={login}>
         Login
@@ -66,9 +56,7 @@ export default function LoginButton() {
 
   return (
     <div id={styles.body}>
-      <div className={styles.header}>
-        {button}
-      </div>
+      <div className={styles.header}>{button}</div>
     </div>
   );
 }

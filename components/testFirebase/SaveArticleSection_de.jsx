@@ -1,16 +1,45 @@
-import { onAuthStateChanged } from "firebase/auth";
+import { onAuthStateChanged, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { useState } from "react";
-import LoginButton from "./LoginButton.jsx";
-import { auth } from "/firebase.js";
-import styles from "./firebase.module.scss";
 import SaveArticleDE from "./SaveArticle_de";
+import styles from "./firebase.module.scss";
+import { auth } from "/firebase.js";
+import { getDocSnap } from "../../helpers/firebaseFunctions";
 
 export default function SaveArticleSection(props) {
   const [user, setUser] = useState(auth.currentUser);
+  const [loggedIn, setLoggedIn] = useState(false)
+
+  const provider = new GoogleAuthProvider();
 
   onAuthStateChanged(auth, (user) => {
-    setUser(user);
+    if (user) {
+      setUser(user);
+      if (!loggedIn) setLoggedIn(true);
+      addNewUserDoc(user);
+    } else if (loggedIn) {
+      setUser({});
+      setLoggedIn(false);
+    }
   });
+
+  async function addNewUserDoc(user) {
+    const docSnap = await getDocSnap(user.uid);
+    if (!docSnap.exists()) {
+      await setDoc(doc(db, "users", user.uid), {
+        email: user.email,
+        id: user.uid,
+        "read-articles": {},
+      });
+    }
+  }
+
+  async function login() {
+    try {
+      await signInWithPopup(auth, provider);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   return (
     <>
@@ -20,7 +49,7 @@ export default function SaveArticleSection(props) {
           <button
             id={styles.articleReadButton}
             className={styles.button}
-            onClick={null}
+            onClick={login}
           >
             Anmelden
           </button>

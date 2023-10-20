@@ -1,61 +1,20 @@
 import { doc, onSnapshot } from "firebase/firestore";
-import { useEffect, useState } from "react";
-import { db } from "/firebase.js";
-import { auth } from "/firebase.js";
-import { onAuthStateChanged, signInWithPopup, signOut } from "firebase/auth";
-import styles from "./firebase.module.scss";
-import allArticles from "./allArticles";
-import { getDocSnap } from "../../helpers/firebaseFunctions";
 import Image from "next/image";
-import allChapters from "./allArticles";
+import { useEffect, useState } from "react";
+import { markAsNotRead, markAsRead } from "../../helpers/firebaseFunctions";
+import allChapters from "./allArticles.ts";
+import styles from "./firebase.module.scss";
+import { db } from "/firebase.js";
 
 export default function ArticleListDE({ user }) {
-  const [loggedIn, setLoggedIn] = useState(false);
-  const [currentUser, setCurrentUser] = useState({});
   const [progress, setProgress] = useState(0);
-
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      setCurrentUser(user);
-      if (!loggedIn) setLoggedIn(true);
-      addNewUserDoc(user);
-    } else if (loggedIn) {
-      setCurrentUser({});
-      setLoggedIn(false);
-    }
-  });
-
-  async function addNewUserDoc(user) {
-    const docSnap = await getDocSnap(user.uid);
-    if (!docSnap.exists()) {
-      await setDoc(doc(db, "users", user.uid), {
-        email: user.email,
-        id: user.uid,
-        "read-articles": { index: true },
-      });
-    }
-  }
-
-  async function login() {
-    try {
-      const result = await signInWithPopup(auth, provider);
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
-  function logout() {
-    signOut(auth);
-  }
 
   const [userArticles, setUserArticles] = useState({});
 
   // executes given function on mount and every time the given document is updated in the database - the document is the logged in users document
   const unsub = onSnapshot(doc(db, "users", user.uid), (docSnap) => {
     // create a deep copy from the read-articles object in the users data
-    const readArticles = JSON.parse(
-      JSON.stringify(docSnap.data()["read-articles"])
-    );
+    const readArticles = JSON.parse(JSON.stringify(docSnap.data()["read-articles"]));
     setUserArticles(readArticles);
   });
 
@@ -71,17 +30,21 @@ export default function ArticleListDE({ user }) {
         if (userArticles[article.id]) {
           progressVar += 1;
         }
-      })
-    })
+      });
+    });
 
     setProgress(progressVar);
-  }, [userArticles])
+  }, [userArticles]);
 
   useEffect(() => {
-    const progressBar = document.getElementById('progress');
+    const progressBar = document.getElementById("progress");
     const calculatedWith = 550 / (41 / progress);
     progressBar.style.width = `${calculatedWith}px`;
-  }, [progress])
+  }, [progress]);
+
+  const toggleReadStatus = (articleId) => {
+    userArticles[articleId] ? markAsNotRead(user, articleId) : markAsRead(user, articleId);
+  };
 
   const articles = allChapters.map((chapter) => (
     <div className={styles.chapter}>
@@ -95,7 +58,7 @@ export default function ArticleListDE({ user }) {
           const [isHovered, setIsHovered] = useState(false);
 
           useEffect(() => {
-            const text = document.getElementById('additional-text');
+            const text = document.getElementById("additional-text");
             if (text) {
               if (isHovered) {
                 if (!text) {
@@ -103,7 +66,7 @@ export default function ArticleListDE({ user }) {
                 }
                 setTimeout(() => {
                   text.style.opacity = 1;
-                }, 100)
+                }, 100);
               } else {
                 if (!text) {
                   return;
@@ -116,19 +79,25 @@ export default function ArticleListDE({ user }) {
           return (
             <div>
               <div className={styles.articlePrev}>
-                <Image
-                  src={require(`../../resources/images/${art.image}`)}
-                  alt="Background"
-                  className={`${styles.card} ${styles.background}`}
-                />
+                <Image src={require(`../../resources/images/${art.image}`)} alt="Background" className={`${styles.card} ${styles.background}`} />
                 <div className={styles.info} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                   <h2>{art.title_de}</h2>
-                  <p>{baseText}{isHovered ? <span className={styles.additionalText} id="additional-text">{additionalText}</span> : '...'}</p>
+                  <p>
+                    {baseText}
+                    {isHovered ? (
+                      <span className={styles.additionalText} id="additional-text">
+                        {additionalText}
+                      </span>
+                    ) : (
+                      "..."
+                    )}
+                  </p>
                 </div>
                 <div
-                  className={`${styles.status} ${
-                    userArticles[art.id] ? styles.read : styles.notread
-                  }`}
+                  className={`${styles.status} ${userArticles[art.id] ? styles.read : styles.notread}`}
+                  onClick={() => {
+                    toggleReadStatus(art.id);
+                  }}
                 >
                   {userArticles[art.id] ? "Gelesen" : "Nicht gelesen"}
                 </div>
@@ -142,13 +111,7 @@ export default function ArticleListDE({ user }) {
 
   return (
     <div className={styles.articleList}>
-      <h1 className={styles.greeting}>
-        Hey,{" "}
-        {currentUser.displayName?.substring(
-          0,
-          currentUser.displayName.indexOf(" ")
-        )}
-      </h1>
+      <h1 className={styles.greeting}>Hey, {user.displayName?.substring(0, user.displayName.indexOf(" "))}</h1>
       <p className={styles.introduction}>
         Hier kannst du deinen Fortschritt tracken und dir einen Überblick über die Artikel verschaffen, die noch vor dir liegen. Über Klicks auf die Artikel-Karten gelangst du direkt zu ihnen.
       </p>
