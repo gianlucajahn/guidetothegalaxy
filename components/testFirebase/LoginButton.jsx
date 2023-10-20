@@ -52,9 +52,7 @@ export default function LoginButton() {
   }
 
   const button = loggedIn ? (
-    <button className={`${styles.button} ${styles.logout}`} onClick={logout}>
-      logout
-    </button>
+    null
   ) : (
     <div className={styles.loginContainer}>
       <button className={`${styles.button} ${styles.login}`} onClick={login}>
@@ -69,7 +67,6 @@ export default function LoginButton() {
   return (
     <div id={styles.body}>
       <div className={styles.header}>
-        <div>{loggedIn ? currentUser.displayName : null}</div>
         {button}
       </div>
     </div>
