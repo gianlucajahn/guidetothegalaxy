@@ -12,6 +12,7 @@ import allChapters from "./allArticles.ts";
 export default function ArticleList({ user }) {
   const [loggedIn, setLoggedIn] = useState(false);
   const [currentUser, setCurrentUser] = useState({});
+  const [progress, setProgress] = useState(0);
 
   onAuthStateChanged(auth, (user) => {
     if (user) {
@@ -66,6 +67,27 @@ export default function ArticleList({ user }) {
     return unsub;
   });
 
+  useEffect(() => {
+    let progressVar = 0;
+
+    allChapters.map((chapter) => {
+      chapter.articles.map((article) => {
+        if (userArticles[article.id]) {
+          progressVar += 1;
+        }
+      })
+    })
+
+    setProgress(progressVar);
+  }, [userArticles])
+
+  useEffect(() => {
+    const progressBar = document.getElementById('progress');
+    const calculatedWith = 550 / progress;
+    progressBar.style.width = `${calculatedWith}px`;
+  }, [progress])
+
+  let progressVar = 0;
   const articles = allChapters.map((chapter) => (
     <div className={styles.chapter}>
       <h1 className={styles.chapterTitle}>{chapter.title}</h1>
@@ -137,6 +159,14 @@ export default function ArticleList({ user }) {
         as read/listened to and jump to whichever article you'd like. Feel free
         to look around.
       </p>
+
+      <h1 className={styles.chapterTitle}>My progress</h1>
+      <div className={styles.progressBarContainer}>
+        <div className={styles.progressBar}>
+          <div className={styles.progress} id="progress" />
+        </div>
+        <h2>40%</h2>
+      </div>
       {articles}
     </div>
   );

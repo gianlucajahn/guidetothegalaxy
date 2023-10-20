@@ -26,7 +26,6 @@ export default function AccountPage() {
               alt="Software Engineer Meme"
             />
             <figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Live Footage unseres Entwicklers auf der Suche nach deinem Eintrag in unserer Datenbank</figcaption>
-            <p>Keine Sorge, junger Astronaut, denn du kannst deinen früheren Fehler, kein Konto erstellt zu haben, ganz einfach wiedergutmachen! Klick' einfach auf eine der folgenden Schaltflächen:</p>
           <LoginButton />
         </div>
       ) : (

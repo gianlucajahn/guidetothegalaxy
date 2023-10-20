@@ -18,14 +18,13 @@ export default function AccountPage() {
       {user == undefined || user == null ? (
         <div className={css.account}>
           <h1>Hey, Stranger!</h1>
-          <p>You seem to be not logged in. To use the Account feature and to track your reading or listening progress, you can login or sign up to a free account on our website. Afterwards, you will be able to track your progress at the end of every article!</p>
+          <p>You seem to be not logged in. To use the Account feature and to track your reading or listening progress, you can login or sign up to a free account on our website.</p>
           <Image
               className={css.troll}
               src={require("../../resources/images/engineers.jpg")}
               alt="Software Engineer Meme"
             />
             <figcaption style={{ color: "rgb(156, 156, 156)", fontSize: "14px", marginTop: "2px" }}>Live Footage of our Engineers trying to find you in our database</figcaption>
-            <p>Worry not, young astronaut, for you can make up for your past mistakes of not creating an account quite easily! Just click on one of the buttons below.</p>
           <LoginButton />
         </div>
       ) : (
