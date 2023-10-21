@@ -121,7 +121,7 @@ export default function ArticleListDE({ user }) {
         <div className={styles.progressBar}>
           <div className={styles.progress} id="progress" />
         </div>
-        <h2>{Math.floor(41 / progress)}%</h2>
+        <h2>{Math.floor((progress / 41) * 100)}%</h2>
       </div>
       {articles}
     </div>
