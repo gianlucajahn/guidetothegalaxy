@@ -15,6 +15,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/documentation/secondpage.mdx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/documentation/secondpage.mdx", "components/testFirebase/ArticleList_de.jsx"],
   "exclude": ["node_modules"]
 }

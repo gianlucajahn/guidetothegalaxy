@@ -21,6 +21,8 @@
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.278",
     "@vercel/analytics": "^0.1.11",
+    "classnames": "^2.3.2",
+    "firebase": "^10.4.0",
     "framer-motion": "^10.10.0",
     "i": "^0.3.7",
     "next": "^13.2.4",
