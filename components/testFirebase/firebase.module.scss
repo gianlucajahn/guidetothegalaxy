@@ -190,6 +190,18 @@
   padding: 50px 20%;
   overflow: hidden;
 
+  @media screen and (max-width: 960px) {
+    padding: 50px 10%;
+  }
+
+  @media screen and (max-width: 540px) {
+    padding: 30px 6.5%;
+  }
+
+  @media screen and (max-width: 430px) {
+    padding: 30px 5%;
+  }
+
   .introduction {
     color: #f3f4f6;
     font-size: 18px;
@@ -216,6 +228,10 @@
   font-family: "Inter", sans-serif;
   font-weight: 600;
   letter-spacing: 0.0125em;
+
+  @media screen and (max-width: 540px) {
+    font-size: 52px;
+  }
 }
 
 .chapter {
@@ -229,7 +245,13 @@
     font-size: 56px;
     font-family: "Inter", sans-serif;
     font-weight: 600;
+    line-height: 1.1;
     margin-bottom: -4px;
+
+    @media screen and (max-width: 540px) {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
   }
 
   .chapterDesc {
@@ -255,12 +277,20 @@
   display: flex;
   gap: 10px;
 
+  @media screen and (max-width: 500px) {
+    margin-bottom: 20px;
+  }
+
   .progressBar {
     width: 550px;
     height: 20px;
     border-radius: 24px;
     background-color: rgb(209, 209, 209);
     margin-bottom: 26px;
+
+    @media screen and (max-width: 745px) {
+      width: 65vw;
+    }
 
     .progress {
       position: absolute;
@@ -275,5 +305,16 @@
     font-family: "Inter", sans-serif;
     font-size: 18px;
     margin-top: -4px;
+  }
+}
+
+.chapterTitle {
+  font-size: 56px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  margin-bottom: -4px;
+
+  @media screen and (max-width: 540px) {
+    font-size: 48px;
   }
 }
