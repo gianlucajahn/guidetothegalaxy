@@ -19,7 +19,7 @@ export default function Hero_de() {
       <p className={styles.slogan}>Ein optimistischer Blick in die Zukunft der menschlichen Raumfahrt, gefüttert mit einer Prise Sarkasmus.</p>
 
       <div className={styles.buttonContainer}>
-        <a href="https://beyondearth.gg/documentation/introduction"><button className={styles.brightButton}>Jetzt lesen</button></a>
+        <a href="https://beyondearth.gg/de/documentation/introduction"><button className={styles.brightButton}>Jetzt lesen</button></a>
         <a href="https://github.com/gianlucajahn/guidetothegalaxy" target="_blank"><button className={styles.darkButton} style={{ color: "white !important" }}>GitHub</button></a>
       </div>
 
