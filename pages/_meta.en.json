@@ -18,6 +18,12 @@
       "pagination": true
     }
   },
+  "news": {
+    "title": "News",
+    "type": "page",
+    "href": "https://news.beyondearth.gg/",
+    "newWindow": true
+  },
   "about": {
     "title": "About",
     "type": "page",
