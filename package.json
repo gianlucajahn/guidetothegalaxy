@@ -21,6 +21,7 @@
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.278",
     "@vercel/analytics": "^0.1.11",
+    "@wavesurfer/react": "^1.0.4",
     "classnames": "^2.3.2",
     "firebase": "^10.4.0",
     "framer-motion": "^10.10.0",
@@ -33,7 +34,8 @@
     "react-dom": "^18.2.0",
     "react-use-scroll-snap": "^0.0.4",
     "sass": "^1.60.0",
-    "use-sound": "^4.0.1"
+    "use-sound": "^4.0.1",
+    "wavesurfer.js": "^7.7.3"
   },
   "devDependencies": {
     "@types/node": "18.11.10",
