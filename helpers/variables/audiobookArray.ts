@@ -24,7 +24,7 @@ const audiobookArray = [
             },
             {
                 id: 'de',
-                src: '',
+                src: 'https://audio.jukehost.co.uk/EMtmwUTmzqhxxoAFEwdO1SL79pLjTp6J',
                 duration: '5'
             }
         ]
@@ -34,13 +34,13 @@ const audiobookArray = [
         languages: [
             {
                 id: 'en',
-                src: 'https://audio.jukehost.co.uk/p8VjKaEkHeRYhR21aL0MAqAO8TTRXTY2',
+                src: 'https://audio.jukehost.co.uk/7SN7bso8xgFv6OiaDnHuMp7J2C2lFU09',
                 duration: '4'
             },
             {
                 id: 'de',
-                src: '',
-                duration: ''
+                src: 'https://audio.jukehost.co.uk/Hx1ec5RWZaORVuRZ2Lvyxa78WIpH3Pzg',
+                duration: '5'
             }
         ]
     },
