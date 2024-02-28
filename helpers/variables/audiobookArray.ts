@@ -1,6 +1,6 @@
 const audiobookArray = [
     {
-        title: 'introduction',
+        title: 'documentation/introduction',
         languages: [
             {
                 id: 'en',
@@ -40,6 +40,21 @@ const audiobookArray = [
             {
                 id: 'de',
                 src: 'https://audio.jukehost.co.uk/Hx1ec5RWZaORVuRZ2Lvyxa78WIpH3Pzg',
+                duration: '5'
+            }
+        ]
+    },
+    {
+        title: 'rockets/introduction',
+        languages: [
+            {
+                id: 'en',
+                src: 'https://audio.jukehost.co.uk/NMHxHqq3EdUDxthtw2C77vk4OFqzaB6t',
+                duration: '3'
+            },
+            {
+                id: 'de',
+                src: 'https://audio.jukehost.co.uk/iet2AVpVhS1cZYRBdpyCRBjvyJZJ29Ln',
                 duration: '5'
             }
         ]
