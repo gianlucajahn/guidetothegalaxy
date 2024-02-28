@@ -2,9 +2,8 @@
 
 .audioplayer {
     * {
-        margin-top: -65px;
-        margin-bottom: -65px;
         margin-left: 30px;
+        margin-top: -65px;
         cursor: pointer;
     }
 }
@@ -27,8 +26,7 @@
     align-items: center;
     justify-content: center;
     transition: 0.3s all;
-    position: absolute;
-    bottom: 90px;
+    margin-top: 25px;
 
     &:hover {
         background-color: rgb(16, 130, 223);
