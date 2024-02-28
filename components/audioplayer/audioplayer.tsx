@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <div className={css.audioContainer}>
-        <button className={css.playButton} onClick={onPlayPause}>
+      <button className={css.playButton} onClick={onPlayPause}>
         <Image
           src={require(`../../resources/images/${
             isPlaying ? "pause" : "play"
