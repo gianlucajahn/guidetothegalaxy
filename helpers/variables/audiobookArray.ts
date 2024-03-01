@@ -285,7 +285,7 @@ const audiobookArray = [
         ]
     },
     {
-        title: 'powersupply',
+        title: 'power',
         languages: [
             {
                 id: 'en',
