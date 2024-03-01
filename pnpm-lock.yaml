@@ -10,6 +10,9 @@ dependencies:
   '@vercel/analytics':
     specifier: ^0.1.11
     version: 0.1.11(react@18.2.0)
+  '@wavesurfer/react':
+    specifier: ^1.0.4
+    version: 1.0.4(react@18.2.0)(wavesurfer.js@7.7.3)
   classnames:
     specifier: ^2.3.2
     version: 2.3.2
@@ -49,6 +52,9 @@ dependencies:
   use-sound:
     specifier: ^4.0.1
     version: 4.0.1(react@18.2.0)
+  wavesurfer.js:
+    specifier: ^7.7.3
+    version: 7.7.3
 
 devDependencies:
   '@types/node':
@@ -994,6 +1000,16 @@ packages:
       react: ^16.8||^17||^18
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /@wavesurfer/react@1.0.4(react@18.2.0)(wavesurfer.js@7.7.3):
+    resolution: {integrity: sha512-6WkXLhh0EaytyK1B6JqHZmzHQlBz+nbGH5x009tUH6nUIFFXq7zwkDEXqeZuWyVTKgjqcOQGOgavSZ7EbsS6lA==}
+    peerDependencies:
+      react: ^18.2.0
+      wavesurfer.js: ^7.6.3
+    dependencies:
+      react: 18.2.0
+      wavesurfer.js: 7.7.3
     dev: false
 
   /acorn-jsx@5.3.2(acorn@8.8.2):
@@ -3120,6 +3136,10 @@ packages:
 
   /vscode-textmate@8.0.0:
     resolution: {integrity: sha512-AFbieoL7a5LMqcnOF04ji+rpXadgOXnZsxQr//r83kLPr7biP7am3g9zbaZIaBGwBRWeSvoMD4mgPdX3e4NWBg==}
+    dev: false
+
+  /wavesurfer.js@7.7.3:
+    resolution: {integrity: sha512-TC7cQb0RVggtNC+Dl05gcnhSFL5U+fww3ZYJUuqgfR+r9oY+bh/hChCipDFDjs5cWtuek3GEtsPXWa93a9XYxw==}
     dev: false
 
   /web-namespaces@2.0.1:
