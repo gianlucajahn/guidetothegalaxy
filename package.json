@@ -19,7 +19,7 @@
   "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
     "@splinetool/react-spline": "^2.2.6",
-    "@splinetool/runtime": "^0.9.278",
+    "@splinetool/runtime": "^1.0.55",
     "@vercel/analytics": "^0.1.11",
     "@wavesurfer/react": "^1.0.4",
     "classnames": "^2.3.2",

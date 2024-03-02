@@ -19,7 +19,7 @@ export default function Hero() {
         <div className={styles.headlineTop}>
           <div className={styles.brand}>BEY</div>
           <div className={styles.splineBox}>
-            <Spline scene="https://prod.spline.design/s8wfXml4adgW7E3w/scene.splinecode" />
+            <Spline scene="https://prod.spline.design/pmYLJavayB3aKScg/scene.splinecode" />
           </div>
           <div className={styles.brand}>ND</div>
         </div>
