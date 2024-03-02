@@ -1,257 +1,323 @@
 // Imports
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap");
 
 // Animations
 @keyframes entry {
-    0% {
-        opacity: 0;
-        transform: translateY(28px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(28px);
+  }
 
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
     100% {
-        opacity: 1;
-        transform: translateY(0px);
+        background-position: 0% 0%;
     }
 }
 
 .section {
-    width: 100vw;
-    height: 92.5vh;
+  width: 100vw;
+  height: 300vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: -90px;
+  align-items: center;
+  background-image: url("https://www.onlygfx.com/wp-content/uploads/2019/02/7-noise-texture-overlays-5-1024x714.png");
+  background-color: rgba(7, 7, 7, 0.6) !important;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 8.85%;
+  position: relative;
+  overflow: hidden;
+
+  * {
+    overflow: hidden;
+  }
+
+  .license {
+    font-size: 14px;
+    margin-top: 22px;
+    color: #747474;
+    font-family: "Inter", sans-serif;
+    animation: 2s 1 forwards entry;
+  }
+
+  .logoContainer {
+    border: 1px solid transparent;
+    backdrop-filter: blur(6px);
+    cursor: pointer;
+    margin-bottom: 32px;
+    transition: 0.2s all;
+    background-color: transparent;
+    background: transparent;
+
+    .logo {
+      height: 125px;
+      width: 112px;
+      transition: 0.2s all;
+      background: transparent;
+      background-color: transparent;
+
+      &:hover {
+        transform: scale(1.08);
+      }
+    }
+
+    p {
+      font-size: 56px;
+    }
+  }
+
+  h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.035em;
+    color: transparent;
+    line-height: 1.025;
+    margin-bottom: 20px;
+    background: rgb(185, 185, 185);
+    background: -moz-linear-gradient(
+      360deg,
+      rgba(185, 185, 185, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      360deg,
+      rgba(185, 185, 185, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    background: linear-gradient(
+      360deg,
+      rgba(185, 185, 185, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b9b9b9",endColorstr="#ffffff",GradientType=1);
+    background-clip: text;
+    animation: 1s 1 forwards entry;
+    opacity: 0;
+
+    @media screen and (max-width: 928px) {
+      max-width: 90% !important;
+    }
+  }
+
+  .slogan {
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    color: #ffffffb2;
+    max-width: 75%;
+    text-align: center;
+    animation: 1s 1 forwards entry;
+    animation-delay: 0.185s;
+    opacity: 0;
+
+    @media screen and (max-width: 928px) {
+      max-width: 70%;
+    }
+  }
+
+  .image {
+    width: 420px;
+    margin-bottom: 28px;
+    animation: 2s 1 forwards entry;
+  }
+
+  .buttonContainer {
+    margin-top: 28px;
     display: flex;
-    flex-direction: column;
-    margin-top: -58px;
-    align-items: center;
-    background-image: url("../../resources/images/hero11.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 8.85%;
-    position: relative;
-    overflow-x: hidden !important;
+    gap: 12px;
 
-    @media screen and (max-width: 1050px) and (min-height: 929px) {
-        height: 135vh;
+    button {
+      width: 200px;
+      height: 48px;
+      border-radius: 4px;
+      font-size: 16px;
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      transition: 0.5s all;
+      transition-delay: 0.1s;
+      animation: 1s 1 forwards entry;
+      animation-delay: 0.4s;
+      opacity: 0;
     }
 
-    @media screen and (max-width: 928px) and (min-width: 601px) {
-        padding-top: 35% !important;
-        height: 92.5vh;
+    .brightButton {
+      background-color: white;
+      color: black;
+
+      &:hover {
+        box-shadow: 0px 0px 24px white;
+      }
     }
 
-    @media screen and (max-width: 600px) and (max-height: 730px) {
-        padding-top: 20% !important;
+    .darkButton {
+      background-color: rgba(5, 5, 5, 0.92);
+      border: 1px solid #969696;
+
+      &:hover {
+        border: 1px solid white;
+      }
     }
-
-    @media screen and (max-width: 550px) {
-        padding-top: 35% !important;
-    }
-
-    .license {
-        font-size: 14px;
-        margin-top: 22px;
-        color: #747474;
-        font-family: "Inter", sans-serif;
-        animation: 2s 1 forwards entry;
-    }
-
-    &:after {
-        content:"";
-        background: linear-gradient(270deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 35%, rgba(255,255,255,1) 100%);
-        display: block;
-        height: 1px;
-        width: 100vw;
-        position: absolute;
-        bottom: 0;
-    }
-
-    .logoContainer {
-        border: 1px solid transparent;
-        backdrop-filter: blur(6px);
-        cursor: pointer;
-        margin-bottom: 32px;
-        transition: 0.2s all;
-        background-color: transparent;
-        background: transparent;
-        animation: 2s 1 forwards entry;
-
-        .logo {
-            height: 125px;
-            width: 112px;
-            transition: 0.2s all;
-            background: transparent;
-            background-color: transparent;
-
-            &:hover {
-                transform: scale(1.08);
-            }
-        }
-
-        p {
-            font-size: 56px;
-        }
-    }
-
-    h1 {
-        font-size: 80px;
-        font-family: 'Inter', sans-serif;
-        font-weight: 700;
-        max-width: 44%;
-        min-height: 170px;
-        text-align: center;
-        letter-spacing: -0.035em;
-        color: transparent; 
-        line-height: 1.025;
-        margin-bottom: 20px;
-        background: rgb(185,185,185);
-        background: -moz-linear-gradient(360deg, rgba(185,185,185,1) 0%, rgba(255,255,255,1) 100%);
-        background: -webkit-linear-gradient(360deg, rgba(185,185,185,1) 0%, rgba(255,255,255,1) 100%);
-        background: linear-gradient(360deg, rgba(185,185,185,1) 0%, rgba(255,255,255,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b9b9b9",endColorstr="#ffffff",GradientType=1);
-        background-clip: text;
-        animation: 2s 1 forwards entry;
-
-        @media screen and (max-width: 928px) {
-            max-width: 90% !important;
-        }
-    }
-
-    .slogan {
-        font-size: 20px;
-        font-family: 'Space Grotesk', sans-serif;
-        color: #FFFFFFB2;
-        max-width: 35%;
-        text-align: center;
-        animation: 2s 1 forwards entry;
-
-        @media screen and (max-width: 928px) {
-            max-width: 70%;
-        }
-    }
-
-    .image {
-        width: 420px;
-        margin-bottom: 28px;
-        animation: 2s 1 forwards entry;
-    }
-
-    .buttonContainer {
-        margin-top: 28px;
-        display: flex;
-        gap: 12px;
-
-        button {
-            width: 200px;
-            height: 48px;
-            border-radius: 4px;
-            font-size: 16px;
-            font-family: "Inter", sans-serif;
-            font-weight: 500;
-            transition: 0.5s all;
-            transition-delay: 0.1s;
-            animation: 2s 1 forwards entry;
-        }
-
-        .brightButton {
-            background-color: white;
-            color: black;
-
-            &:hover {
-                box-shadow: 0px 0px 24px white;
-            }
-        }
-
-        .darkButton {
-            background-color: rgba(5, 5, 5, 0.92);
-            border: 1px solid #969696;
-
-            &:hover {
-                border: 1px solid white;
-            }
-        }
-    }
+  }
 }
 
 // Media Queries
 
 @media screen and (max-width: 1730px) {
-    h1.title {
-        max-width: 800px;
-    }
+  h1.title {
+    max-width: 800px;
+  }
 }
 
 @media screen and (max-width: 1250px) {
-    h1.title {
-        max-width: 80%;
-    }
+  h1.title {
+    max-width: 80%;
+  }
 
-    .section {
-        padding-top: 12.5%;
-    }
+  .section {
+    padding-top: 12.5%;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    h1.title {
-        font-size: 50px;
-        margin-bottom: -30px;
-    }
+  h1.title {
+    font-size: 50px;
+    margin-bottom: -30px;
+  }
 
-    p.slogan {
-        min-width: 65%;
-    }
+  p.slogan {
+    min-width: 65%;
+  }
 
-    .section {
-        padding-top: 17.5%;
-    }
+  .section {
+    padding-top: 17.5%;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    h1.title {
-        margin-bottom: 10px;
-        max-width: 80%;
-        font-size: 45px;
-        margin-bottom: -30px;
-    }
+  h1.title {
+    margin-bottom: 10px;
+    max-width: 80%;
+    font-size: 45px;
+    margin-bottom: -30px;
+  }
 
-    p.slogan {
-        min-width: 75%;
-        margin-bottom: 10px;
-    }
+  p.slogan {
+    min-width: 75%;
+    margin-bottom: 10px;
+    animation: 1s 1 forwards entry;
+  }
 
-    .section {
-        padding-top: 25%;
-        height: 107.5vh;
-        background-position: 0% 0%;
-        background-attachment: scroll;
-    }
+  .section {
+    padding-top: 25%;
+    height: 107.5vh;
+    background-position: 0% 0%;
+    background-attachment: scroll;
+  }
 
-    .image {
-        min-width: 80%;
-        max-width: 80%;
-        margin-top: 10px;
-    }
+  .image {
+    min-width: 80%;
+    max-width: 80%;
+    margin-top: 10px;
+  }
 
-    .buttonContainer {
-        a {
-            button.brightButton,
-            button.darkButton {
-                width: 43.5vw;
-            }
-        }
+  .buttonContainer {
+    a {
+      button.brightButton,
+      button.darkButton {
+        width: 43.5vw;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 535px) {
-    h1.title {
-        margin-bottom: 0px;
-    }
+  h1.title {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 520px) {
-    h1.title {
-        font-size: 32px;
-        margin-bottom: -70px;
-    }
+  h1.title {
+    font-size: 32px;
+    margin-bottom: -70px;
+  }
+}
+
+.splineItem {
+  z-index: 10;
+  height: 80%;
+  width: 100%;
+  transform: scale(1.65);
+  margin-right: 60px;
+  margin-top: -10px;
+}
+
+.heroSection {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.headline {
+  font-size: 270px !important;
+  margin-top: 35px;
+  font-stretch: 190%;
+  line-height: 0.9 !important;
+
+  span {
+    overflow: hidden;
+    background-size: 300% 300%;
+    height: 100vh;
+    background-color:#CEBAE3;
+    background-color:#EBAFD9;
+    background-image: radial-gradient(at 97% 97%,#a5f08e 0, transparent 47%), radial-gradient(at 1% 86%, #7bc3f3 0, transparent 42%), radial-gradient(at 63% 9%, #2d73f7 0, transparent 50%), radial-gradient(at 34% 44%, #f3d88f 0, transparent 44%), radial-gradient(at 92% 54%, rgb(14, 105, 241) 0, transparent 50%), radial-gradient(at 89% 15%, #1900ff 0, transparent 50%), radial-gradient(at 1% 0%, #57e76f 0, transparent 50%), radial-gradient(at 49% 78%, #ff11b8 0, transparent 50%);
+    animation: gradient 10s linear infinite;
+    background-clip: text;
+}
+  }
+
+.teaser {
+  border: 1px solid #2e2e2e;
+  border-radius: 16px;
+  padding: 3px 12px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  transition: 0.2s all;
+  animation: 1s 1 forwards entry;
+
+
+  &:hover {
+    background-color: #2e2e2e;
+  }
+
+  .circle {
+    margin-top: 1px;
+    height: 0.7rem;
+    width: 0.7rem;
+    border-radius: 50%;
+    background-color: rgb(36, 214, 36);
+  }
 }
