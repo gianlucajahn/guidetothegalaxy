@@ -15,10 +15,20 @@ export default function Hero() {
         <div className={styles.circle} />
         <div>Now Live!</div>
       </button>
-      <h1 className={styles.headline}>BEYOND<br /><span>EARTH</span></h1>
+      <h1 className={styles.headline}>
+        BEYOND
+        <div className={styles.splineBox}>
+          <Spline scene="https://prod.spline.design/s8wfXml4adgW7E3w/scene.splinecode" />
+        </div>
+        <br />
+        <span>EARTH</span>
+      </h1>
 
       <div className={styles.heroSection}>
-        <p className={styles.slogan}>An optimistic glance into the future of human spaceflight, padded with a pinch of sarcasm.</p>
+        <p className={styles.slogan}>
+          An optimistic glance into the future of human spaceflight, padded with
+          a pinch of sarcasm.
+        </p>
         <div className={styles.buttonContainer}>
           <a href="https://beyondearth.gg/documentation/introduction">
             <button className={styles.brightButton}>Start reading</button>
