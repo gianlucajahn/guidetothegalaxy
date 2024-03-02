@@ -16,11 +16,13 @@ export default function Hero() {
         <div>Now Live!</div>
       </button>
       <h1 className={styles.headline}>
-        BEYOND
-        <div className={styles.splineBox}>
-          <Spline scene="https://prod.spline.design/s8wfXml4adgW7E3w/scene.splinecode" />
+        <div className={styles.headlineTop}>
+          <div className={styles.brand}>BEY</div>
+          <div className={styles.splineBox}>
+            <Spline scene="https://prod.spline.design/s8wfXml4adgW7E3w/scene.splinecode" />
+          </div>
+          <div className={styles.brand}>ND</div>
         </div>
-        <br />
         <span>EARTH</span>
       </h1>
 
@@ -47,6 +49,11 @@ export default function Hero() {
         </div>
 
         <p className={styles.license}>License: MIT X11</p>
+        <a className={`${styles.heroMouse} ${styles.anchor}`} href="">
+          <div className={styles.mouseIcon}>
+            <span></span>
+          </div>
+        </a>
       </div>
     </section>
   );

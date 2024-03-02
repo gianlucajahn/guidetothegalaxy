@@ -32,20 +32,18 @@
   height: 300vh;
   display: flex;
   flex-direction: column;
-  margin-top: -90px;
   align-items: center;
-  background-image: url("https://www.onlygfx.com/wp-content/uploads/2019/02/7-noise-texture-overlays-5-1024x714.png");
   background-color: rgba(7, 7, 7, 0.6) !important;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 8.85%;
+  padding-top: 3%;
   position: relative;
   overflow: hidden;
 
   * {
-    overflow: hidden;
+
   }
 
   .license {
@@ -283,6 +281,11 @@
   font-stretch: 190%;
   line-height: 0.9 !important;
 
+  .headlineTop {
+    display: flex;
+    gap: 200px;
+  }
+
   span {
     overflow: hidden;
     background-size: 300% 300%;
@@ -315,6 +318,7 @@
   font-size: 14px;
   transition: 0.2s all;
   animation: 1s 1 forwards entry;
+  margin-bottom: -10px;
 
   &:hover {
     background-color: #2e2e2e;
@@ -330,9 +334,80 @@
 }
 
 .splineBox {
-  transform: scale(1.4);
+  transform: scale(1.425);
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: -95px;
-  left: 92px;
-  z-index: 1004;
+  top: -94px;
+  left: 44px;
+}
+
+.heroMouse {
+  margin-top: 20px;
+  margin-left: -15px;
+  text-align: center;
+  z-index: 100;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  h3 {
+    margin-left: -14px;
+    padding-top: 15px;
+  }
+}
+
+.mouseIcon {
+  width: 25px;
+  height: 45px;
+  border-radius: 15px;
+  position: relative;
+  border: 2px solid #dedede;
+  text-align: center;
+
+  span {
+    width: 3px;
+    height: 8px;
+    margin: 2px auto 0;
+    display: block;
+    background: #dedede;
+    border-radius: 5px;
+    -webkit-animation: 1.2s ease infinite wheel-up-down;
+            animation: 1.2s ease infinite wheel-up-down;
+  }
+}
+
+@-webkit-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
+
+@keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
+
+.brand {
+  animation: 2s infinite forwards glow;
+  text-shadow: 0px 0px 22px #ffffff !important;
 }
