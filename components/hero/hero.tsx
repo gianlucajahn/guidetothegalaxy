@@ -73,8 +73,7 @@ export default function Hero() {
           <div className={styles.card} onMouseMove={(e) => handleOnMouseMove(e)}>
             <h3>Everything for free, forever</h3>
             <p>
-              Card Content and text in here, please. Card Content and text in
-              here, please. Card Content and text in here, please.
+              All chapters in english and german, account creation, progress tracking, audiobooks and additional resources, all for free, forever.
             </p>
           </div>
           <div className={styles.card} onMouseMove={(e) => handleOnMouseMove(e)}>
