@@ -79,8 +79,7 @@ export default function Hero() {
           <div className={styles.card} onMouseMove={(e) => handleOnMouseMove(e)}>
             <h3>All the sources</h3>
             <p>
-              Card Content and text in here, please. Card Content and text in
-              here, please. Card Content and text in here, please.
+              If anything isn't being proven within an article, sources are being provided. No "believe me, I know my stuff" crap.
             </p>
           </div>
           <div className={styles.card} onMouseMove={(e) => handleOnMouseMove(e)}>
