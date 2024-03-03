@@ -9,6 +9,17 @@ export default function Hero() {
     document.body.style.overflowX = "hidden";
   }, []);
 
+  const handleOnMouseMove = (e) => {
+    const { currentTarget: target } = e;
+
+    const rect = target.getBoundingClientRect(),
+      x = e.clientX - rect.left,
+      y = e.clientY - rect.top;
+
+    target.style.setProperty("--mouse-x", `${x}px`);
+    target.style.setProperty("--mouse-y", `${y}px`);
+  };
+
   return (
     <section className={styles.section}>
       <button className={styles.teaser}>
@@ -54,6 +65,54 @@ export default function Hero() {
             <span></span>
           </div>
         </a>
+      </div>
+
+      <div className={styles.cardsSection}>
+        <h2>What You're Getting</h2>
+        <div className={styles.cards}>
+          <div className={styles.card} onMouseMove={(e) => handleOnMouseMove(e)}>
+            <h3>Everything for free, forever</h3>
+            <p>
+              Card Content and text in here, please. Card Content and text in
+              here, please. Card Content and text in here, please.
+            </p>
+          </div>
+          <div className={styles.card} onMouseMove={(e) => handleOnMouseMove(e)}>
+            <h3>All the sources</h3>
+            <p>
+              Card Content and text in here, please. Card Content and text in
+              here, please. Card Content and text in here, please.
+            </p>
+          </div>
+          <div className={styles.card} onMouseMove={(e) => handleOnMouseMove(e)}>
+            <h3>Science lessons</h3>
+            <p>
+              Card Content and text in here, please. Card Content and text in
+              here, please. Card Content and text in here, please.
+            </p>
+          </div>
+          <div className={styles.card} onMouseMove={(e) => handleOnMouseMove(e)}>
+            <h3>Bursts of nihilism</h3>
+            <p>
+              Card Content and text in here, please. Card Content and text in
+              here, please. Card Content and text in here, please.
+            </p>
+          </div>
+          <div className={styles.card} onMouseMove={(e) => handleOnMouseMove(e)}>
+            <h3>Progress Tracking</h3>
+            <p>
+              Card Content and text in here, please. Card Content and text in
+              here, please. Card Content and text in here, please.
+            </p>
+          </div>
+          <div className={styles.card} onMouseMove={(e) => handleOnMouseMove(e)}>
+            <h3>Top End Merchandise</h3>
+            <p>
+              Card Content and text in here, please. Card Content and text in
+              here, please. Card Content and text in here, please.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
