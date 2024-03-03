@@ -421,7 +421,13 @@
     font-family: "Inter", sans-serif;
     font-size: 56px;
     font-weight: 600;
+  }
+
+  .sarcastic {
     margin-bottom: 60px;
+    color: #b6b6b6;
+    font-family: "Inter", sans-serif;
+    margin-top: -2px;
   }
 
   .cards {
@@ -431,16 +437,23 @@
     grid-template-columns: 1fr 1fr 1fr;
 
     .card {
-      padding: 14px 30px 18px 30px;
+      padding: 20px 30px 18px 30px;
       background-color: rgba(255, 255, 255, 0.02);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 10px;
       position: relative;
+      display: flex;
+      gap: 14px;
+
+      .cardIcon {
+        height: 22px;
+        width: 22px;
+        margin-top: 8px;
+      }
 
       h3 {
         font-size: 24px;
         font-weight: 600;
-        margin-top: 85px;
       }
 
       p {

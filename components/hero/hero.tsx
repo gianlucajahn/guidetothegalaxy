@@ -69,46 +69,107 @@ export default function Hero() {
 
       <div className={styles.cardsSection}>
         <h2>What You're Getting</h2>
+        <p className={styles.sarcastic}>It's a shame I have to convince you, but it is what it is...</p>
         <div className={styles.cards}>
-          <div className={styles.card} onMouseMove={(e) => handleOnMouseMove(e)}>
-            <h3>Everything for free, forever</h3>
-            <p>
-              All chapters in english and german, account creation, progress tracking, audiobooks and additional resources, all for free, forever.
-            </p>
+          <div
+            className={styles.card}
+            onMouseMove={(e) => handleOnMouseMove(e)}
+          >
+            <Image
+              className={styles.cardIcon}
+              src={require(".//../../resources/images/piggybank.png")}
+              alt="Piggy Bank"
+            />
+            <div>
+              <h3>Everything for free</h3>
+              <p>
+                All chapters in english and german, account creation, progress
+                tracking, audiobooks and additional resources, all for free,
+                forever.
+              </p>
+            </div>
           </div>
-          <div className={styles.card} onMouseMove={(e) => handleOnMouseMove(e)}>
-            <h3>All the sources</h3>
-            <p>
-              If anything isn't being proven within an article, sources are being provided. No "believe me, I know my stuff" crap.
-            </p>
+          <div
+            className={styles.card}
+            onMouseMove={(e) => handleOnMouseMove(e)}
+          >
+            <Image
+              className={styles.cardIcon}
+              src={require(".//../../resources/images/folder.png")}
+              alt="Sources"
+            />
+            <div>
+              <h3>All the sources</h3>
+              <p>
+                If anything isn't being proven within an article, sources are
+                being provided. No "believe me, I know my stuff" crap.
+              </p>
+            </div>
           </div>
-          <div className={styles.card} onMouseMove={(e) => handleOnMouseMove(e)}>
-            <h3>Science lessons</h3>
-            <p>
-              Card Content and text in here, please. Card Content and text in
-              here, please. Card Content and text in here, please.
-            </p>
+          <div
+            className={styles.card}
+            onMouseMove={(e) => handleOnMouseMove(e)}
+          >
+            <Image
+              className={styles.cardIcon}
+              src={require(".//../../resources/images/science.png")}
+              alt="Science"
+            />
+            <div>
+              <h3>Science lessons</h3>
+              <p>
+                All natural sciences have their right to exist within this
+                project. You'll learn a lot about all of them!
+              </p>
+            </div>
           </div>
-          <div className={styles.card} onMouseMove={(e) => handleOnMouseMove(e)}>
-            <h3>Bursts of nihilism</h3>
-            <p>
-              Card Content and text in here, please. Card Content and text in
-              here, please. Card Content and text in here, please.
-            </p>
+          <div
+            className={styles.card}
+            onMouseMove={(e) => handleOnMouseMove(e)}
+          >
+            <Image
+              className={styles.cardIcon}
+              src={require(".//../../resources/images/nihilism.png")}
+              alt="Nihilism"
+            />
+            <div>
+              <h3>Bursts of nihilism</h3>
+              <p>
+                After finishing reading or listening, you might think you're unimaginably insignificant. You're right! But don't worry yet.
+              </p>
+            </div>
           </div>
-          <div className={styles.card} onMouseMove={(e) => handleOnMouseMove(e)}>
-            <h3>Progress Tracking</h3>
-            <p>
-              Card Content and text in here, please. Card Content and text in
-              here, please. Card Content and text in here, please.
-            </p>
+          <div
+            className={styles.card}
+            onMouseMove={(e) => handleOnMouseMove(e)}
+          >
+            <Image
+              className={styles.cardIcon}
+              src={require(".//../../resources/images/progress.png")}
+              alt="Progress"
+            />
+            <div>
+              <h3>Progress Tracking</h3>
+              <p>
+                Our free account system makes it as easy as possible for you to track your reading or listening progress.
+              </p>
+            </div>
           </div>
-          <div className={styles.card} onMouseMove={(e) => handleOnMouseMove(e)}>
-            <h3>Top End Merchandise</h3>
-            <p>
-              Card Content and text in here, please. Card Content and text in
-              here, please. Card Content and text in here, please.
-            </p>
+          <div
+            className={styles.card}
+            onMouseMove={(e) => handleOnMouseMove(e)}
+          >
+            <Image
+              className={styles.cardIcon}
+              src={require(".//../../resources/images/merch.png")}
+              alt="Merchandise"
+            />
+            <div>
+              <h3>Top End Merchandise</h3>
+              <p>
+                This website features a merchandise shop from highest quality fabrics in the merchandise market that is actually non-profit.
+              </p>
+            </div>
           </div>
         </div>
       </div>
