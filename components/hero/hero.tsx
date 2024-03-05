@@ -205,6 +205,63 @@ export default function Hero() {
               </p>
             </div>
           </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+            className={styles.card}
+            onMouseMove={(e) => handleOnMouseMove(e)}
+          >
+            <Image
+              className={styles.cardIcon}
+              src={require(".//../../resources/images/opensource.png")}
+              alt="Open Source"
+            />
+            <div>
+              <h3>A chance to contribute</h3>
+              <p>
+                Since this project is open-source, if you feel like a chapter is missing and can defend that claim, you can add it!
+              </p>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+            className={styles.card}
+            onMouseMove={(e) => handleOnMouseMove(e)}
+          >
+            <Image
+              className={styles.cardIcon}
+              src={require(".//../../resources/images/discord.png")}
+              alt="Discord"
+            />
+            <div>
+              <h3>A (nerdy) community</h3>
+              <p>
+                Join other readers and space-enthusiasts on our discord server to exchange and make friends in the field.
+              </p>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+            className={styles.card}
+            onMouseMove={(e) => handleOnMouseMove(e)}
+          >
+            <Image
+              className={styles.cardIcon}
+              src={require(".//../../resources/images/rockets.png")}
+              alt="Rocket"
+            />
+            <div>
+              <h3>An engineering jumpstart</h3>
+              <p>
+                If you want to break into the aerospace engineering market, you won't find any better motivation than this project.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
