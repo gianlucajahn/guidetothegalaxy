@@ -68,10 +68,26 @@ export default function Hero() {
       </div>
 
       <div className={styles.cardsSection}>
-        <h2>What You're Getting</h2>
-        <p className={styles.sarcastic}>It's a shame I have to convince you, but it is what it is...</p>
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+        >
+          What You're Getting
+        </motion.h2>
+        <motion.p
+          className={styles.sarcastic}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+        >
+          It's a shame I have to convince you, but it is what it is...
+        </motion.p>
         <div className={styles.cards}>
-          <div
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
             className={styles.card}
             onMouseMove={(e) => handleOnMouseMove(e)}
           >
@@ -88,10 +104,13 @@ export default function Hero() {
                 forever.
               </p>
             </div>
-          </div>
-          <div
+          </motion.div>
+          <motion.div
             className={styles.card}
             onMouseMove={(e) => handleOnMouseMove(e)}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
           >
             <Image
               className={styles.cardIcon}
@@ -105,10 +124,13 @@ export default function Hero() {
                 being provided. No "believe me, I know my stuff" crap.
               </p>
             </div>
-          </div>
-          <div
+          </motion.div>
+          <motion.div
             className={styles.card}
             onMouseMove={(e) => handleOnMouseMove(e)}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
           >
             <Image
               className={styles.cardIcon}
@@ -122,10 +144,13 @@ export default function Hero() {
                 project. You'll learn a lot about all of them!
               </p>
             </div>
-          </div>
-          <div
+          </motion.div>
+          <motion.div
             className={styles.card}
             onMouseMove={(e) => handleOnMouseMove(e)}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
           >
             <Image
               className={styles.cardIcon}
@@ -135,13 +160,17 @@ export default function Hero() {
             <div>
               <h3>Bursts of nihilism</h3>
               <p>
-                After finishing reading or listening, you might think you're unimaginably insignificant. You're right! But don't worry yet.
+                After finishing reading or listening, you might think you're
+                unimaginably insignificant. You're right! But don't worry yet.
               </p>
             </div>
-          </div>
-          <div
+          </motion.div>
+          <motion.div
             className={styles.card}
             onMouseMove={(e) => handleOnMouseMove(e)}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
           >
             <Image
               className={styles.cardIcon}
@@ -151,13 +180,17 @@ export default function Hero() {
             <div>
               <h3>Progress Tracking</h3>
               <p>
-                Our free account system makes it as easy as possible for you to track your reading or listening progress.
+                Our free account system makes it as easy as possible for you to
+                track your reading or listening progress.
               </p>
             </div>
-          </div>
-          <div
+          </motion.div>
+          <motion.div
             className={styles.card}
             onMouseMove={(e) => handleOnMouseMove(e)}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
           >
             <Image
               className={styles.cardIcon}
@@ -167,10 +200,11 @@ export default function Hero() {
             <div>
               <h3>Top End Merchandise</h3>
               <p>
-                This website features a merchandise shop from highest quality fabrics in the merchandise market that is actually non-profit.
+                This website features a merchandise shop from highest quality
+                fabrics in the merchandise market that is actually non-profit.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
