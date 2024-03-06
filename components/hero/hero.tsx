@@ -91,18 +91,21 @@ export default function Hero() {
             className={styles.card}
             onMouseMove={(e) => handleOnMouseMove(e)}
           >
-            <Image
-              className={styles.cardIcon}
-              src={require(".//../../resources/images/piggybank.png")}
-              alt="Piggy Bank"
-            />
-            <div>
-              <h3>Everything for free</h3>
-              <p>
-                All chapters in english and german, account creation, progress
-                tracking, audiobooks and additional resources, all for free,
-                forever.
-              </p>
+            <div className={styles.cardBorder}></div>
+            <div className={styles.cardContent}>
+              <Image
+                className={styles.cardIcon}
+                src={require(".//../../resources/images/piggybank.png")}
+                alt="Piggy Bank"
+              />
+              <div>
+                <h3>Everything for free</h3>
+                <p>
+                  All chapters in english and german, account creation, progress
+                  tracking, audiobooks and additional resources, all for free,
+                  forever.
+                </p>
+              </div>
             </div>
           </motion.div>
           <motion.div
@@ -112,17 +115,20 @@ export default function Hero() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
           >
-            <Image
-              className={styles.cardIcon}
-              src={require(".//../../resources/images/folder.png")}
-              alt="Sources"
-            />
-            <div>
-              <h3>All the sources</h3>
-              <p>
-                If anything isn't being proven within an article, sources are
-                being provided. No "believe me, I know my stuff" crap.
-              </p>
+            <div className={styles.cardBorder}></div>
+            <div className={styles.cardContent}>
+              <Image
+                className={styles.cardIcon}
+                src={require(".//../../resources/images/folder.png")}
+                alt="Sources"
+              />
+              <div>
+                <h3>All the sources</h3>
+                <p>
+                  If anything isn't being proven within an article, sources are
+                  being provided. No "believe me, I know my stuff" crap.
+                </p>
+              </div>
             </div>
           </motion.div>
           <motion.div
@@ -132,17 +138,20 @@ export default function Hero() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
           >
-            <Image
-              className={styles.cardIcon}
-              src={require(".//../../resources/images/science.png")}
-              alt="Science"
-            />
-            <div>
-              <h3>Science lessons</h3>
-              <p>
-                All natural sciences have their right to exist within this
-                project. You'll learn a lot about all of them!
-              </p>
+            <div className={styles.cardBorder}></div>
+            <div className={styles.cardContent}>
+              <Image
+                className={styles.cardIcon}
+                src={require(".//../../resources/images/science.png")}
+                alt="Science"
+              />
+              <div>
+                <h3>Science lessons</h3>
+                <p>
+                  All natural sciences have their right to exist within this
+                  project. You'll learn a lot about all of them!
+                </p>
+              </div>
             </div>
           </motion.div>
           <motion.div
@@ -152,17 +161,20 @@ export default function Hero() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
           >
-            <Image
-              className={styles.cardIcon}
-              src={require(".//../../resources/images/nihilism.png")}
-              alt="Nihilism"
-            />
-            <div>
-              <h3>Bursts of nihilism</h3>
-              <p>
-                After finishing reading or listening, you might think you're
-                unimaginably insignificant. You're right! But don't worry yet.
-              </p>
+            <div className={styles.cardBorder}></div>
+            <div className={styles.cardContent}>
+              <Image
+                className={styles.cardIcon}
+                src={require(".//../../resources/images/nihilism.png")}
+                alt="Nihilism"
+              />
+              <div>
+                <h3>Bursts of nihilism</h3>
+                <p>
+                  After finishing reading or listening, you might think you're
+                  unimaginably insignificant. You're right! But don't worry yet.
+                </p>
+              </div>
             </div>
           </motion.div>
           <motion.div
@@ -172,17 +184,20 @@ export default function Hero() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
           >
-            <Image
-              className={styles.cardIcon}
-              src={require(".//../../resources/images/progress.png")}
-              alt="Progress"
-            />
-            <div>
-              <h3>Progress Tracking</h3>
-              <p>
-                Our free account system makes it as easy as possible for you to
-                track your reading or listening progress.
-              </p>
+            <div className={styles.cardBorder}></div>
+            <div className={styles.cardContent}>
+              <Image
+                className={styles.cardIcon}
+                src={require(".//../../resources/images/progress.png")}
+                alt="Progress"
+              />
+              <div>
+                <h3>Progress Tracking</h3>
+                <p>
+                  Our free account system makes it as easy as possible for you
+                  to track your reading or listening progress.
+                </p>
+              </div>
             </div>
           </motion.div>
           <motion.div
@@ -192,17 +207,20 @@ export default function Hero() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
           >
-            <Image
-              className={styles.cardIcon}
-              src={require(".//../../resources/images/merch.png")}
-              alt="Merchandise"
-            />
-            <div>
-              <h3>Top End Merchandise</h3>
-              <p>
-                This website features a merchandise shop from highest quality
-                fabrics in the merchandise market that is actually non-profit.
-              </p>
+            <div className={styles.cardBorder}></div>
+            <div className={styles.cardContent}>
+              <Image
+                className={styles.cardIcon}
+                src={require(".//../../resources/images/merch.png")}
+                alt="Merchandise"
+              />
+              <div>
+                <h3>Top-End Merchandise</h3>
+                <p>
+                  This website features a merchandise shop from highest quality
+                  fabrics in the merchandise market that is actually non-profit.
+                </p>
+              </div>
             </div>
           </motion.div>
           <motion.div
@@ -212,16 +230,20 @@ export default function Hero() {
             className={styles.card}
             onMouseMove={(e) => handleOnMouseMove(e)}
           >
-            <Image
-              className={styles.cardIcon}
-              src={require(".//../../resources/images/opensource.png")}
-              alt="Open Source"
-            />
-            <div>
-              <h3>A chance to contribute</h3>
-              <p>
-                Since this project is open-source, if you feel like a chapter is missing and can defend that claim, you can add it!
-              </p>
+            <div className={styles.cardBorder}></div>
+            <div className={styles.cardContent}>
+              <Image
+                className={styles.cardIcon}
+                src={require(".//../../resources/images/opensource.png")}
+                alt="Open Source"
+              />
+              <div>
+                <h3>A chance to contribute</h3>
+                <p>
+                  Since this project is open-source, if you feel like a chapter
+                  is missing and can defend that claim, you can add it!
+                </p>
+              </div>
             </div>
           </motion.div>
           <motion.div
@@ -231,16 +253,20 @@ export default function Hero() {
             className={styles.card}
             onMouseMove={(e) => handleOnMouseMove(e)}
           >
-            <Image
-              className={styles.cardIcon}
-              src={require(".//../../resources/images/discord.png")}
-              alt="Discord"
-            />
-            <div>
-              <h3>A (nerdy) community</h3>
-              <p>
-                Join other readers and space-enthusiasts on our discord server to exchange and make friends in the field.
-              </p>
+            <div className={styles.cardBorder}></div>
+            <div className={styles.cardContent}>
+              <Image
+                className={styles.cardIcon}
+                src={require(".//../../resources/images/discord.png")}
+                alt="Discord"
+              />
+              <div>
+                <h3>A (nerdy) community</h3>
+                <p>
+                  Join other readers and space-enthusiasts on our discord server
+                  to exchange and make friends in the field.
+                </p>
+              </div>
             </div>
           </motion.div>
           <motion.div
@@ -250,16 +276,20 @@ export default function Hero() {
             className={styles.card}
             onMouseMove={(e) => handleOnMouseMove(e)}
           >
-            <Image
-              className={styles.cardIcon}
-              src={require(".//../../resources/images/rockets.png")}
-              alt="Rocket"
-            />
-            <div>
-              <h3>An engineering jumpstart</h3>
-              <p>
-                If you want to break into the aerospace engineering market, you won't find any better motivation than this project.
-              </p>
+            <div className={styles.cardBorder}></div>
+            <div className={styles.cardContent}>
+              <Image
+                className={styles.cardIcon}
+                src={require(".//../../resources/images/rockets.png")}
+                alt="Rocket"
+              />
+              <div>
+                <h3>An engineering jumpstart</h3>
+                <p>
+                  If you want to break into the aerospace engineering market,
+                  you won't find any better motivation than this project.
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>
