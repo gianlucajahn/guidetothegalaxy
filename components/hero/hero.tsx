@@ -287,11 +287,33 @@ export default function Hero() {
                 <h3>An engineering jumpstart</h3>
                 <p>
                   If you want to break into the aerospace engineering market,
-                  you won't find any better motivation than this project.
+                  you won't find any better jumpstart than this project.
                 </p>
               </div>
             </div>
           </motion.div>
+        </div>
+      </div>
+
+      <div className={styles.moreSection}>
+      <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+        >
+          What's Awaiting Us
+        </motion.h2>
+        <motion.p
+          className={styles.sarcastic}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+        >
+          Or should I say "Who's?", to build up some suspense?
+        </motion.p>
+
+        <div className={styles.marsSpline}>
+          <Spline scene="https://prod.spline.design/KFWCEGUzLtn8396f/scene.splinecode" />
         </div>
       </div>
     </section>

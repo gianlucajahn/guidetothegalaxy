@@ -29,7 +29,7 @@
 
 .section {
   width: 100vw;
-  height: 200vh;
+  height: 254vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -527,3 +527,30 @@
   }
 }
 
+.moreSection {
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 18px;
+    margin-right: 30px;
+  }
+
+  .marsSpline {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 38.5vh;
+    transform: scale(2.1);
+  }
+}
