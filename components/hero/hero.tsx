@@ -296,7 +296,7 @@ export default function Hero() {
       </div>
 
       <div className={styles.moreSection}>
-      <motion.h2
+        <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
@@ -312,9 +312,20 @@ export default function Hero() {
           Or should I say "Who's?", to build up some suspense?
         </motion.p>
 
-        <div className={styles.marsSpline}>
+        <motion.div
+          className={styles.marsSpline}
+          initial={{ y: 200, scale: 1 }}
+          whileInView={{ y: 0, scale: 2.1 }}
+          transition={{ duration: 2, type: "spring" }}
+        >
           <Spline scene="https://prod.spline.design/KFWCEGUzLtn8396f/scene.splinecode" />
-        </div>
+        </motion.div>
+        <motion.div
+          className={styles.sky}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+        />
       </div>
     </section>
   );

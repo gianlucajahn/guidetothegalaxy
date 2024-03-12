@@ -551,6 +551,15 @@
     width: 100vw;
     height: 100vh;
     top: 38.5vh;
-    transform: scale(2.1);
+  }
+
+  .sky {
+    position: absolute;
+    top: -17vh;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../resources/images/starrysky.png");
+    background-size: cover;
   }
 }
