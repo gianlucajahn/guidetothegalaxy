@@ -312,11 +312,60 @@ export default function Hero() {
           Or should I say "Who's?", to build up some suspense?
         </motion.p>
 
+        <div className={styles.revealCards}>
+          <motion.div
+            className={`${styles.revealCard} ${styles.terraforming}`}
+            initial={{ y: 70, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1.1, type: "spring", bounce: 0.55, delay: 0.1 }}
+            whileHover={{ scale: 1.125, transition: { duration: 0.2, bounce: 0.8 }}}
+          >
+            <h1>Terraforming Mars</h1>
+            <p>We are going to terraform Mars. Are you wondering how? Learn now</p>
+            <p></p>
+          </motion.div>
+
+          <motion.div
+            className={`${styles.revealCard} ${styles.cloudcities}`}
+            initial={{ y: 70, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1.1, type: "spring", bounce: 0.55, delay: 0.1 }}
+            whileHover={{ scale: 1.125, transition: { duration: 0.2, bounce: 0.8 }}}
+          >
+            <h1>Cloud Cities</h1>
+            <p>We are going to terraform Mars. Are you wondering how? Learn now</p>
+            <p></p>
+          </motion.div>
+
+          <motion.div
+            className={`${styles.revealCard} ${styles.spacehabs}`}
+            initial={{ y: 70, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1.1, type: "spring", bounce: 0.55, delay: 0.1 }}
+            whileHover={{ scale: 1.125, transition: { duration: 0.2, bounce: 0.8 }}}
+          >
+            <h1>Space Habitats</h1>
+            <p>We are going to terraform Mars. Are you wondering how? Learn now</p>
+            <p></p>
+          </motion.div>
+
+          <motion.div
+            className={`${styles.revealCard} ${styles.alien}`}
+            initial={{ y: 70, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1.1, type: "spring", bounce: 0.55, delay: 0.1 }}
+            whileHover={{ scale: 1.125, transition: { duration: 0.2, bounce: 0.8 }}}
+          >
+            <h1>Alien Life</h1>
+            <p>We are going to terraform Mars. Are you wondering how? Learn now</p>
+            <p></p>
+          </motion.div>
+        </div>
+
         <motion.div
           className={styles.marsSpline}
           initial={{ y: 200, scale: 1 }}
           whileInView={{ y: 0, scale: 2.1 }}
-          transition={{ duration: 2, type: "spring" }}
         >
           <Spline scene="https://prod.spline.design/KFWCEGUzLtn8396f/scene.splinecode" />
         </motion.div>
