@@ -366,6 +366,7 @@ export default function Hero() {
           className={styles.marsSpline}
           initial={{ y: 200, scale: 1 }}
           whileInView={{ y: 0, scale: 2.1 }}
+          transition={{ type: "spring", duration: 1 }}
         >
           <Spline scene="https://prod.spline.design/KFWCEGUzLtn8396f/scene.splinecode" />
         </motion.div>
