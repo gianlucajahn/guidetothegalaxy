@@ -321,7 +321,7 @@ export default function Hero() {
             whileHover={{ scale: 1.125, transition: { duration: 0.2, bounce: 0.8 }}}
           >
             <h1>Terraforming Mars</h1>
-            <p>We are going to terraform Mars. Are you wondering how? Learn now</p>
+            <p>We are going to terraform Mars. Are you already wondering how?</p>
             <p></p>
           </motion.div>
 
@@ -333,7 +333,7 @@ export default function Hero() {
             whileHover={{ scale: 1.125, transition: { duration: 0.2, bounce: 0.8 }}}
           >
             <h1>Cloud Cities</h1>
-            <p>We are going to terraform Mars. Are you wondering how? Learn now</p>
+            <p>Do flying cities sound too futuristic to you? Well, they aren't!</p>
             <p></p>
           </motion.div>
 
@@ -345,7 +345,7 @@ export default function Hero() {
             whileHover={{ scale: 1.125, transition: { duration: 0.2, bounce: 0.8 }}}
           >
             <h1>Space Habitats</h1>
-            <p>We are going to terraform Mars. Are you wondering how? Learn now</p>
+            <p>What are Space Habitats and how can they house trillions of people?</p>
             <p></p>
           </motion.div>
 
@@ -357,7 +357,7 @@ export default function Hero() {
             whileHover={{ scale: 1.125, transition: { duration: 0.2, bounce: 0.8 }}}
           >
             <h1>Alien Life</h1>
-            <p>We are going to terraform Mars. Are you wondering how? Learn now</p>
+            <p>As we will learn, we will make alien contact sooner than you expected.</p>
             <p></p>
           </motion.div>
         </div>
