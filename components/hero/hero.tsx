@@ -343,7 +343,7 @@ export default function Hero() {
               duration: 1.1,
               type: "spring",
               bounce: 0.55,
-              delay: 0.1,
+              delay: 0.245,
             }}
             whileHover={{
               scale: 1.125,
@@ -365,7 +365,7 @@ export default function Hero() {
               duration: 1.1,
               type: "spring",
               bounce: 0.55,
-              delay: 0.1,
+              delay: 0.245,
             }}
             whileHover={{
               scale: 1.125,
@@ -412,7 +412,7 @@ export default function Hero() {
             duration: 1.1,
             type: "spring",
             bounce: 0.55,
-            delay: 0.1,
+            delay: 0.275,
           }}
         >
           <p className={styles.ctaText}>
