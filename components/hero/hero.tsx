@@ -317,11 +317,21 @@ export default function Hero() {
             className={`${styles.revealCard} ${styles.terraforming}`}
             initial={{ y: 70, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1.1, type: "spring", bounce: 0.55, delay: 0.1 }}
-            whileHover={{ scale: 1.125, transition: { duration: 0.2, bounce: 0.8 }}}
+            transition={{
+              duration: 1.1,
+              type: "spring",
+              bounce: 0.55,
+              delay: 0.1,
+            }}
+            whileHover={{
+              scale: 1.125,
+              transition: { duration: 0.2, bounce: 0.8 },
+            }}
           >
             <h1>Terraforming Mars</h1>
-            <p>We are going to terraform Mars. Are you already wondering how?</p>
+            <p>
+              We are going to terraform Mars. Are you already wondering how?
+            </p>
             <p></p>
           </motion.div>
 
@@ -329,11 +339,21 @@ export default function Hero() {
             className={`${styles.revealCard} ${styles.cloudcities}`}
             initial={{ y: 70, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1.1, type: "spring", bounce: 0.55, delay: 0.1 }}
-            whileHover={{ scale: 1.125, transition: { duration: 0.2, bounce: 0.8 }}}
+            transition={{
+              duration: 1.1,
+              type: "spring",
+              bounce: 0.55,
+              delay: 0.1,
+            }}
+            whileHover={{
+              scale: 1.125,
+              transition: { duration: 0.2, bounce: 0.8 },
+            }}
           >
             <h1>Cloud Cities</h1>
-            <p>Do flying cities sound too futuristic to you? Well, they aren't!</p>
+            <p>
+              Do flying cities sound too futuristic to you? Well, they aren't!
+            </p>
             <p></p>
           </motion.div>
 
@@ -341,11 +361,22 @@ export default function Hero() {
             className={`${styles.revealCard} ${styles.spacehabs}`}
             initial={{ y: 70, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1.1, type: "spring", bounce: 0.55, delay: 0.1 }}
-            whileHover={{ scale: 1.125, transition: { duration: 0.2, bounce: 0.8 }}}
+            transition={{
+              duration: 1.1,
+              type: "spring",
+              bounce: 0.55,
+              delay: 0.1,
+            }}
+            whileHover={{
+              scale: 1.125,
+              transition: { duration: 0.2, bounce: 0.8 },
+            }}
           >
             <h1>Space Habitats</h1>
-            <p>What are Space Habitats and how can they house trillions of people?</p>
+            <p>
+              What are Space Habitats and how can they house trillions of
+              people?
+            </p>
             <p></p>
           </motion.div>
 
@@ -353,14 +384,57 @@ export default function Hero() {
             className={`${styles.revealCard} ${styles.alien}`}
             initial={{ y: 70, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1.1, type: "spring", bounce: 0.55, delay: 0.1 }}
-            whileHover={{ scale: 1.125, transition: { duration: 0.2, bounce: 0.8 }}}
+            transition={{
+              duration: 1.1,
+              type: "spring",
+              bounce: 0.55,
+              delay: 0.1,
+            }}
+            whileHover={{
+              scale: 1.125,
+              transition: { duration: 0.2, bounce: 0.8 },
+            }}
           >
             <h1>Alien Life</h1>
-            <p>As we will learn, we will make alien contact sooner than you expected.</p>
+            <p>
+              As we will learn, we will make alien contact sooner than you
+              expected.
+            </p>
             <p></p>
           </motion.div>
         </div>
+
+        <motion.div
+          className={styles.cta}
+          initial={{ y: 70, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 1.1,
+            type: "spring",
+            bounce: 0.55,
+            delay: 0.1,
+          }}
+        >
+          <p className={styles.ctaText}>
+            Start reading now or regret it later.
+          </p>
+          <div className={`${styles.buttonContainer} ${styles.ctaButtons}`}>
+            <a href="https://beyondearth.gg/documentation/introduction">
+              <button className={styles.brightButton}>Start reading</button>
+            </a>
+            <a
+              href="https://github.com/gianlucajahn/guidetothegalaxy"
+              target="_blank"
+            >
+              <button
+                className={styles.darkButton}
+                style={{ color: "white !important" }}
+              >
+                GitHub
+              </button>
+            </a>
+          </div>
+        </motion.div>
 
         <motion.div
           className={styles.marsSpline}

@@ -612,3 +612,20 @@
   top: 22.5%;
   right: 26%;
 }
+
+.ctaButtons {
+  z-index: 10;
+  margin-top: -4px !important;
+}
+
+.ctaText {
+  z-index: 10;
+  margin-top: -75px;
+}
+
+.cta {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
