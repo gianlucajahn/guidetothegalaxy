@@ -416,7 +416,7 @@ export default function Hero() {
           }}
         >
           <p className={styles.ctaText}>
-            Start reading now or regret it later.
+            Start reading now - or regret it later :)
           </p>
           <div className={`${styles.buttonContainer} ${styles.ctaButtons}`}>
             <a href="https://beyondearth.gg/documentation/introduction">
