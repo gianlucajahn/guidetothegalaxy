@@ -60,11 +60,11 @@ export default function Hero() {
         </div>
 
         <p className={styles.license}>License: MIT X11</p>
-        <a className={`${styles.heroMouse} ${styles.anchor}`} href="">
+        <div className={`${styles.heroMouse} ${styles.anchor}`}>
           <div className={styles.mouseIcon}>
             <span></span>
           </div>
-        </a>
+        </div>
       </div>
 
       <div className={styles.cardsSection}>
