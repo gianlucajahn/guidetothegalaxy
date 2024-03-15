@@ -42,6 +42,10 @@
   position: relative;
   overflow: hidden;
 
+  @media screen and (max-width: 800px) {
+    padding-top: 1%;
+  }
+
   .license {
     font-size: 14px;
     margin-top: 22px;
@@ -108,6 +112,30 @@
     @media screen and (max-width: 928px) {
       max-width: 90% !important;
     }
+
+    @media screen and (max-width: 1190px) {
+      font-size: 200px !important;
+    }
+
+    @media screen and (max-width: 902px) {
+      font-size: 162px !important;
+    }
+
+    @media screen and (max-width: 735px) {
+      font-size: 140px !important;
+    }
+
+    @media screen and (max-width: 660px) {
+      font-size: 110px !important;
+    }
+
+    @media screen and (max-width: 520px) {
+      font-size: 80px !important;
+    }
+
+    @media screen and (max-width: 365px) {
+      font-size: 70px !important;
+    }
   }
 
   .slogan {
@@ -123,6 +151,10 @@
     @media screen and (max-width: 928px) {
       max-width: 70%;
     }
+
+    @media screen and (max-width: 520px) {
+      font-size: 17px;
+    };
   }
 
   .image {
@@ -136,6 +168,10 @@
     display: flex;
     gap: 12px;
 
+    @media screen and (max-width: 520px) {
+      gap: 8px;
+    }
+
     button {
       width: 200px;
       height: 48px;
@@ -148,6 +184,10 @@
       animation: 1s 1 forwards entry;
       animation-delay: 0.4s;
       opacity: 0;
+
+      @media screen and (max-width: 520px) {
+        height: 44px;
+      }
     }
 
     .brightButton {
@@ -200,6 +240,10 @@
 
   .section {
     padding-top: 17.5%;
+
+    @media screen and (max-width: 520px) {
+      padding-top: 15% !important;
+    }
   }
 }
 
@@ -280,6 +324,30 @@
   .headlineTop {
     display: flex;
     gap: 200px;
+
+    @media screen and (max-width: 1190px) {
+      gap: 160px;
+    }
+
+    @media screen and (max-width: 902px) {
+      gap: 130px;
+    }
+    
+    @media screen and (max-width: 735px) {
+      gap: 120px;
+    }
+
+    @media screen and (max-width: 660px) {
+      gap: 110px;
+    }
+
+    @media screen and (max-width: 520px) {
+      gap: 61px;
+    }
+
+    @media screen and (max-width: 365px) {
+      gap: 57px;
+    }
   }
 
   span {
@@ -327,6 +395,11 @@
     border-radius: 50%;
     background-color: rgb(36, 214, 36);
   }
+
+  @media screen and (max-width: 520px) {
+    font-size: 12px;
+    padding: 2px 12px;
+  }
 }
 
 .splineBox {
@@ -336,6 +409,47 @@
   position: absolute;
   top: -94px;
   left: 41px;
+
+  @media screen and (max-width: 1190px) {
+    transform: scale(0.69);
+    top: -69px;
+    left: 30px;
+  }
+
+  @media screen and (max-width: 902px) {
+    transform: scale(0.55);
+    top: -56px;
+    left: 24px;
+  }
+  
+  @media screen and (max-width: 735px) {
+    transform: scale(0.48);
+    top: -52px;
+    left: 22px;
+    z-index: 1000;
+  }
+
+  @media screen and (max-width: 660px) {
+    transform: scale(0.435);
+    top: -45px;
+    left: 18px;
+  }
+
+  @media screen and (max-width: 520px) {
+    width: 200%;
+    height: 200%;
+    transform: scale(0.26);
+    top: -101px;
+    left: -150px;
+  }
+
+  @media screen and (max-width: 365px) {
+    width: 200%;
+    height: 200%;
+    transform: scale(0.24);
+    top: -89px;
+    left: -133px;
+  }
 }
 
 .heroMouse {
