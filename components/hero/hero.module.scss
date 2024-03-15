@@ -241,7 +241,7 @@
   .section {
     padding-top: 17.5%;
 
-    @media screen and (max-width: 520px) {
+    @media screen and (max-width: 660px) {
       padding-top: 15% !important;
     }
   }
@@ -338,7 +338,7 @@
     }
 
     @media screen and (max-width: 660px) {
-      gap: 110px;
+      gap: 88px;
     }
 
     @media screen and (max-width: 520px) {
@@ -430,9 +430,11 @@
   }
 
   @media screen and (max-width: 660px) {
-    transform: scale(0.435);
-    top: -45px;
-    left: 18px;
+    width: 200%;
+    height: 200%;
+    transform: scale(0.365);
+    top: -137px;
+    left: -209px;
   }
 
   @media screen and (max-width: 520px) {
