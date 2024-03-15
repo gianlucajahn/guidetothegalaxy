@@ -39,12 +39,11 @@ export default function Hero() {
 
       <div className={styles.heroSection}>
         <p className={styles.slogan}>
-          An optimistic glance into the future of human spaceflight, padded with
-          a pinch of sarcasm.
+          Ein optimistischer Blick in die Zukunft der menschlichen Raumfahrt, gefüttert mit einer Prise Sarkasmus.
         </p>
         <div className={styles.buttonContainer}>
           <a href="https://beyondearth.gg/documentation/introduction">
-            <button className={styles.brightButton}>Start reading</button>
+            <button className={styles.brightButton}>Jetzt lesen</button>
           </a>
           <a
             href="https://github.com/gianlucajahn/guidetothegalaxy"
@@ -73,7 +72,7 @@ export default function Hero() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
         >
-          What You're Getting
+          Was Dich Erwartet
         </motion.h2>
         <motion.p
           className={styles.sarcastic}
@@ -81,7 +80,7 @@ export default function Hero() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
         >
-          It's a shame I have to convince you, but it is what it is...
+          Es ist ein Jammer, dass ich dich überzeugen muss, aber naja...
         </motion.p>
         <div className={styles.cards}>
           <motion.div
@@ -99,11 +98,11 @@ export default function Hero() {
                 alt="Piggy Bank"
               />
               <div>
-                <h3>Everything for free</h3>
+                <h3>Alles, völlig kostenlos</h3>
                 <p>
-                  All chapters in english and german, account creation, progress
-                  tracking, audiobooks and additional resources, all for free,
-                  forever.
+                  Alle Kapitel in Englisch und Deutsch, Account-Features, Progress 
+                  Tracking, Audiobooks und zusätzliche Ressourcen, kostenlos,
+                  für immer.
                 </p>
               </div>
             </div>
@@ -123,10 +122,10 @@ export default function Hero() {
                 alt="Sources"
               />
               <div>
-                <h3>All the sources</h3>
+                <h3>All unsere Quellen</h3>
                 <p>
-                  If anything isn't being proven within an article, sources are
-                  being provided. No "believe me, I know my stuff" crap.
+                  Sollte ein Beweis nicht innerhalb eines Kapitels erbracht werden,
+                  findest du ihn im Quelldokument zum Ende jedes Kapitels. 
                 </p>
               </div>
             </div>
@@ -146,10 +145,10 @@ export default function Hero() {
                 alt="Science"
               />
               <div>
-                <h3>Science lessons</h3>
+                <h3>Naturwissenschafts-Lektionen</h3>
                 <p>
-                  All natural sciences have their right to exist within this
-                  project. You'll learn a lot about all of them!
+                  Jede Naturwissenschaft hat ihre Existenzberechtigung innerhalb
+                  dieses Projekts. Du wirst sie alle kennenlernen!
                 </p>
               </div>
             </div>
@@ -169,10 +168,10 @@ export default function Hero() {
                 alt="Nihilism"
               />
               <div>
-                <h3>Bursts of nihilism</h3>
+                <h3>Nihilistische Existenzkrisen</h3>
                 <p>
-                  After finishing reading or listening, you might think you're
-                  unimaginably insignificant. You're right! But don't worry yet.
+                  Nachdem du dieses Projekts gelesen oder angehört hast,
+                  wirst du vielleicht denken, du bist völlig insignifikant. Stimmt sogar!
                 </p>
               </div>
             </div>
@@ -192,10 +191,10 @@ export default function Hero() {
                 alt="Progress"
               />
               <div>
-                <h3>Progress Tracking</h3>
+                <h3>Progress-Tracking</h3>
                 <p>
-                  Our free account system makes it as easy as possible for you
-                  to track your reading or listening progress.
+                  Unser kostenloses Accountsystem macht es dir so einfach wie 
+                  möglich, deinen Lese- oder Hörfortschritt zu tracken.
                 </p>
               </div>
             </div>
@@ -217,8 +216,8 @@ export default function Hero() {
               <div>
                 <h3>Top-End Merchandise</h3>
                 <p>
-                  This website features a merchandise shop from highest quality
-                  fabrics in the merchandise market that is actually non-profit.
+                  Diese Website beinhaltet einen Merchandise-Shop, in dem wir großen
+                  Wert auf hochwertige Verarbeitung legen. Non-Profit.
                 </p>
               </div>
             </div>
@@ -238,10 +237,10 @@ export default function Hero() {
                 alt="Open Source"
               />
               <div>
-                <h3>A chance to contribute</h3>
+                <h3>Die Möglichkeit, zu helfen</h3>
                 <p>
-                  Since this project is open-source, if you feel like a chapter
-                  is missing and can defend that claim, you can add it!
+                  Da dieses Projekt Open-Source ist, tu' dir keinen Zwang an und
+                  füge ihm gern ein Kapitel hinzu, wenn du es verteidigen kannst!
                 </p>
               </div>
             </div>
@@ -261,10 +260,10 @@ export default function Hero() {
                 alt="Discord"
               />
               <div>
-                <h3>A (nerdy) community</h3>
+                <h3>Eine (Nerd-) Community</h3>
                 <p>
-                  Join other readers and space-enthusiasts on our discord server
-                  to exchange and make friends in the field.
+                  Lerne andere Leser und Weltraum-Enthusiasten auf unserem Discord-Server 
+                  kennen, um Freunde in der Branche zu finden.
                 </p>
               </div>
             </div>
@@ -284,10 +283,10 @@ export default function Hero() {
                 alt="Rocket"
               />
               <div>
-                <h3>An engineering jumpstart</h3>
+                <h3>Starthilfe in die Branche</h3>
                 <p>
-                  If you want to break into the aerospace engineering market,
-                  you won't find any better jumpstart than this project.
+                  Solltest du in der Raumfahrttechnik arbeiten wollen, wirst du
+                  keine bessere Starthilfe in deine Traumbranche finden als dieses Projekt.
                 </p>
               </div>
             </div>
@@ -301,7 +300,7 @@ export default function Hero() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
         >
-          What's Awaiting Us
+          Was Uns Erwartet
         </motion.h2>
         <motion.p
           className={styles.sarcastic}
@@ -309,7 +308,7 @@ export default function Hero() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
         >
-          Or should I say "Who's?", to build up some suspense?
+          Oder sollte ich sagen "Wer?", um ein wenig Spannung aufzubauen?
         </motion.p>
 
         <div className={styles.revealCards}>
@@ -328,9 +327,9 @@ export default function Hero() {
               transition: { duration: 0.2, bounce: 0.8 },
             }}
           >
-            <h1>Terraforming Mars</h1>
+            <h1>Terraforming des Mars</h1>
             <p>
-              We are going to terraform Mars. Are you already wondering how?
+              Wir werden den Mars "terraformen". Fragst du dich, wie wir das tun?
             </p>
             <p></p>
           </motion.div>
@@ -352,7 +351,7 @@ export default function Hero() {
           >
             <h1>Cloud Cities</h1>
             <p>
-              Do flying cities sound too futuristic to you? Well, they aren't!
+              Klingen fliegende Städte zu futuristisch für dich? Sind sie nicht!
             </p>
             <p></p>
           </motion.div>
@@ -374,8 +373,8 @@ export default function Hero() {
           >
             <h1>Space Habitats</h1>
             <p>
-              What are Space Habitats and how can they house trillions of
-              people?
+              Was sind Space Habitats und wieviele Menschen haben dort
+              Platz?
             </p>
             <p></p>
           </motion.div>
@@ -395,10 +394,9 @@ export default function Hero() {
               transition: { duration: 0.2, bounce: 0.8 },
             }}
           >
-            <h1>Alien Life</h1>
+            <h1>Fremdes Leben</h1>
             <p>
-              As we will learn, we will make alien contact sooner than you
-              expected.
+              Wie wir bald lernen werden, sind wir nicht allein hier draußen...
             </p>
             <p></p>
           </motion.div>
@@ -416,11 +414,11 @@ export default function Hero() {
           }}
         >
           <p className={styles.ctaText}>
-            Start reading now - or regret it later :)
+            Schaue jetzt rein - oder bereu' es später :)
           </p>
           <div className={`${styles.buttonContainer} ${styles.ctaButtons}`}>
             <a href="https://beyondearth.gg/documentation/introduction">
-              <button className={styles.brightButton}>Start reading</button>
+              <button className={styles.brightButton}>Jetzt lesen</button>
             </a>
             <a
               href="https://github.com/gianlucajahn/guidetothegalaxy"
