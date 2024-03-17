@@ -4,7 +4,7 @@ import audiobookArray from "../../helpers/variables/audiobookArray";
 import styles from "./readingtime.module.scss";
 
 export interface ReadingTimeProps {
-  duration: string
+  duration: string;
 }
 
 export default function ReadingTime(props: ReadingTimeProps) {
@@ -58,7 +58,18 @@ export default function ReadingTime(props: ReadingTimeProps) {
 
       <div className={styles.right}>
         <p>Reading Time: {readTime ? readTime : null} minutes</p>
-        <p>Audiobook: {props.duration.toString()} minute{props.duration.toString() !== "1" ? "s" : ""}</p>
+        <p>
+          Audiobook:{" "}
+          {props.duration
+            ? props.duration.toString()
+            : "Not available for this chapter"}{" "}
+          {props.duration ? "minute" : null}{" "}
+          {props.duration
+            ? props.duration.toString() !== "1"
+              ? "s"
+              : ""
+            : null}
+        </p>
       </div>
     </div>
   );
