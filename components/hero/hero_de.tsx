@@ -272,7 +272,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
-            className={styles.card}
+            className={`${styles.card} ${styles.lastCard}`}
             onMouseMove={(e) => handleOnMouseMove(e)}
           >
             <div className={styles.cardBorder}></div>
