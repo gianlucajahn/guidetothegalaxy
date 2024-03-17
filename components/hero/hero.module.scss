@@ -534,6 +534,14 @@
     font-family: "Inter", sans-serif;
     font-size: 56px;
     font-weight: 600;
+
+    @media screen and (max-width: 599px) {
+      font-size: 46px;
+    }
+
+    @media screen and (max-width: 479px) {
+      font-size: 38px;
+    }
   }
 
   .sarcastic {
@@ -541,6 +549,14 @@
     color: #b6b6b6;
     font-family: "Inter", sans-serif;
     margin-top: -2px;
+
+    @media screen and (max-width: 599px) {
+      font-size: 13px;
+    }
+
+    @media screen and (max-width: 479px) {
+      font-size: 11px;
+    }
   }
 
   .cards {
@@ -549,10 +565,32 @@
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
 
+    @media screen and (max-width: 650px) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 425px) {
+      width: 85%;
+    }
+
+    @media screen and (max-width: 1460px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+
     .card {
       background-color: rgba(255, 255, 255, 0.135);
       border-radius: 10px;
       position: relative;
+
+      &.lastCard {
+        @media screen and (max-width: 1460px) {
+          display: none !important;
+        }
+      }
 
       .cardContent {
         --card-color: rgb(23, 23, 23);
@@ -597,12 +635,22 @@
         font-weight: 600;
         margin-top: 18px;
         margin-right: 30px;
+
+        @media screen and (max-width: 425px) {
+          font-size: 20px;
+          margin-top: 20px;
+        }
       }
 
       p {
         color: rgba(255, 255, 255, 0.65);
         margin-bottom: 18px;
         margin-right: 30px;
+
+        @media screen and (max-width: 425px) {
+          font-size: 15px;
+          margin-top: 2px;
+        }
       }
 
       &:hover {
