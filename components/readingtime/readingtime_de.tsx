@@ -63,7 +63,7 @@ export default function ReadingTime(props: ReadingTimeProps) {
           {props.duration
             ? props.duration.toString()
             : "Für dieses Kapitel nicht verfügbar"}{" "}
-          {props.duration ? "Minute" : null}{" "}
+          {props.duration ? "Minute" : null}{""}
           {props.duration
             ? props.duration.toString() !== "1"
               ? "n"

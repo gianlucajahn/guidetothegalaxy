@@ -63,7 +63,7 @@ export default function ReadingTime(props: ReadingTimeProps) {
           {props.duration
             ? props.duration.toString()
             : "Not available for this chapter"}{" "}
-          {props.duration ? "minute" : null}{" "}
+          {props.duration ? "minute" : null}{""}
           {props.duration
             ? props.duration.toString() !== "1"
               ? "s"
