@@ -57,7 +57,7 @@ export default function ReadingTime(props: ReadingTimeProps) {
       </div>
 
       <div className={styles.right}>
-        <p>Lesezeit: {readTime ? readTime : null} Minuten</p>
+      <p>Reading Time: {readTime ? readTime : null} Minute{readTime > 1 ? "n" : ""}</p>
         <p>
           Audiobook:{" "}
           {props.duration
