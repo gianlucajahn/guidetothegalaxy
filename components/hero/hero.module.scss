@@ -42,6 +42,10 @@
   position: relative;
   overflow: hidden;
 
+  @media screen and (max-width: 1250px) {
+    min-height: auto;
+  }
+
   @media screen and (max-width: 800px) {
     padding-top: 1%;
   }
@@ -108,7 +112,9 @@
     background-clip: text;
     animation: 1s 1 forwards entry;
     opacity: 0;
+  }
 
+  .headline {
     @media screen and (max-width: 928px) {
       max-width: 90% !important;
     }
@@ -263,7 +269,6 @@
 
   .section {
     padding-top: 25%;
-    height: 107.5vh;
     background-position: 0% 0%;
     background-attachment: scroll;
   }
@@ -542,6 +547,10 @@
     @media screen and (max-width: 479px) {
       font-size: 38px;
     }
+
+    @media screen and (max-width: 390px) {
+      font-size: 34px;
+    }
   }
 
   .sarcastic {
@@ -699,12 +708,48 @@
     font-family: "Inter", sans-serif;
     font-size: 56px;
     font-weight: 600;
+    z-index: 1000;
+
+    @media screen and (max-width: 585px) {
+      font-size: 52px;
+    }
+
+    @media screen and (max-width: 535px) {
+      font-size: 46px;
+    }
+
+    @media screen and (max-width: 470px) {
+      font-size: 42px;
+    }
+
+    @media screen and (max-width: 425px) {
+      font-size: 38px;
+    }
+
+    @media screen and (max-width: 370px) {
+      font-size: 32px;
+    }
   }
 
   p {
     color: rgba(255, 255, 255, 0.65);
     margin-bottom: 18px;
     margin-right: 30px;
+  }
+
+  .sarcastic {
+    @media screen and (max-width: 680px) {
+      margin-bottom: -55px;
+    }
+
+    @media screen and (max-width: 535px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 425px) {
+      font-size: 13px;
+      margin-left: 25px;
+    }
   }
 
   .marsSpline {
@@ -747,34 +792,201 @@
   cursor: pointer;
   max-width: 300px;
 
+  @media screen and (max-width: 810px) {
+    font-size: 16px;
+    padding: 16px;
+    max-width: 250px;
+  }
+
+  @media screen and (max-width: 585px) {
+    max-width: 42.5%;
+  }
+
+  @media screen and (max-width: 410px) {
+    max-width: 45%;
+  }
+
   p {
     font-size: 14px;
     margin: 0;
+
+    @media screen and (max-width: 810px) {
+      font-size: 12px;
+    }
   }
 
   h1 {
     margin-bottom: 10px;
+
+    @media screen and (max-width: 810px) {
+      margin-bottom: 6px;
+    }
   }
 }
 
 .terraforming {
   top: 22.5%;
   left: 26%;
+
+  @media screen and (max-width: 1385px) {
+    top: 35%;
+  }
+
+  @media screen and (max-width: 1315px) {
+    left: 21.5%;
+  }
+
+  @media screen and (max-width: 1150px) {
+    top: 40%;
+  }
+
+  @media screen and (max-width: 1100px) {
+    left: 15%;
+  }
+
+  @media screen and (max-width: 925px) {
+    left: 12%;
+  }
+
+  @media screen and (max-width: 810px) {
+    top: 32.5%;
+  }
+
+  @media screen and (max-width: 605px) {
+    left: 6%;
+    top: 26%;
+  }
+
+  @media screen and (max-width: 410px) {
+    left: 3%;
+  }
+
+  @media screen and (max-width: 380px) {
+    top: 23.5%;
+  }
 }
 
 .cloudcities {
   bottom: 5%;
   right: 13.5%;
+
+  @media screen and (max-width: 1150px) {
+    right: 8%;
+  }
+
+  @media screen and (max-width: 925px) {
+    right: 5%;
+  }
+
+  @media screen and (max-width: 810px) {
+    bottom: 21.5%;
+  }
+
+  @media screen and (max-width: 605px) {
+    right: 6%;
+    bottom: 38%;
+  }
+
+  @media screen and (max-width: 542px) {
+    bottom: 30%;
+  }
+
+  @media screen and (max-width: 428px) {
+    bottom: 20%;
+  }
+
+  @media screen and (max-width: 410px) {
+    right: 3%;
+  }
+
+  @media screen and (max-width: 395px) {
+    bottom: 15%;
+  }
 }
 
 .spacehabs {
   bottom: 5%;
   left: 13.5%;
+
+  @media screen and (max-width: 1150px) {
+    left: 8%;
+  }
+
+  @media screen and (max-width: 925px) {
+    left: 5%;
+  }
+
+  @media screen and (max-width: 810px) {
+    bottom: 21.5%;
+  }
+
+  @media screen and (max-width: 605px) {
+    left: 6%;
+    bottom: 38%;
+  }
+
+  @media screen and (max-width: 542px) {
+    bottom: 30%;
+  }
+
+  @media screen and (max-width: 428px) {
+    bottom: 20%;
+  }
+
+  @media screen and (max-width: 410px) {
+    left: 3%;
+  }
+
+  @media screen and (max-width: 395px) {
+    bottom: 15%;
+  }
 }
 
 .alien {
   top: 22.5%;
   right: 26%;
+
+  @media screen and (max-width: 1385px) {
+    top: 35%;
+  }
+
+  @media screen and (max-width: 1315px) {
+    right: 21.5%;
+  }
+
+  @media screen and (max-width: 1150px) {
+    top: 40%;
+  }
+
+  @media screen and (max-width: 1100px) {
+    right: 15%;
+  }
+
+  @media screen and (max-width: 925px) {
+    right: 12%;
+  }
+
+  @media screen and (max-width: 810px) {
+    top: 32.5%;
+  }
+
+  @media screen and (max-width: 680px) {
+    top: 39%;
+    right: 7.5%;
+  }
+
+  @media screen and (max-width: 605px) {
+    right: 6%;
+    top: 26%;
+  }
+
+  @media screen and (max-width: 410px) {
+    right: 3%;
+  }
+
+  @media screen and (max-width: 380px) {
+    top: 23.5%;
+  }
 }
 
 .ctaButtons {
@@ -792,4 +1004,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 1545px) {
+    margin-top: 100px !important;
+  }
+
+  @media screen and (max-width: 1250px) {
+    margin-bottom: 150px;
+  }
+
+  @media screen and (max-width: 825px) {
+    margin-top: 125px !important;
+  }
+
+  @media screen and (max-width: 810px) {
+    margin-top: 50px !important;
+    margin-bottom: 75px;
+  }
+
+  @media screen and (max-width: 605px) {
+    margin-top: 30px !important;
+    margin-bottom: 120px;
+  }
+
+  @media screen and (max-width: 395px) {
+    margin-top: 70px !important;
+    margin-bottom: 120px;
+  }
 }

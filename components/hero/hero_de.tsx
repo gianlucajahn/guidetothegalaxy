@@ -297,6 +297,7 @@ export default function Hero() {
       <div className={styles.moreSection}>
         <motion.h2
           initial={{ opacity: 0 }}
+          className={styles.moreTeaser}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
         >
