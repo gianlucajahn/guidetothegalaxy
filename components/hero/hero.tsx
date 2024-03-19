@@ -20,6 +20,41 @@ export default function Hero() {
     target.style.setProperty("--mouse-y", `${y}px`);
   };
 
+  function lengthOfLongestSubstring(string: string): number {
+    const substrings = [];
+    for (let i = 0; i < string.length; i++) {
+      let currentSubstring = "";
+      const occurredSymbols = [];
+      for (let j = i; j < string.length; j++) {
+        if (occurredSymbols.includes(string[j])) {
+          console.log("breaks")
+          break;
+        } else {
+          console.log(string[j]);
+          occurredSymbols.push(string[j]);
+          currentSubstring += string[j];
+          console.log(currentSubstring)
+        }
+      }
+      substrings.push(currentSubstring);
+    }
+    let max_str = substrings[0].length;
+    let ans = substrings[0];
+
+    for (let k = 1; k < substrings.length; k++) {
+      let maxi = substrings[k].length;
+
+      if (maxi > max_str) {
+        ans = substrings[k];
+        max_str = maxi;
+      }
+    }
+
+    return ans.length;
+  }
+
+  console.log(lengthOfLongestSubstring("abcdefghhhilmohhhpqrstuvwxyzzyjdhjdhjdhabc"));
+
   return (
     <section className={styles.section}>
       <button className={styles.teaser}>
