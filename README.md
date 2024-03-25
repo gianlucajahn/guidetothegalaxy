@@ -71,16 +71,16 @@ Cause it's cool.
 
 ## Technologies
 
-- Next.js 12
+- ⚛️ Next.js 12
   - Nextra
   - Server Side Rendering
   - Next.js Image & Link Components
   - Next.js I18n
-- TypeScript
-- TailwindCSS / SCSS
-- Hashnode
-- Spring
-- Firebase
-- Framer Motion
-- Three.js & Spline
-- ElevenLabs
+- 💻 TypeScript
+- 🎨 TailwindCSS / SCSS
+- 💠 Hashnode
+- 👕 Spring
+- 🔥 Firebase
+- 💨 Framer Motion
+- 👓 Three.js & Spline
+- 🤖 ElevenLabs
