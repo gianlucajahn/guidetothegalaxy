@@ -14,7 +14,7 @@ export default function About() {
   React.useEffect(() => {
     if (window.innerWidth <= 600) {
       setPortfolio("My Portfolio");
-      return
+      return;
     }
 
     if (typeof document === "undefined") {
@@ -89,7 +89,7 @@ export default function About() {
       </div>
       <section className={css.firstSection} id="first">
         <h1>
-          About Beyond <span className={css.grad}>Earth©</span>
+          About Beyond <span className={css.grad}>Earth®</span>
         </h1>
         <h3>The open-sourced guide on spacetravel</h3>
         <div className={css.info}>
@@ -221,11 +221,10 @@ export default function About() {
       </section>
 
       <section className={css.secondSection}>
-        <h1>Check us out{portfolio ? ' here!': ''}{portfolio ? '' : ' on your preferred platform!'}</h1>
+        <h1>Check us out on other platforms!</h1>
         <h2 className={css.cta1}>
           Our content is available on{" "}
-          <strong className={css.spoti}>Spotify</strong> and on{" "}
-          <strong className={css.apple}>Apple Podcasts</strong>!
+          <strong className={css.apple}>Soundcloud</strong> too!
         </h2>
 
         <div className={css.boxes}>
@@ -253,49 +252,36 @@ export default function About() {
           </div>
 
           <div className={css.boxesMiddle}>
-            <div className={css.box}>
-              <Image
-                className={css.teaser}
-                src={require(".//../../resources/images/spotifyteaser1.png")}
-                alt="Location"
-              />
-              <span>
-                <strong>German Audiobook</strong> on Spotify
-              </span>
-            </div>
-            <div className={css.box}>
-              <Image
-                className={css.teaser}
-                src={require(".//../../resources/images/spotifyteaser2.png")}
-                alt="Location"
-              />
-              <span>
-                <strong>English Audiobook</strong> on Spotify
-              </span>
-            </div>
-          </div>
-
-          <div className={css.boxesRight}>
-            <div className={css.box}>
-              <Image
-                className={css.teaser}
-                src={require(".//../../resources/images/applepodcasts1.png")}
-                alt="Location"
-              />
-              <span>
-                <strong>German Audiobook</strong> on Apple Podcasts
-              </span>
-            </div>
-            <div className={css.box}>
-              <Image
-                className={css.teaser}
-                src={require(".//../../resources/images/applepodcasts2.png")}
-                alt="Location"
-              />
-              <span>
-                <strong>English Audiobook</strong> on Apple Podcasts
-              </span>
-            </div>
+            <a
+              href="https://soundcloud.com/gianluca-jahn-768382314/sets/beyond-earth-deutsch"
+              target="_blank"
+            >
+              <div className={css.box}>
+                <Image
+                  className={css.teaser}
+                  src={require(".//../../resources/images/soundcloudteaser2.png")}
+                  alt="Location"
+                />
+                <span>
+                  <strong>German Audiobook</strong> on Soundcloud
+                </span>
+              </div>
+            </a>
+            <a
+              href="https://soundcloud.com/gianluca-jahn/sets/beyond-earth"
+              target="_blank"
+            >
+              <div className={css.box}>
+                <Image
+                  className={css.teaser}
+                  src={require(".//../../resources/images/soundcloudteaser1.png")}
+                  alt="Location"
+                />
+                <span>
+                  <strong>English Audiobook</strong> on Soundcloud
+                </span>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -320,7 +306,9 @@ export default function About() {
             />
             <p>What is this page about?</p>
           </div>
-          <div className={`${css.answer} ${firstFAQ ? css.expanded : css.none}`}>
+          <div
+            className={`${css.answer} ${firstFAQ ? css.expanded : css.none}`}
+          >
             <p>
               Within this page, we're going to take a chronological leap through
               the future of human spaceflight. We're going to be looking at
@@ -349,9 +337,18 @@ export default function About() {
             />
             <p>Do you work in this field?</p>
           </div>
-          <div className={`${css.answer} ${secondFAQ ? css.expanded : css.none}`}>
+          <div
+            className={`${css.answer} ${secondFAQ ? css.expanded : css.none}`}
+          >
             <p>
-              No, not currently. I am considering enrollment in a part-time Bachelor of Science in Aerospace Engineering but I'm currently working as a Software Developer. My ultimate goal is to help shape and form the future of the spacetravel industry in a bigger fashion than "just" a job in the field though, so I am most likely to continue the (well-paid) path of a Software Engineer and ramp up enough money to start my own company in the Aeronautics & Aerospace Engineering field.
+              No, not currently. I am considering enrollment in a part-time
+              Bachelor of Science in Aerospace Engineering but I'm currently
+              working as a Software Developer. My ultimate goal is to help shape
+              and form the future of the spacetravel industry in a bigger
+              fashion than "just" a job in the field though, so I am most likely
+              to continue the path of a Software Engineer and ramp up enough
+              money to start my own company in the Aeronautics & Aerospace
+              Engineering field.
             </p>
           </div>
         </div>
@@ -367,8 +364,14 @@ export default function About() {
             />
             <p>Where can I request a topic or feature?</p>
           </div>
-          <div className={`${css.answer} ${thirdFAQ ? css.expanded : css.none}`}>
-            <p>Anywhere you want, really, as long as it's probable for me to notice it. You choose between the GitHub repository, my LinkedIn inbox, Discord or even the e-mail option on my portfolio website.</p>
+          <div
+            className={`${css.answer} ${thirdFAQ ? css.expanded : css.none}`}
+          >
+            <p>
+              Anywhere you want, really, as long as it's probable for me to
+              notice it. You choose between the GitHub repository, my LinkedIn
+              inbox, Discord or even the e-mail option on my portfolio website.
+            </p>
           </div>
         </div>
         <div className={css.questionBox}>
@@ -383,9 +386,22 @@ export default function About() {
             />
             <p>Do you think you'll ever be on Mars?</p>
           </div>
-          <div className={`${css.answer} ${fourthFAQ ? css.expanded : css.none}`}>
+          <div
+            className={`${css.answer} ${fourthFAQ ? css.expanded : css.none}`}
+          >
             <p>
-              Tough one. The correct answer to this question is, especially if you know me well enough, much more dependant on my health situation than on the progression speed of spacetravel. If I get to live 70+ years, I think it's pretty likely. If not, I don't think I will, honestly. <br /><br />It's not about me, though. I am not even excited to be there, even if we had a colony up on Mars. What's important to me is accelerating progress and for that, my location doesn't matter at all. If I was an outside observer looking at humans and their progress, I wouldn't care for a single human so why should I now? Because I just so happen to be him? 
+              Tough one. The correct answer to this question is, especially if
+              you know me well enough, much more dependant on my health
+              situation than on the progression speed of spacetravel. If I get
+              to live 70+ years, I think it's pretty likely. If not, I don't
+              think I will, honestly. <br />
+              <br />
+              It's not about me, though. I am not even excited to be there, even
+              if we had a colony up on Mars. What's important to me is
+              accelerating progress and for that, my location doesn't matter at
+              all. If I was an outside observer looking at humans and their
+              progress, I wouldn't care for a single human so why should I now?
+              Because I just so happen to be him?
             </p>
           </div>
         </div>
@@ -401,9 +417,16 @@ export default function About() {
             />
             <p>How can I contribute?</p>
           </div>
-          <div className={`${css.answer} ${fifthFAQ ? css.expanded : css.none} ${css.last}`}>
+          <div
+            className={`${css.answer} ${fifthFAQ ? css.expanded : css.none} ${
+              css.last
+            }`}
+          >
             <p>
-              Lots of ways! Apart from the very obvious one being fulfilling feature requests or writing chapters that the both of us agreed on, simply sharing this page will help increase awareness already. Give it a like on Spotify, Apple Podcasts or GitHub, if you like. Everything helps :)
+              Lots of ways! Apart from the very obvious one being fulfilling
+              feature requests or writing chapters that the both of us agreed
+              on, simply sharing this page will help increase awareness already.
+              Give it a like on Soundcloud, if you like. Everything helps :)
             </p>
           </div>
         </div>

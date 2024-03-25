@@ -83,7 +83,7 @@ export default function About() {
       </div>
       <section className={css.firstSection} id="first">
         <h1>
-          Über Beyond <span className={css.grad}>Earth©</span>
+          Über Beyond <span className={css.grad}>Earth®</span>
         </h1>
         <h3>Die Online-Bibliothek zur Raumfahrt</h3>
         <div className={css.info}>
@@ -210,11 +210,10 @@ export default function About() {
       </section>
 
       <section className={css.secondSection}>
-        <h1>Besuch' uns auf deiner Lieblingsplattform!</h1>
+        <h1>Besuch' uns gern auch anderswo!</h1>
         <h2 className={css.cta1}>
-          Unser Content ist sowohl auf{" "}
-          <strong className={css.spoti}>Spotify</strong> als auch{" "}
-          <strong className={css.apple}>Apple Podcasts</strong> verfügbar!
+          Unser Content ist auch auf{" "}
+          <strong className={css.apple}>Soundcloud</strong> verfügbar!
         </h2>
 
         <div className={css.boxes}>
@@ -245,44 +244,21 @@ export default function About() {
             <div className={css.box}>
               <Image
                 className={css.teaser}
-                src={require(".//../../resources/images/spotifyteaser1.png")}
+                src={require(".//../../resources/images/soundcloudteaser2.png")}
                 alt="Location"
               />
               <span>
-                <strong>Deutsches Hörbuch</strong> auf Spotify
+                <strong>Deutsches Hörbuch</strong> auf Soundcloud
               </span>
             </div>
             <div className={css.box}>
               <Image
                 className={css.teaser}
-                src={require(".//../../resources/images/spotifyteaser2.png")}
+                src={require(".//../../resources/images/soundcloudteaser1.png")}
                 alt="Location"
               />
               <span>
-                <strong>Englisches Hörbuch</strong> auf Spotify
-              </span>
-            </div>
-          </div>
-
-          <div className={css.boxesRight}>
-            <div className={css.box}>
-              <Image
-                className={css.teaser}
-                src={require(".//../../resources/images/applepodcasts1.png")}
-                alt="Location"
-              />
-              <span>
-              <strong>Deutsches Hörbuch</strong> auf Apple Podcasts
-              </span>
-            </div>
-            <div className={css.box}>
-              <Image
-                className={css.teaser}
-                src={require(".//../../resources/images/applepodcasts2.png")}
-                alt="Location"
-              />
-              <span>
-              <strong>Englisches Hörbuch</strong> auf Apple Podcasts
+                <strong>Englisches Hörbuch</strong> auf Soundcloud
               </span>
             </div>
           </div>
@@ -335,7 +311,7 @@ export default function About() {
           </div>
           <div className={`${css.answer} ${secondFAQ ? css.expanded : css.none}`}>
             <p>
-            Nein, derzeit nicht. Ich erwäge, einen Teilzeit-Bachelor of Science in Luft- und Raumfahrttechnik zu absolvieren, aber ich arbeite derzeit als Softwareentwickler. Mein ultimatives Ziel ist es, die Zukunft der Raumfahrtindustrie mitzugestalten, und zwar auf eine größere Art und Weise als "nur" durch einen Job in diesem Bereich. Daher werde ich höchstwahrscheinlich den (gut bezahlten) Weg eines Software-Ingenieurs fortsetzen und genug Geld auftreiben, um mein eigenes Unternehmen im Bereich Luft- und Raumfahrttechnik zu gründen.
+            Nein, derzeit nicht. Ich erwäge, einen Teilzeit-Bachelor of Science in Luft- und Raumfahrttechnik zu absolvieren, aber ich arbeite derzeit als Softwareentwickler. Mein ultimatives Ziel ist es, die Zukunft der Raumfahrtindustrie mitzugestalten, und zwar auf eine größere Art und Weise als "nur" durch einen Job in diesem Bereich. Daher werde ich höchstwahrscheinlich den Weg eines Software-Ingenieurs fortsetzen und genug Geld auftreiben, um mein eigenes Unternehmen im Bereich Luft- und Raumfahrttechnik zu gründen.
             </p>
           </div>
         </div>
@@ -390,7 +366,7 @@ export default function About() {
           </div>
           <div className={`${css.answer} ${fifthFAQ ? css.expanded : css.none} ${css.last}`}>
             <p>
-            Es gibt viele Möglichkeiten! Abgesehen von der sehr offensichtlichen Möglichkeit, Feature-Wünsche zu erfüllen oder Kapitel zu schreiben, auf die wir uns beide geeinigt haben, hilft schon das Teilen dieser Seite dabei, deren Bekanntheit zu steigern. Gib uns einen Like auf Spotify, Apple Podcasts oder GitHub, wenn du magst. Alles hilft :)
+            Es gibt viele Möglichkeiten! Abgesehen von der sehr offensichtlichen Möglichkeit, Feature-Wünsche zu erfüllen oder Kapitel zu schreiben, auf die wir uns beide geeinigt haben, hilft schon das Teilen dieser Seite dabei, deren Bekanntheit zu steigern. Gib uns einen Like auf Soundcloud, wenn du magst. Alles hilft :)
             </p>
           </div>
         </div>

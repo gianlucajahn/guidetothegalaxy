@@ -108,12 +108,20 @@
 
                 .grad {
                   background: linear-gradient(300deg,#35b0ff,#004aeb,#00cbff,#0020ff);
+                  background-image: radial-gradient(at 97% 97%, #a5f08e 0, transparent 47%),
+                  radial-gradient(at 1% 86%, #7bc3f3 0, transparent 42%),
+                  radial-gradient(at 63% 9%, #2d73f7 0, transparent 50%),
+                  radial-gradient(at 34% 44%, #f3d88f 0, transparent 44%),
+                  radial-gradient(at 92% 54%, rgb(14, 105, 241) 0, transparent 50%),
+                  radial-gradient(at 89% 15%, #1900ff 0, transparent 50%),
+                  radial-gradient(at 1% 0%, #57e76f 0, transparent 50%),
+                  radial-gradient(at 49% 78%, #ff11b8 0, transparent 50%);
                   background-size: 240% 240%;
                   animation: gradientAnimation 5s ease infinite;
                   -webkit-background-clip: text;
                   -webkit-text-fill-color: transparent;
                   background-clip: text;
-                  font-weight: 700;
+                  font-weight: 800;
                 }
             }
 
@@ -662,8 +670,8 @@
   }
 
   .apple {
-    color: #b84fea;
-    filter: drop-shadow(0px 0px 10px #b84fea);
+    color: #eea51e;
+    filter: drop-shadow(0px 0px 10px #eea51e);
     cursor: pointer;
   }
 
@@ -733,8 +741,7 @@
       margin-left: 16px;
     }
 
-    .boxesLeft,
-    .boxesMiddle {
+    .boxesLeft {
       border-right: 1px solid #1c1c1c;;
       position: relative;
       padding-right: 50px;
@@ -752,7 +759,7 @@
       gap: 20px;
 
       .box {
-        border: 0.91rem solid rgba(40, 40, 40, 0.5);
+        border: 0rem solid rgba(40, 40, 40, 0.5);
         background-color: rgba(40, 40, 40, 0.5);
         height: 210px;
         width: 210px;
