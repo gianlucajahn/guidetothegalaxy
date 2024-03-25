@@ -1,5 +1,5 @@
 <h1>Beyond Earth </h1>
-An optimistic glance into the future of human spaceflight, padded with a pinch of sarcasm.
+An optimistic glance into the future of human spaceflight, padded with a pinch of sarcasm. <br />
 Natively open-source and open for contribution.
  
  </div>
