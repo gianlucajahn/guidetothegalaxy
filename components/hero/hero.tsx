@@ -69,7 +69,7 @@ export default function Hero() {
           </div>
           <div className={styles.brand}>ND</div>
         </div>
-        <span>MERCH</span>
+        <span>EARTH</span>
       </h1>
 
       <div className={styles.heroSection}>
