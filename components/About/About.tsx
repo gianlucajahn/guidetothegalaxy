@@ -341,8 +341,7 @@ export default function About() {
             className={`${css.answer} ${secondFAQ ? css.expanded : css.none}`}
           >
             <p>
-              No, not currently. I am considering enrollment in a part-time
-              Bachelor of Science in Aerospace Engineering but I'm currently
+              No, not currently. I did a Bachelor of Science in Aerospace Engineering but I'm currently
               working as a Software Developer. My ultimate goal is to help shape
               and form the future of the spacetravel industry in a bigger
               fashion than "just" a job in the field though, so I am most likely

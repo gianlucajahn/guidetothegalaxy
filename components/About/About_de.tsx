@@ -311,7 +311,7 @@ export default function About() {
           </div>
           <div className={`${css.answer} ${secondFAQ ? css.expanded : css.none}`}>
             <p>
-            Nein, derzeit nicht. Ich erwäge, einen Teilzeit-Bachelor of Science in Luft- und Raumfahrttechnik zu absolvieren, aber ich arbeite derzeit als Softwareentwickler. Mein ultimatives Ziel ist es, die Zukunft der Raumfahrtindustrie mitzugestalten, und zwar auf eine größere Art und Weise als "nur" durch einen Job in diesem Bereich. Daher werde ich höchstwahrscheinlich den Weg eines Software-Ingenieurs fortsetzen und genug Geld auftreiben, um mein eigenes Unternehmen im Bereich Luft- und Raumfahrttechnik zu gründen.
+            Nein, derzeit nicht. Ich habe einen Bachelor of Science in Luft- und Raumfahrttechnik, arbeite derzeit aber als Softwareentwickler. Mein ultimatives Ziel ist es, die Zukunft der Raumfahrtindustrie mitzugestalten, und zwar auf eine größere Art und Weise als "nur" durch einen Job in diesem Bereich. Daher werde ich höchstwahrscheinlich den Weg eines Software-Ingenieurs fortsetzen und genug Geld auftreiben, um mein eigenes Unternehmen im Bereich Luft- und Raumfahrttechnik zu gründen.
             </p>
           </div>
         </div>
